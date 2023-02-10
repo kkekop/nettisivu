@@ -4,8 +4,9 @@
 		<title>Expected Value of NBA Draft Picks</title>
 		<link rel="stylesheet" href="styles/nba.css" />
 	</head>
+
 	<body>
-		<div display="flex;">
+		<div class="header">
 			<div class="donate-container">
 				<button
 					class="donate-button"
@@ -28,14 +29,25 @@
 					>
 				</div>
 			</div>
+
+			<div class="shop-container">
+				<img class="hbc-image" src="hbc.jpg" alt="" />
+				<div class="offer-tag">HYVÄÄ KORIPALLOA</div>
+				<div class="add-to-cart-container">
+					<a href="https://www.hunksbasketball.fi/" target="_blank"
+						><button class="add-to-cart-button">Osta</button></a
+					>
+				</div>
+			</div>
 		</div>
+
 		<br />
+
 		<div class="selitys">
-			<p style="font-size: 30px; font-weight: bold">Kapun värit</p>
-			<p>
+			<div class="selitys-title">
 				Expected value of NBA draft picks using a simple valuation
 				method
-			</p>
+			</div>
 			<p>
 				Based on
 				<a href="https://www.82games.com/nbadraftpicks.htm"
@@ -59,34 +71,6 @@
 			</p>
 		</div>
 
-		<div class="selitys2">
-			<p style="font-size: 30px; font-weight: bold">Kiilin värit</p>
-			<p>
-				Expected value of NBA draft picks using a simple valuation
-				method
-			</p>
-			<p>
-				Based on
-				<a href="https://www.82games.com/nbadraftpicks.htm"
-					>82games.com post</a
-				>
-			</p>
-			<p>Ratings are based on the following formula:</p>
-			<p>Rating = points/game + rebounds/game + assists/game</p>
-			<ul>
-				<li><b>Star</b> -- 20+ rating</li>
-				<li><b>Solid</b> -- 15 to 19.9</li>
-				<li><b>Role Player</b> -- 10 to14.9</li>
-				<li><b>Deep Bench</b> -- 5 to 9.9</li>
-				<li><b>Complete Bust</b> -- less than 5</li>
-				<li><b>DNP</b> -- (never played in the NBA)</li>
-			</ul>
-			<p>
-				All the averages are averages of the players' averages, not
-				weighted averages or anything like that. I.e. a dude with 1 game
-				has the same weight as a dude with 800 games.
-			</p>
-		</div>
 		<img src="rating.png" alt="" style="height: 600px" />
 		<img src="ratings_avg_max_min.png" alt="" style="height: 600px" />
 		<img src="years_picks_rating.png" alt="" style="height: 600px" />
