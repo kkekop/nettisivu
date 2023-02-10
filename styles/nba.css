@@ -1,0 +1,75 @@
+.df th,
+.top3df th {
+	background-color: lightgray;
+}
+.df tbody tr:nth-child(even),
+.top3df tbody tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+.df tbody tr:nth-child(odd),
+.top3df tbody tr:nth-child(odd) {
+	background-color: rgb(240, 240, 240, 1);
+}
+
+.df th {
+	width: 60px;
+	text-align: center;
+}
+
+.top3df th {
+	width: 60px;
+	text-align: center;
+}
+
+.df tbody tr,
+.top3df tbody tr {
+	text-align: center;
+}
+
+.donate-button {
+	height: 240px;
+	width: 566px;
+	/*justify-content: center;*/
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(191, 171, 1);
+	font-size: 50px;
+	color: rgb(191, 171, 1);
+	background-color: rgb(15, 61, 118);
+	background-image: url("./hbc.jpg");
+	background-repeat: repeat;
+	background-size: 10%;
+	position: relative;
+	align-items: center;
+	z-index: 100;
+}
+
+.donate-button:hover {
+	color: rgb(15, 61, 118);
+	background-color: rgb(191, 171, 1);
+	border-color: rgb(15, 61, 118);
+}
+
+.logo-left {
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 30%;
+}
+
+.logo-right {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	width: 30%;
+}
+
+.selitys {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-left: 40px;
+	background-color: rgb(191, 171, 1);
+	color: rgb(15, 61, 118);
+}
