@@ -146,10 +146,10 @@ tr:nth-child(even) {
 
 .offer-tag {
 	position: absolute;
-	background-color: black;
-	color: white;
+	background-color: rgb(0, 58, 109);
+	color: rgb(228, 196, 0);
 	right: 0px;
-	top: 10px;
+	top: 0px;
 	padding: 10px;
 }
 
