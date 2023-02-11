@@ -64,6 +64,7 @@ tr:nth-child(even) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	object-fit: contain;
 }
 
 .donate-button {
@@ -117,7 +118,7 @@ tr:nth-child(even) {
 .shop-container {
 	position: relative;
 	display: inline-flex;
-
+	object-fit: contain;
 	/*padding: 20px;*/
 }
 
@@ -179,7 +180,15 @@ tr:nth-child(even) {
 }
 
 .images {
-	background-color: rgb(228, 196, 0);
-	margin-left: 40px;
-	padding-left: 100px;
+	/*background-color: rgb(228, 196, 0);*/
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	right: 150px;
+}
+
+.lauri-image {
+	object-fit: contain;
+	max-height: 700px;
 }
