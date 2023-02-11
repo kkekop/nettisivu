@@ -69,7 +69,7 @@ tr:nth-child(even) {
 
 .donate-button {
 	height: 240px;
-	width: 566px;
+	width: 300px;
 	/*justify-content: center;*/
 	border-width: 5px;
 	border-style: solid;
