@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hedging Calculator</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+			table {
+				width: 50%;
+				margin: auto;
+			}
+			td,
+			th {
+				padding: 10px;
+				text-align: center;
+			}
+			.back {
+				text-align: left;
+			}
+			.lay {
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th class="nulli"></th>
+				<th class="back">Back</th>
+				<th class="lay">Lay</th>
+			</tr>
+			<tr>
+				<td class="back">Odds</td>
+				<td class="lay">
+					<input type="number" id="backOdds" />
+				</td>
+				<td class="lay">
+					<input type="number" id="layOdds" />
+				</td>
+			</tr>
+			<tr>
+				<td class="back">Commission</td>
+				<td class="lay">
+					<input
+						type="decimal"
+						id="backCommission"
+						step="0.01"
+						value="0.00%"
+					/>
+				</td>
+				<td class="lay">
+					<input
+						type="TEL"
+						id="layCommission"
+						step="0.01"
+						value="0.00%"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td class="back">Bet Size</td>
+				<td class="lay">
+					<input type="number" id="backBetSize" />
+				</td>
+				<td class="lay">
+					<input type="number" id="layBetSize" disabled /> (Pelaajan
+					panos betfairin betsilaatikossa)
+				</td>
+			</tr>
+
+			<tr>
+				<th class="nulli"></th>
+				<th class="back">Wins</th>
+				<th class="lay">Loses</th>
+			</tr>
+			<tr>
+				<td class="back">Back Bet Profit</td>
+				<td class="lay" id="backWins"></td>
+				<td class="lay" id="backLoses"></td>
+			</tr>
+			<tr>
+				<td class="back">Lay Bet Profit</td>
+				<td class="lay" id="layLoses"></td>
+				<td class="lay" id="layWins"></td>
+			</tr>
+			<tr>
+				<td class="back">Net</td>
+				<td class="lay" id="backWinNet"></td>
+				<td class="lay" id="layWinNet"></td>
+			</tr>
+			<tr>
+				<td class="back">Yield</td>
+				<td class="lay" id="backYield"></td>
+				<td class="lay" id="layYield"></td>
+			</tr>
+		</table>
+		<br />
+		<button id="calculate">Calculate</button>
+
+		<script>
+			$(document).ready(function () {
+				$("#calculate").click(function () {
+					// Get the values of the inputs
+
+					var backOdds = $("#backOdds").val();
+					var layOdds = $("#layOdds").val();
+					var backCommission = $("#backCommission").val() / 100;
+					var layCommission = $("#layCommission").val() / 100;
+					var backBetSize = $("#backBetSize").val();
+
+					if (!backBetSize) {
+						alert("Please enter a value for Back Bet Size");
+						return;
+					}
+
+					// Calculate layBetSize based on the formula
+					var layBetSize =
+						(backBetSize *
+							((backOdds - 1) * (1 - backCommission) + 1)) /
+						(layOdds - layCommission);
+					$("#layBetSize").val(layBetSize);
+
+					var backWins =
+						backBetSize * (backOdds - 1) * (1 - backCommission);
+					$("#backWins").text(backWins);
+
+					var backLoses = -backBetSize;
+					$("#backLoses").text(backLoses);
+
+					var layLoses = -layBetSize * (layOdds - 1);
+					$("#layLoses").text(layLoses);
+
+					var layWins = layBetSize * (1 - layCommission);
+					$("#layWins").text(layWins);
+
+					var backWinNet = backWins + layLoses;
+					$("#backWinNet").text(backWinNet);
+
+					var layWinNet = backLoses + layWins;
+					$("#layWinNet").text(layWinNet);
+
+					var backYield = (backNet / backBetSize) * 100;
+					$("#backYield").text(backYield + "%");
+
+					var layYield = (layNet / layBetSize) * 100;
+					$("#layYield").text(layYield + "%");
+				});
+			});
+		</script>
+	</body>
+</html>
