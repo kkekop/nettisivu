@@ -23,6 +23,7 @@
 		</style>
 	</head>
 	<body>
+		<h1>Free bet calculator</h1>
 		<table>
 			<tr>
 				<th class="nulli"></th>
@@ -116,7 +117,7 @@
 					// Calculate layBetSize based on the formula
 					var layBetSize =
 						(backBetSize *
-							((backOdds - 1) * (1 - backCommission) + 1)) /
+							((backOdds - 1) * (1 - backCommission))) /
 						(layOdds - layCommission);
 					$("#layBetSize").val(layBetSize);
 
@@ -124,7 +125,7 @@
 						backBetSize * (backOdds - 1) * (1 - backCommission);
 					$("#backWins").text(backWins);
 
-					var backLoses = -backBetSize;
+					var backLoses = 0;
 					$("#backLoses").text(backLoses);
 
 					var layLoses = -layBetSize * (layOdds - 1);
