@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dynamic Image Tab Gallery</title>
+		<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif;
+			}
+			.tabs {
+				display: flex;
+				cursor: pointer;
+				padding: 10px;
+				background: #f0f0f0;
+			}
+			.tabs div {
+				padding: 10px 20px;
+				margin-right: 5px;
+				border: 1px solid #ddd;
+			}
+			.sub-tabs {
+				display: none;
+				margin-top: 10px;
+			}
+			.sub-tabs div {
+				padding: 5px 10px;
+				cursor: pointer;
+				border: 1px solid #ddd;
+				display: inline-block;
+			}
+			.images {
+				margin-top: 20px;
+				display: none;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.active {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Dynamic Image Tab Gallery</h2>
+
+		<!-- Main Tabs Container -->
+		<div class="tabs" id="mainTabs"></div>
+
+		<!-- Sub Tabs and Images Container -->
+		<div id="subTabsContainer"></div>
+
+		<!-- Image Display -->
+		<div id="imageContainer" class="images">
+			<img id="displayedImage" src="" alt="Image" />
+		</div>
+
+		<script>
+			// Labels and Months Arrays
+			const labels = [
+				"Menot",
+				"Menot_ilman_sijoituksia",
+				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia",
+				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia_ja_kuluja",
+				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia_ja_terveys",
+				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia_ja_kuluja_ja_terveys",
+			];
+			const months = ["6kk", "12kk", "24kk", "6_12_24kk"];
+
+			// Main Tabs: Populate Main Tabs Dynamically
+			const mainTabsContainer = document.getElementById("mainTabs");
+			labels.forEach((label) => {
+				const tab = document.createElement("div");
+				tab.innerText = label.replace(/_/g, " "); // Display name without underscores
+				tab.onclick = () => showSubTabs(label);
+				mainTabsContainer.appendChild(tab);
+			});
+
+			// Sub Tabs: Populate Sub Tabs for each label
+			const subTabsContainer =
+				document.getElementById("subTabsContainer");
+			labels.forEach((label) => {
+				const subTabDiv = document.createElement("div");
+				subTabDiv.classList.add("sub-tabs");
+				subTabDiv.id = `subTabs-${label}`;
+
+				months.forEach((month) => {
+					const monthTab = document.createElement("div");
+					monthTab.innerText = month.replace("kk", " months");
+					monthTab.onclick = () => showImage(label, month);
+					subTabDiv.appendChild(monthTab);
+				});
+
+				subTabsContainer.appendChild(subTabDiv);
+			});
+
+			// Function to show the appropriate sub-tabs and default image based on the main tab clicked
+			function showSubTabs(label) {
+				// Hide all sub-tabs
+				document
+					.querySelectorAll(".sub-tabs")
+					.forEach((tab) => (tab.style.display = "none"));
+				// Show the selected category's sub-tabs
+				document.getElementById(`subTabs-${label}`).style.display =
+					"block";
+
+				// Show the 6_12_24 image by default when main tab is clicked
+				showImage(label, "6_12_24kk");
+			}
+
+			// Function to show the selected image
+			function showImage(label, timeframe) {
+				const imagePath = `images/${label}_${timeframe}.png`; // Image path format
+				const imageContainer =
+					document.getElementById("imageContainer");
+				const displayedImage =
+					document.getElementById("displayedImage");
+
+				// Set the source of the image
+				displayedImage.src = imagePath;
+				displayedImage.alt = `${label} - ${timeframe}`;
+
+				// Display the image container
+				imageContainer.style.display = "block";
+			}
+		</script>
+	</body>
+</html>
