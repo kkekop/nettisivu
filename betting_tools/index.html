@@ -71,23 +71,30 @@
 
 			<tr>
 				<th class="nulli"></th>
-				<th class="back">Wins</th>
-				<th class="lay">Loses</th>
+				<th class="back">Back site</th>
+				<th class="lay">Lay site</th>
+				<th class="lay">Net</th>
 			</tr>
 			<tr>
-				<td class="back">Back Bet Profit</td>
+				<td class="back">Back Bet Wins</td>
 				<td class="lay" id="backWins"></td>
-				<td class="lay" id="backLoses"></td>
-			</tr>
-			<tr>
-				<td class="back">Lay Bet Profit</td>
 				<td class="lay" id="layLoses"></td>
-				<td class="lay" id="layWins"></td>
+				<td class="lay" id="backWinNet"></td>
 			</tr>
 			<tr>
-				<td class="back">Net</td>
-				<td class="lay" id="backWinNet"></td>
+				<td class="back">Back Bet Loses</td>
+				<td class="lay" id="backLoses"></td>
+				<td class="lay" id="layWins"></td>
 				<td class="lay" id="layWinNet"></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="back">Amount tied</td>
+				<td class="lay" id="backLosesAmt"></td>
+				<td class="lay" id="layLosesAmt"></td>
+				<td class="lay" id="amountTied"></td>
 			</tr>
 			<tr>
 				<td class="back">Yield</td>
@@ -139,6 +146,12 @@
 
 					var layWinNet = backLoses + layWins;
 					$("#layWinNet").text(layWinNet);
+
+					var amountTied = backLoses + layLoses;
+					$("#amountTied").text(-amountTied);
+
+					$("#backLosesAmt").text(-backLoses);
+					$("#layLosesAmt").text(-layLoses);
 
 					var backYield = (backNet / backBetSize) * 100;
 					$("#backYield").text(backYield + "%");
