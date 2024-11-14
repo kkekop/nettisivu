@@ -99,13 +99,6 @@
 				<td class="lay" id="layLosesAmt"></td>
 				<td class="lay" id="amountTied"></td>
 			</tr>
-			<tr>
-				<td class="back">Yield</td>
-				<td></td>
-				<td></td>
-				<td class="lay" id="backYield"></td>
-				<td class="lay" id="layYield"></td>
-			</tr>
 		</table>
 		<br />
 		<button id="calculate">Calculate</button>
@@ -161,12 +154,12 @@
 					$("#backLosesAmt").text(parseFloat(-backLoses).toFixed(3));
 					$("#layLosesAmt").text(parseFloat(-layLoses).toFixed(3));
 
-					var backWinYield = (backWinNet / amountTied) * 100;
+					var backWinYield = (backWinNet / -amountTied) * 100;
 					$("#backWinYield").text(
 						parseFloat(backWinYield).toFixed(3) + "%"
 					);
 
-					var layWinYield = (layWinNet / amountTied) * 100;
+					var layWinYield = (layWinNet / -amountTied) * 100;
 					$("#layWinYield").text(
 						parseFloat(layWinYield).toFixed(3) + "%"
 					);
