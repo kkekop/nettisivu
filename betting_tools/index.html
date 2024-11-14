@@ -74,18 +74,21 @@
 				<th class="back">Back site</th>
 				<th class="lay">Lay site</th>
 				<th class="lay">Net</th>
+				<th class="lay">Yield</th>
 			</tr>
 			<tr>
 				<td class="back">Back Bet Wins</td>
 				<td class="lay" id="backWins"></td>
 				<td class="lay" id="layLoses"></td>
 				<td class="lay" id="backWinNet"></td>
+				<td class="lay" id="backWinYield"></td>
 			</tr>
 			<tr>
 				<td class="back">Back Bet Loses</td>
 				<td class="lay" id="backLoses"></td>
 				<td class="lay" id="layWins"></td>
 				<td class="lay" id="layWinNet"></td>
+				<td class="lay" id="layWinYield"></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -98,6 +101,8 @@
 			</tr>
 			<tr>
 				<td class="back">Yield</td>
+				<td></td>
+				<td></td>
 				<td class="lay" id="backYield"></td>
 				<td class="lay" id="layYield"></td>
 			</tr>
@@ -129,38 +134,42 @@
 						(backBetSize *
 							((backOdds - 1) * (1 - backCommission) + 1)) /
 						(layOdds - layCommission);
-					$("#layBetSize").val(layBetSize);
+					$("#layBetSize").val(parseFloat(layBetSize).toFixed(3));
 
 					var backWins =
 						backBetSize * (backOdds - 1) * (1 - backCommission);
-					$("#backWins").text(backWins);
+					$("#backWins").text(parseFloat(backWins).toFixed(3));
 
 					var backLoses = -backBetSize;
-					$("#backLoses").text(backLoses);
+					$("#backLoses").text(parseFloat(backLoses).toFixed(3));
 
 					var layLoses = -layBetSize * (layOdds - 1);
-					$("#layLoses").text(layLoses);
+					$("#layLoses").text(parseFloat(layLoses).toFixed(3));
 
 					var layWins = layBetSize * (1 - layCommission);
-					$("#layWins").text(layWins);
+					$("#layWins").text(parseFloat(layWins).toFixed(3));
 
 					var backWinNet = backWins + layLoses;
-					$("#backWinNet").text(backWinNet);
+					$("#backWinNet").text(parseFloat(backWinNet).toFixed(3));
 
 					var layWinNet = backLoses + layWins;
-					$("#layWinNet").text(layWinNet);
+					$("#layWinNet").text(parseFloat(layWinNet).toFixed(3));
 
 					var amountTied = backLoses + layLoses;
-					$("#amountTied").text(-amountTied);
+					$("#amountTied").text(parseFloat(-amountTied).toFixed(3));
 
-					$("#backLosesAmt").text(-backLoses);
-					$("#layLosesAmt").text(-layLoses);
+					$("#backLosesAmt").text(parseFloat(-backLoses).toFixed(3));
+					$("#layLosesAmt").text(parseFloat(-layLoses).toFixed(3));
 
-					var backYield = (backNet / backBetSize) * 100;
-					$("#backYield").text(backYield + "%");
+					var backWinYield = (backWinNet / amountTied) * 100;
+					$("#backWinYield").text(
+						parseFloat(backWinYield).toFixed(3) + "%"
+					);
 
-					var layYield = (layNet / layBetSize) * 100;
-					$("#layYield").text(layYield + "%");
+					var layWinYield = (layWinNet / amountTied) * 100;
+					$("#layWinYield").text(
+						parseFloat(layWinYield).toFixed(3) + "%"
+					);
 				});
 			});
 		</script>
