@@ -84,6 +84,7 @@
 				"Menot",
 				"Ylijaama",
 				"Saastamisaste",
+				"Kulut",
 				"Palkka",
 				"SEND MONEY",
 			];
@@ -92,12 +93,37 @@
 				"Menot_ilman_sijoituksia",
 				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia",
 				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia_ja_kuluja",
+
 				"Ylijaama",
 				"Ylijaama_ilman_sijoituksia",
 				"Ylijaama_ilman_sijoituksia_ja_lainojen_lyhennyksia",
+
 				"Saastamisaste_ilman_sijoituksia",
 				"Saastamisaste_ilman_sijoituksia_ja_lainojen_lyhennyksia",
+
 				"Palkka",
+
+				"Kulut_Alkoholi_ja_tupakka",
+				"Kulut_Asuminen",
+				"Kulut_Asuntolaina_kulut",
+				"Kulut_Asuntolaina_lyhennys",
+				"Kulut_Elintarvikkeet",
+				"Kulut_Hotellit,_kahvilat_ja_ravintolat",
+				"Kulut_Kulttuuri_ja_vapaa-aika",
+				"Kulut_Lemmikit",
+				"Kulut_Liikenne",
+				"Kulut_Muut_menot_ja_koulutus",
+				"Kulut_Opintolaina_kulut",
+				"Kulut_Opintolaina_lyhennys",
+				"Kulut_Palkka",
+				"Kulut_Sijoitukset",
+				"Kulut_Sisustus_ja_kodinkoneet",
+				"Kulut_Terveys",
+				"Kulut_Tietoliikenne",
+				"Kulut_Tyokahvi",
+				"Kulut_Tyopysakointi",
+				"Kulut_Tyoruoka",
+				"Kulut_Vaatteet_ja_jalkineet",
 			];
 			const months = [
 				"6kk",
@@ -106,6 +132,7 @@
 				"6_12_24kk",
 				"1kk",
 				"1_6_12_24kk",
+				"cumulative",
 			];
 
 			// Top Tabs: Populate Top Tabs Dynamically
@@ -135,7 +162,9 @@
 				// Populate main tabs and make them visible
 				filteredLabels.forEach((label) => {
 					const tab = document.createElement("div");
-					tab.innerText = label.replace(/_/g, " "); // Display name without underscores
+					tab.innerText = label
+						.replace(/^Kulut\s*/, "")
+						.replace(/_/g, " "); // Display name without underscores and replace Kulut from start
 					tab.onclick = () => showSubTabs(label);
 					mainTabsContainer.appendChild(tab);
 				});
