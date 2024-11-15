@@ -18,17 +18,20 @@
 				padding: 0;
 				display: flex;
 				justify-content: center;
-				align-items: center;
+				align-items: flex-start;
 				height: 100vh;
 				color: #333;
 				flex-direction: column;
 				padding: 20px;
-				overflow: hidden; /* Prevent overflow */
+				overflow-y: auto; /* Allow vertical scrolling */
 				-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
 				box-sizing: border-box;
+				font-size: calc(
+					1vw + 1rem
+				); /* Scale font size relative to viewport */
 			}
 
-			/* Zoom or Scaling the entire page */
+			/* Container for the content */
 			.calculator-card {
 				width: 100%;
 				max-width: 800px;
@@ -39,16 +42,10 @@
 				box-sizing: border-box;
 				display: flex;
 				flex-direction: column;
-				transform-origin: top center; /* Ensure scaling happens from top center */
-				/* Scaling the container */
-				transform: scale(
-					calc(100vh / 1200)
-				); /* Dynamically scale based on viewport height */
-				transform-origin: top center; /* Make sure scaling starts from the top */
+				max-height: 100vh; /* Allow the card to take up the full screen height */
+				overflow-y: auto; /* Make the card content scrollable */
 			}
 
-			/* Table Styling */
-			/* Table Styling */
 			/* Table Styling */
 			table {
 				width: 100%;
@@ -61,7 +58,7 @@
 			td {
 				padding: 12px 15px;
 				text-align: center;
-				font-size: 1rem;
+				font-size: 0.9rem; /* Adjusted font size */
 				border-bottom: 1px solid #e0e0e0;
 			}
 
@@ -83,11 +80,6 @@
 				word-wrap: break-word; /* Ensure text is wrapped if it overflows */
 			}
 
-			/* Adjustments for the header (if needed) */
-			th {
-				white-space: nowrap; /* Prevent header text from breaking */
-			}
-
 			/* Input Styling */
 			input[type="number"],
 			input[type="decimal"] {
@@ -96,7 +88,7 @@
 				margin: 8px 0;
 				border-radius: 6px;
 				border: 1px solid #ccc;
-				font-size: 0.9rem;
+				font-size: 0.9rem; /* Smaller font size */
 				background-color: #f9f9f9;
 				box-sizing: border-box;
 				transition: all 0.3s;
@@ -117,7 +109,7 @@
 				background-color: #4e5b66;
 				color: white;
 				padding: 12px 20px;
-				font-size: 1.2rem;
+				font-size: 0.9rem; /* Smaller font size for buttons */
 				border: none;
 				border-radius: 8px;
 				cursor: pointer;
@@ -172,7 +164,22 @@
 
 			/* Responsive Design */
 			@media (max-width: 768px) {
-				/* Scale further on small screens */
+				body {
+					font-size: calc(
+						1vw + 0.8rem
+					); /* Adjust font size for smaller screens */
+				}
+
+				table th,
+				table td {
+					font-size: 0.8rem; /* Make the text inside the table smaller */
+				}
+
+				button {
+					font-size: 1rem; /* Make buttons slightly smaller */
+				}
+
+				/* Scale further on very small screens */
 				.calculator-card {
 					transform: scale(
 						calc(100vh / 1000)
@@ -181,15 +188,6 @@
 
 				.sponsor-banner {
 					height: 200px; /* Reduce banner height on smaller screens */
-				}
-
-				table th,
-				table td {
-					font-size: 0.9rem;
-				}
-
-				button {
-					font-size: 1rem;
 				}
 			}
 		</style>
