@@ -14,16 +14,20 @@
 				padding: 10px;
 				background: #f0f0f0;
 				display: none; /* Hidden by default */
+				flex-wrap: wrap; /* This allows buttons to wrap onto new lines when necessary */
+				justify-content: space-around; /* Distribute buttons evenly */
+				gap: 5px; /* Small gap between buttons */
 			}
 			.tabs div {
 				padding: 10px 20px;
-				margin-right: 5px;
 				border: 1px solid #ddd;
 				border-radius: 5px;
 				background-color: #f9f9f9;
 				text-align: center;
-				transition: background-color 0.2s, box-shadow 0.2s;
+				flex: 1 1 100px; /* Allows the buttons to shrink or grow, with a minimum width of 100px */
+				box-sizing: border-box; /* Ensures padding is included in the width */
 			}
+
 			.tabs div:hover {
 				background-color: #e0e0e0;
 				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
