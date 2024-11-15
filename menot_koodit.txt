@@ -1,0 +1,324 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import os
+
+# import_file = r'C:\Users\kimmo\Dropbox\Menot\menot_total.xlsx'
+import_file = r'C:\Users\kimmo\Downloads\dummy_expense_data.xlsx'
+
+df = pd.read_excel(import_file, parse_dates=['pvm'])
+
+first_month = pd.to_datetime('2018-03-01')
+first_month_yyyymm = first_month.strftime('%Y-%m')
+
+df_start = df[df['pvm'] >= first_month].fillna(0).copy()
+
+
+def filter_df(category_filter: list = None, category_filter_type: str = None, comment_filter: list = None, comment_filter_type: str = None , dataframe: pd.DataFrame = None) -> pd.DataFrame:
+    """
+    Filters out rows in the DataFrame based on the provided category and comment filters.
+
+    Parameters:
+    -----------
+    category_filter : list, optional
+        A list of category values to exclude from the DataFrame. If None, no filtering is applied to categories.
+    comment_filter : list, optional
+        A list of comment values to exclude from the DataFrame. If None, no filtering is applied to comments.
+    dataframe : pd.DataFrame, optional
+        The DataFrame to apply the filters to. If None, the global `df_start` DataFrame will be used.
+
+    Returns:
+    --------
+    pd.DataFrame
+        A filtered DataFrame with rows removed based on the specified category and comment filters.
+    
+    Notes:
+    ------
+    - The method assumes the DataFrame has columns named 'Kategoria' and 'Lisäselite'.
+    - Rows will be removed if the 'Kategoria' is in `category_filter` or the 'Lisäselite' is in `comment_filter`.
+    """
+    
+    # Use the global df_start DataFrame if no dataframe is provided
+    if dataframe is None:
+        dataframe = df_start
+    
+    # Ensure filters are lists, defaulting to empty if None
+    if category_filter is None:
+        category_filter = []  # Default to an empty list if no category filter is provided
+    if comment_filter is None:
+        comment_filter = []  # Default to an empty list if no comment filter is provided
+    if category_filter_type is None:
+        category_filter_type = 'exclusive'
+
+    
+    # Filter out rows based on the 'Category' column (if a filter is provided)
+    if category_filter_type == 'exclusive':
+        dataframe = dataframe[~dataframe['Kategoria'].isin(category_filter)]  # Exclude rows with 'Category' in category_filter
+    elif category_filter_type == 'inclusive':
+        dataframe = dataframe[dataframe['Kategoria'].isin(category_filter)]  # Exclude rows with 'Category' in category_filter
+        
+    # Filter out rows based on the 'Comment' column (if a filter is provided)
+    if comment_filter:
+        if comment_filter_type == 'exclusive':
+            dataframe = dataframe[~dataframe['Lisäselite'].isin(comment_filter)]  # Exclude rows with 'Comment' in comment_filter
+        elif comment_filter_type == 'inclusive':
+            dataframe = dataframe[dataframe['Lisäselite'].isin(comment_filter)]  # Exclude rows with 'Comment' in comment_filter
+    
+    return dataframe
+
+
+def pivot_df(dataframe: pd.DataFrame) -> pd.DataFrame:
+    df_grouped = dataframe.pivot_table(index = 'Month',columns = 'Kategoria', values = 'Summa', aggfunc = 'sum').fillna(0)
+
+    df_grouped.index = pd.to_datetime(df_grouped.index)
+    
+    if 'Palkka' in df_grouped.columns:
+        df_grouped = df_grouped*-1
+    
+    return df_grouped
+
+# Define a translation function to remove umlauts
+def remove_umlauts(text):
+    translations = str.maketrans("äöåÄÖÅ", "aoaAOA")
+    return text.translate(translations)
+
+
+def pivot_and_filter_df(column_filter, column_filter_type, comment_filter_type, comment_filter, dataframe: pd.DataFrame = None) -> pd.DataFrame:
+    filtered_df = filter_df(column_filter, column_filter_type, comment_filter_type, comment_filter)
+    pivoted_df = pivot_df(filtered_df)
+    
+    return pivoted_df
+
+
+
+
+def chart_rolling_average_charts(label,
+                                 rolling_averages: list = [6,12,24],
+                                 dataframe: pd.DataFrame = None, 
+                                 pic_path: str = None,
+                                 display_images: bool = False
+                                           ):
+    
+    '''
+    dataframe has to be in monthly sums per kategoria as columns and dates as rows
+    
+    i.e. something like this
+    
+        df_grouped = dataframe.pivot_table(index = 'Month',columns = 'Kategoria', values = 'Summa', aggfunc = 'sum').fillna(0)
+
+        df_grouped.index = pd.to_datetime(df_grouped.index)
+    '''
+
+    # Apply translation to label for filename
+    clean_label = remove_umlauts(label.replace(" ", "_"))
+
+
+    # Plot and save each timeframe separately
+    # for window in (6, 12, 24):
+    for window in rolling_averages:
+        plt.figure(figsize=(10, 8))
+
+        # filtered_df = filter_df(column_filter, comment_filter)
+        # pivoted_df = pivot_df(filtered_df)
+        filtered_sum = dataframe.sum(axis=1)
+
+        rolling_mean = filtered_sum.rolling(window=window, min_periods=1).mean()
+        rolling_mean.plot(label=f'{label} {window} kk')
+
+        # Add titles and legend for individual plots
+        plt.title(f'{label} {window} kk keskiarvo {first_month_yyyymm} alkaen')
+        plt.xlabel('Kuukausi')
+        plt.ylabel('Eurot')
+        plt.legend()
+        plt.grid(visible = True, axis = 'y')
+        plt.tight_layout()
+
+        # Save each timeframe plot with the clean label
+        filename = os.path.join(pic_path, f"{clean_label}_{window}kk.png")
+        plt.savefig(filename)
+        plt.show() if display_images else None
+        plt.close()
+
+    # Plot and save a combined plot with all three timeframes (6, 12, 24)
+    plt.figure(figsize=(10, 8))
+
+    for window in rolling_averages:
+
+        # filtered_df = filter_df(column_filter, comment_filter)
+        # pivoted_df = pivot_df(filtered_df)
+        filtered_sum = dataframe.sum(axis=1)
+
+        rolling_mean = filtered_sum.rolling(window=window, min_periods=1).mean()
+        rolling_mean.plot(label=f'{label} {window} kk')
+
+    # Adding titles and legend for combined plot
+    plt.title(f'{label} keskiarvot {first_month_yyyymm} alkaen')
+    plt.xlabel('Kuukausi')
+    plt.ylabel('Eurot')
+    plt.legend()
+    plt.grid(visible = True, axis = 'y')
+    plt.tight_layout()
+
+    # Save the combined plot with the clean label
+    combined_filename = f"{clean_label}_{'_'.join(map(str, rolling_averages))}kk.png"
+    combined_filepath = os.path.join(pic_path, combined_filename)
+    plt.savefig(combined_filepath)
+    plt.show() if display_images else None
+    plt.close()
+
+    
+    
+    
+
+def chart_cumulative_charts(label,
+                            dataframe: pd.DataFrame = None, 
+                            pic_path: str = None,
+                            display_images: bool = False
+                                           ):
+    
+    '''
+    dataframe has to be in monthly sums per kategoria as columns and dates as rows
+    
+    i.e. something like this
+    
+        df_grouped = dataframe.pivot_table(index = 'Month',columns = 'Kategoria', values = 'Summa', aggfunc = 'sum').fillna(0)
+
+        df_grouped.index = pd.to_datetime(df_grouped.index)
+    '''
+
+    # Apply translation to label for filename
+    clean_label = remove_umlauts(label.replace(" ", "_"))
+
+    plt.figure(figsize=(10, 8))
+
+    # filtered_df = filter_df(column_filter, comment_filter)
+    # pivoted_df = pivot_df(filtered_df)
+    filtered_sum = dataframe.sum(axis=1)
+
+    cumulative_sum = filtered_sum.cumsum()
+    cumulative_sum.plot(label=f'{label} cumulative')
+
+    # Add titles and legend for individual plots
+    plt.title(f'{label} cumulative {first_month_yyyymm} alkaen')
+    plt.xlabel('Kuukausi')
+    plt.ylabel('Eurot')
+    plt.legend()
+    plt.grid(visible = True, axis = 'y')
+    plt.tight_layout()
+
+    # Save each timeframe plot with the clean label
+    filename = os.path.join(pic_path, f"{clean_label}_cumulative.png")
+    plt.savefig(filename)
+    plt.show() if display_images else None
+    plt.close()
+    
+
+filter_dict = {
+                'Menot': [['Palkka'], 'exclusive', None, None],
+                'Menot ilman sijoituksia': [['Palkka', 'Sijoitukset'], 'exclusive', None, None],
+                'Menot ilman sijoituksia ja lainojen lyhennyksiä': [['Palkka', 'Sijoitukset', 'Asuntolaina lyhennys', 'Opintolaina lyhennys'], 'exclusive', None, None],
+                'Menot ilman sijoituksia ja lainojen lyhennyksiä ja kuluja': [['Palkka', 'Sijoitukset', 'Asuntolaina lyhennys', 'Opintolaina lyhennys', 'Asuntolaina kulut', 'Opintolaina kulut'], 'exclusive', None, None],
+                # 'Menot ilman sijoituksia ja lainojen lyhennyksiä ja hoitoja': [['Palkka', 'Sijoitukset', 'Asuntolaina lyhennys', 'Opintolaina lyhennys'], 'exclusive', ['Dextra', 'YA lääke'], 'exclusive'],
+                # 'Menot ilman sijoituksia ja lainojen lyhennyksiä ja kuluja ja hoitoja': [['Palkka', 'Sijoitukset', 'Asuntolaina lyhennys', 'Opintolaina lyhennys', 'Asuntolaina kulut', 'Opintolaina kulut'], 'exclusive', ['Dextra', 'YA lääke'], 'exclusive'],
+                'Ylijäämä': [None, None, None, None],
+                'Ylijäämä ilman sijoituksia': [['Sijoitukset'], 'exclusive', None, None],
+                'Ylijäämä ilman sijoituksia ja lainojen lyhennyksiä': [['Sijoitukset', 'Asuntolaina lyhennys', 'Opintolaina lyhennys'], 'exclusive', None, None],
+                'Palkka': [['Palkka'], 'inclusive', None, None]
+              }
+
+filter_dict_saastamisaste = {
+                'Säästämisaste ilman sijoituksia': [['Sijoitukset'], 'exclusive', None, None],
+                'Säästämisaste ilman sijoituksia ja lainojen lyhennyksiä': [['Sijoitukset', 'Asuntolaina lyhennys', 'Opintolaina lyhennys'], 'exclusive', None, None],
+              }
+
+filter_dict_kategoriat = {}
+
+for kategoria in df_start['Kategoria'].unique():
+    filter_dict_kategoriat[f'Kulut {kategoria}'] = [[kategoria], 'inclusive', None, None]
+
+
+# picture_output_path = r'C:\Users\kimmo\github\nettisivu\menot\images'
+picture_output_path = r'C:\Users\kimmo\github\nettisivu\menokuvia\images'
+verbose = True
+
+if verbose:
+    print('averaget')
+    
+for label, (column_filter, column_filter_type, comment_filter, comment_filter_type)  in filter_dict.items():
+    chart_rolling_average_charts(label,
+                                 [1,6,12,24],
+                                 dataframe = pivot_and_filter_df(column_filter, column_filter_type, comment_filter, comment_filter_type, df_start),
+                                 pic_path = picture_output_path,
+                                 display_images = False)
+    chart_rolling_average_charts(label,
+                                 [6,12,24],
+                                 dataframe = pivot_and_filter_df(column_filter, column_filter_type,comment_filter, comment_filter_type, df_start),
+                                 pic_path = picture_output_path,
+                                 display_images = False)
+    #print(label, column_filter, column_filter_type, comment_filter, comment_filter_type)
+
+if verbose:
+    print('averaget done')
+    
+if verbose:
+    print('kumulatiiviset')
+    
+for label, (column_filter, column_filter_type, comment_filter, comment_filter_type) in filter_dict.items():
+    chart_cumulative_charts(label,
+                             dataframe = pivot_and_filter_df(column_filter, column_filter_type, comment_filter, comment_filter_type, df_start),
+                             pic_path = picture_output_path,
+                             display_images = False)
+    #print(label, column_filter, column_filter_type, comment_filter, comment_filter_type)
+
+if verbose:
+    print('kumulatiiviset done')
+
+if verbose:
+    print('säästämisaste')
+    
+for label, (column_filter, column_filter_type, comment_filter, comment_filter_type) in filter_dict_saastamisaste.items():
+    pivotoitu_fraami = pivot_and_filter_df(column_filter, column_filter_type, comment_filter, comment_filter_type, df_start)
+    datafraami_sisaan = (pivotoitu_fraami.div(pivotoitu_fraami['Palkka'], axis=0)*100).copy()
+    chart_rolling_average_charts(label, [1,6,12,24], datafraami_sisaan, pic_path = picture_output_path, display_images = False)
+    chart_rolling_average_charts(label, [6,12,24], datafraami_sisaan, pic_path = picture_output_path, display_images = False)
+    chart_cumulative_charts(label, datafraami_sisaan, pic_path = picture_output_path, display_images = False)
+    
+    #print(label, column_filter, column_filter_type, comment_filter, comment_filter_type)
+
+if verbose:
+    print('säästämisaste done')
+
+if verbose:
+    print('kategoria averaget')
+    
+for label, (column_filter, column_filter_type, comment_filter, comment_filter_type)  in filter_dict_kategoriat.items():
+    chart_rolling_average_charts(label,
+                                 [1,6,12,24],
+                                 dataframe = pivot_and_filter_df(column_filter, column_filter_type, comment_filter, comment_filter_type, df_start),
+                                 pic_path = picture_output_path,
+                                 display_images = False)
+    chart_rolling_average_charts(label,
+                                 [6,12,24],
+                                 dataframe = pivot_and_filter_df(column_filter, column_filter_type,comment_filter, comment_filter_type, df_start),
+                                 pic_path = picture_output_path,
+                                 display_images = False)
+    #print(label, column_filter, column_filter_type, comment_filter, comment_filter_type)
+
+if verbose:
+    print('kategoria averaget done')
+
+if verbose:
+    print('kategoria kumulatiiviset')
+    
+for label, (column_filter, column_filter_type, comment_filter, comment_filter_type) in filter_dict_kategoriat.items():
+    chart_cumulative_charts(label,
+                             dataframe = pivot_and_filter_df(column_filter, column_filter_type, comment_filter, comment_filter_type, df_start),
+                             pic_path = picture_output_path,
+                             display_images = False)
+    #print(label, column_filter, column_filter_type, comment_filter, comment_filter_type)
+
+if verbose:
+    print('kategoria kumulatiiviset')
+    
+print('------ VALMIS ----------')
