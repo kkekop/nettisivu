@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hedging Calculator</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+			table {
+				width: 50%;
+				margin: auto;
+			}
+			td,
+			th {
+				padding: 10px;
+				text-align: center;
+			}
+			.back {
+				text-align: left;
+			}
+			.lay {
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Arb Calculator</h1>
+		<table>
+			<tr>
+				<th class="nulli"></th>
+				<th class="back">Back</th>
+				<th class="lay">Lay</th>
+			</tr>
+			<tr>
+				<td class="back">Odds</td>
+				<td class="lay">
+					<input type="number" id="backOdds" />
+				</td>
+				<td class="lay">
+					<input type="number" id="layOdds" />
+				</td>
+			</tr>
+			<tr>
+				<td class="back">Commission</td>
+				<td class="lay">
+					<input
+						type="decimal"
+						id="backCommission"
+						step="0.01"
+						value="0"
+					/>
+				</td>
+				<td class="lay">
+					<input
+						type="TEL"
+						id="layCommission"
+						step="0.01"
+						value="2"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td class="back">Bet Size</td>
+				<td class="lay">
+					<input type="number" id="backBetSize" />
+				</td>
+				<td class="lay">
+					<input type="number" id="layBetSize" disabled /> (Pelaajan
+					panos betfairin betsilaatikossa)
+				</td>
+			</tr>
+
+			<tr>
+				<th class="nulli"></th>
+				<th class="back">Back site</th>
+				<th class="lay">Lay site</th>
+				<th class="lay">Net</th>
+				<th class="lay">Yield</th>
+			</tr>
+			<tr>
+				<td class="back">Back Bet Wins</td>
+				<td class="lay" id="backWins"></td>
+				<td class="lay" id="layLoses"></td>
+				<td class="lay" id="backWinNet"></td>
+				<td class="lay" id="backWinYield"></td>
+			</tr>
+			<tr>
+				<td class="back">Back Bet Loses</td>
+				<td class="lay" id="backLoses"></td>
+				<td class="lay" id="layWins"></td>
+				<td class="lay" id="layWinNet"></td>
+				<td class="lay" id="layWinYield"></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="back">Amount tied</td>
+				<td class="lay" id="backLosesAmt"></td>
+				<td class="lay" id="layLosesAmt"></td>
+				<td class="lay" id="amountTied"></td>
+			</tr>
+		</table>
+		<br />
+		<button id="calculate">Calculate</button>
+		<br />
+		<br />
+		<button id="calculate">SEND MONEY</button>
+
+		<script>
+			$(document).ready(function () {
+				$("#calculate").click(function () {
+					// Get the values of the inputs
+
+					var backOdds = $("#backOdds").val();
+					var layOdds = $("#layOdds").val();
+					var backCommission = $("#backCommission").val() / 100;
+					var layCommission = $("#layCommission").val() / 100;
+					var backBetSize = $("#backBetSize").val();
+
+					if (!backBetSize) {
+						alert("Please enter a value for Back Bet Size");
+						return;
+					}
+
+					// Calculate layBetSize based on the formula
+					var layBetSize =
+						(backBetSize *
+							((backOdds - 1) * (1 - backCommission) + 1)) /
+						(layOdds - layCommission);
+					$("#layBetSize").val(parseFloat(layBetSize).toFixed(3));
+
+					var backWins =
+						backBetSize * (backOdds - 1) * (1 - backCommission);
+					$("#backWins").text(parseFloat(backWins).toFixed(3));
+
+					var backLoses = -backBetSize;
+					$("#backLoses").text(parseFloat(backLoses).toFixed(3));
+
+					var layLoses = -layBetSize * (layOdds - 1);
+					$("#layLoses").text(parseFloat(layLoses).toFixed(3));
+
+					var layWins = layBetSize * (1 - layCommission);
+					$("#layWins").text(parseFloat(layWins).toFixed(3));
+
+					var backWinNet = backWins + layLoses;
+					$("#backWinNet").text(parseFloat(backWinNet).toFixed(3));
+
+					var layWinNet = backLoses + layWins;
+					$("#layWinNet").text(parseFloat(layWinNet).toFixed(3));
+
+					var amountTied = backLoses + layLoses;
+					$("#amountTied").text(parseFloat(-amountTied).toFixed(3));
+
+					$("#backLosesAmt").text(parseFloat(-backLoses).toFixed(3));
+					$("#layLosesAmt").text(parseFloat(-layLoses).toFixed(3));
+
+					var backWinYield = (backWinNet / -amountTied) * 100;
+					$("#backWinYield").text(
+						parseFloat(backWinYield).toFixed(3) + "%"
+					);
+
+					var layWinYield = (layWinNet / -amountTied) * 100;
+					$("#layWinYield").text(
+						parseFloat(layWinYield).toFixed(3) + "%"
+					);
+				});
+			});
+		</script>
+	</body>
+</html>
