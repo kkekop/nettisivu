@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Menokuvioita</title>
+		<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif;
+			}
+			.tabs {
+				display: flex;
+				cursor: pointer;
+				padding: 10px;
+				background: #f0f0f0;
+				display: none; /* Hidden by default */
+			}
+			.tabs div {
+				padding: 10px 20px;
+				margin-right: 5px;
+				border: 1px solid #ddd;
+				border-radius: 5px; /* Rounded corners */
+				background-color: #f9f9f9;
+				text-align: center;
+				transition: background-color 0.2s, box-shadow 0.2s;
+			}
+			.tabs div:hover {
+				background-color: #e0e0e0; /* Slightly darker on hover */
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+			}
+			.sub-tabs {
+				display: none;
+				margin-top: 10px;
+			}
+			.sub-tabs div {
+				padding: 10px 15px;
+				cursor: pointer;
+				border: 1px solid #ddd;
+				border-radius: 5px; /* Rounded corners */
+				display: inline-block;
+				background-color: #f9f9f9; /* Light background */
+				margin: 5px; /* Add spacing between buttons */
+				text-align: center;
+				transition: background-color 0.2s, box-shadow 0.2s;
+			}
+			.sub-tabs div:hover {
+				background-color: #e0e0e0; /* Slightly darker on hover */
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+			}
+			.images {
+				margin-top: 20px;
+				display: none;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.active {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Menokuvioita</h2>
+
+		<!-- Top Level Tabs -->
+		<div class="tabs" id="topTabs" style="display: flex"></div>
+
+		<!-- Main Tabs Container -->
+		<div class="tabs" id="mainTabs"></div>
+
+		<!-- Sub Tabs and Images Container -->
+		<div class="tabs" id="subTabsContainer"></div>
+
+		<!-- Image Display -->
+		<div id="imageContainer" class="images">
+			<img id="displayedImage" src="" alt="Image" />
+		</div>
+
+		<script>
+			// Labels and Months Arrays
+			const labels_top = [
+				"Menot",
+				"Ylijaama",
+				"Saastamisaste",
+				"SEND MONEY",
+			];
+			const labels = [
+				"Menot",
+				"Menot_ilman_sijoituksia",
+				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia",
+				"Menot_ilman_sijoituksia_ja_lainojen_lyhennyksia_ja_kuluja",
+				"Ylijaama",
+				"Ylijaama_ilman_sijoituksia",
+				"Ylijaama_ilman_sijoituksia_ja_lainojen_lyhennyksia",
+				"Saastamisaste_ilman_sijoituksia",
+				"Saastamisaste_ilman_sijoituksia_ja_lainojen_lyhennyksia",
+			];
+			const months = [
+				"6kk",
+				"12kk",
+				"24kk",
+				"6_12_24kk",
+				"1kk",
+				"1_6_12_24kk",
+			];
+
+			// Top Tabs: Populate Top Tabs Dynamically
+			const topTabsContainer = document.getElementById("topTabs");
+			const mainTabsContainer = document.getElementById("mainTabs");
+			const subTabsContainer =
+				document.getElementById("subTabsContainer");
+
+			labels_top.forEach((labelTop) => {
+				const topTab = document.createElement("div");
+				topTab.innerText = labelTop.replace(/_/g, " "); // Display name without underscores
+				topTab.onclick = () => showMainTabs(labelTop);
+				topTabsContainer.appendChild(topTab);
+			});
+
+			// Main Tabs: Populate Main Tabs Dynamically
+			function showMainTabs(topLabel) {
+				// Hide all main tabs
+				mainTabsContainer.style.display = "none";
+				mainTabsContainer.innerHTML = "";
+
+				// Filter labels based on the selected top-level tab
+				const filteredLabels = labels.filter((label) =>
+					label.startsWith(topLabel)
+				);
+
+				// Populate main tabs and make them visible
+				filteredLabels.forEach((label) => {
+					const tab = document.createElement("div");
+					tab.innerText = label.replace(/_/g, " "); // Display name without underscores
+					tab.onclick = () => showSubTabs(label);
+					mainTabsContainer.appendChild(tab);
+				});
+				mainTabsContainer.style.display = "flex";
+
+				// Hide all sub-tabs and images
+				subTabsContainer.innerHTML = "";
+				subTabsContainer.style.display = "none";
+				document.getElementById("imageContainer").style.display =
+					"none";
+			}
+
+			// Sub Tabs: Populate Sub Tabs Dynamically
+			function showSubTabs(label) {
+				// Hide sub-tabs and clear container
+				subTabsContainer.style.display = "none";
+				subTabsContainer.innerHTML = "";
+
+				// Create sub-tabs for the selected label
+				months.forEach((month) => {
+					const monthTab = document.createElement("div");
+					monthTab.innerText = month.replace("kk", " months");
+					monthTab.onclick = () => showImage(label, month);
+					subTabsContainer.appendChild(monthTab);
+				});
+				subTabsContainer.style.display = "flex";
+
+				// Hide images
+				document.getElementById("imageContainer").style.display =
+					"none";
+			}
+
+			// Function to show the selected image
+			function showImage(label, timeframe) {
+				const imagePath = `images/${label}_${timeframe}.png`; // Image path format
+				const imageContainer =
+					document.getElementById("imageContainer");
+				const displayedImage =
+					document.getElementById("displayedImage");
+
+				// Set the source of the image
+				displayedImage.src = imagePath;
+				displayedImage.alt = `${label} - ${timeframe}`;
+
+				// Display the image container
+				imageContainer.style.display = "block";
+			}
+
+			// Initialize by showing only the top-level tabs
+			mainTabsContainer.style.display = "none";
+			subTabsContainer.style.display = "none";
+			document.getElementById("imageContainer").style.display = "none";
+		</script>
+	</body>
+</html>
