@@ -23,15 +23,12 @@
 				color: #333;
 				flex-direction: column;
 				padding: 20px;
-			}
-			h1 {
-				text-align: center;
-				color: #444;
-				font-size: 2.5rem;
-				margin-bottom: 20px;
+				overflow: hidden; /* Prevent overflow */
+				-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
+				box-sizing: border-box;
 			}
 
-			/* Card-style layout */
+			/* Zoom or Scaling the entire page */
 			.calculator-card {
 				width: 100%;
 				max-width: 800px;
@@ -42,14 +39,24 @@
 				box-sizing: border-box;
 				display: flex;
 				flex-direction: column;
+				transform-origin: top center; /* Ensure scaling happens from top center */
+				/* Scaling the container */
+				transform: scale(
+					calc(100vh / 1200)
+				); /* Dynamically scale based on viewport height */
+				transform-origin: top center; /* Make sure scaling starts from the top */
 			}
 
+			/* Table Styling */
+			/* Table Styling */
 			/* Table Styling */
 			table {
 				width: 100%;
 				margin-bottom: 20px;
 				border-collapse: collapse;
+				table-layout: fixed; /* Ensures equal width for all columns */
 			}
+
 			th,
 			td {
 				padding: 12px 15px;
@@ -57,24 +64,28 @@
 				font-size: 1rem;
 				border-bottom: 1px solid #e0e0e0;
 			}
+
 			th {
 				background-color: #4e5b66;
 				color: white;
 				font-weight: 600;
 			}
+
 			td {
 				background-color: #fafafa;
 				border: 1px solid #e0e0e0;
 			}
 
 			/* Equal column widths */
-			.back,
-			.lay,
-			.back-site,
-			.lay-site,
-			.net,
-			.yield {
-				width: 20%; /* Make each column take up 1/5th of the table */
+			table td,
+			table th {
+				width: 16.66%; /* Each column will have equal width */
+				word-wrap: break-word; /* Ensure text is wrapped if it overflows */
+			}
+
+			/* Adjustments for the header (if needed) */
+			th {
+				white-space: nowrap; /* Prevent header text from breaking */
 			}
 
 			/* Input Styling */
@@ -90,9 +101,11 @@
 				box-sizing: border-box;
 				transition: all 0.3s;
 			}
+
 			input[type="number"]:disabled {
 				background-color: #f0f0f0;
 			}
+
 			input[type="number"]:focus,
 			input[type="decimal"]:focus {
 				border-color: #4e5b66;
@@ -112,41 +125,14 @@
 				margin-top: 20px;
 				width: 100%;
 			}
+
 			button:hover {
 				background-color: #3b464f;
 				transform: scale(1.05);
 			}
+
 			button:active {
 				background-color: #2c353f;
-			}
-
-			/* Responsive Design */
-			@media (max-width: 768px) {
-				.calculator-card {
-					padding: 15px;
-				}
-				h1 {
-					font-size: 2rem;
-				}
-				table th,
-				table td {
-					font-size: 0.9rem;
-				}
-				button {
-					font-size: 1rem;
-				}
-				.sponsor-banner {
-					margin: 10px;
-					width: 100%;
-					height: 300px;
-				}
-				.small-text {
-					font-size: 0.8rem;
-					color: #777;
-				}
-				.spacing-row {
-					height: 15px;
-				}
 			}
 
 			/* Small text under inputs */
@@ -160,33 +146,51 @@
 				height: 20px;
 			}
 
-			/* Sponsor banners styling */
+			/* Sponsor Banners */
 			.sponsor-banners {
 				display: flex;
 				justify-content: center;
 				flex-wrap: wrap;
-				margin-top: 40px;
+				margin-top: 20px;
+				max-width: 100%;
 			}
+
 			.sponsor-banner {
 				margin: 10px;
 				width: 100%;
-				height: 300px;
+				height: 250px;
 				background-color: #ddd;
 				border-radius: 8px;
 				overflow: hidden;
 			}
+
 			.sponsor-banner img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
 
-			/* Additional Input Label styling */
-			label {
-				font-size: 1rem;
-				font-weight: 500;
-				color: #333;
-				margin-bottom: 5px;
+			/* Responsive Design */
+			@media (max-width: 768px) {
+				/* Scale further on small screens */
+				.calculator-card {
+					transform: scale(
+						calc(100vh / 1000)
+					); /* Further reduce the scaling for small screens */
+				}
+
+				.sponsor-banner {
+					height: 200px; /* Reduce banner height on smaller screens */
+				}
+
+				table th,
+				table td {
+					font-size: 0.9rem;
+				}
+
+				button {
+					font-size: 1rem;
+				}
 			}
 		</style>
 	</head>
@@ -202,19 +206,19 @@
 			<table>
 				<tr>
 					<td></td>
-					<th class="back" colspan="2">Back</th>
-					<th class="lay" colspan="2">Lay</th>
+					<th class="back">Back</th>
+					<th class="lay">Lay</th>
 				</tr>
 				<tr>
 					<td class="back">Odds</td>
-					<td class="lay" colspan="2">
+					<td class="back">
 						<input
 							type="number"
 							id="backOdds"
 							placeholder="Enter Back Odds"
 						/>
 					</td>
-					<td class="lay" colspan="2">
+					<td class="lay">
 						<input
 							type="number"
 							id="layOdds"
@@ -224,7 +228,7 @@
 				</tr>
 				<tr>
 					<td class="back">Commission</td>
-					<td class="lay" colspan="2">
+					<td class="back">
 						<input
 							type="decimal"
 							id="backCommission"
@@ -233,7 +237,7 @@
 							placeholder="Enter Back Commission"
 						/>
 					</td>
-					<td class="lay" colspan="2">
+					<td class="lay">
 						<input
 							type="decimal"
 							id="layCommission"
@@ -245,60 +249,66 @@
 				</tr>
 				<tr>
 					<td class="back">Bet Size</td>
-					<td class="lay" colspan="2">
+					<td class="back">
 						<input
 							type="number"
 							id="backBetSize"
 							placeholder="Enter Bet Size"
 						/>
 					</td>
-					<td class="lay" colspan="2">
+					<td class="lay">
 						<input
 							type="number"
 							id="layBetSize"
 							disabled
 							placeholder="Calculated Lay Bet"
-						/>
-						<p class="small-text">
-							(Player's bet in Betfair's bet box)
-						</p>
+						/>Betfair bet box amount
 					</td>
 				</tr>
+			</table>
 
-				<!-- Added space between Bet Size and following rows -->
-				<tr class="spacing-row"></tr>
-
+			<!-- New pivoted bottom table with 4 columns -->
+			<table>
 				<tr>
 					<th></th>
-					<th class="back-site">Back site</th>
-					<th class="lay-site">Lay site</th>
-					<th class="net">Net</th>
-					<th class="yield">Yield</th>
+					<th>Back wins</th>
+					<th>Lay wins</th>
+					<th>Amount Tied</th>
 				</tr>
 				<tr>
-					<td class="back">Back Bet Wins</td>
-					<td class="lay" id="backWins"></td>
-					<td class="lay" id="layLoses"></td>
-					<td class="lay" id="backWinNet"></td>
-					<td class="lay" id="backWinYield"></td>
+					<td>Back site</td>
+					<td id="backWins"></td>
+					<td id="backLoses"></td>
+					<td id="backLosesAmt"></td>
 				</tr>
 				<tr>
-					<td class="back">Back Bet Loses</td>
-					<td class="lay" id="backLoses"></td>
-					<td class="lay" id="layWins"></td>
-					<td class="lay" id="layWinNet"></td>
-					<td class="lay" id="layWinYield"></td>
+					<td>Lay site</td>
+					<td id="layLoses"></td>
+					<td id="layWins"></td>
+					<td id="layLosesAmt"></td>
 				</tr>
 				<tr>
-					<td class="back">Amount Tied</td>
-					<td class="lay" id="backLosesAmt"></td>
-					<td class="lay" id="layLosesAmt"></td>
-					<td class="lay" id="amountTied"></td>
+					<td>Net</td>
+					<td id="backWinNet"></td>
+					<td id="layWinNet"></td>
+					<td id="amountTied"></td>
+				</tr>
+				<tr>
+					<td>Yield</td>
+					<td id="backWinYield"></td>
+					<td id="layWinYield"></td>
+					<td id="amountTied"></td>
 				</tr>
 			</table>
 			<button id="calculate">Calculate</button>
 			<br />
 			<button id="calculate">SEND MONEY</button>
+
+			<div class="sponsor-banners">
+				<div class="sponsor-banner">
+					<img src="ad.webp" alt="Sponsor 2" />
+				</div>
+			</div>
 		</div>
 
 		<script>
