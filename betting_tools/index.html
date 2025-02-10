@@ -246,6 +246,16 @@
 					</td>
 				</tr>
 				<tr>
+					<td class="back">PAF Green Bonus</td>
+					<td class="back">
+						<input
+							type="number"
+							id="pafGreenBonus"
+							placeholder="Enter PAF green bonus"
+						/>
+					</td>
+				</tr>
+				<tr>
 					<td class="back">Bet Size</td>
 					<td class="back">
 						<input
@@ -318,6 +328,7 @@
 					var layOdds = $("#layOdds").val();
 					var backCommission = $("#backCommission").val() / 100;
 					var layCommission = $("#layCommission").val() / 100;
+					var pafGreenBonus = $("#pafGreenBonus").val();
 					var backBetSize = $("#backBetSize").val();
 
 					if (!backBetSize) {
@@ -328,7 +339,8 @@
 					// Calculate layBetSize based on the formula
 					var layBetSize =
 						(backBetSize *
-							((backOdds - 1) * (1 - backCommission) + 1)) /
+							((backOdds - 1) * (1 - backCommission) + 1) -
+							pafGreenBonus * 1) /
 						(layOdds - layCommission);
 					$("#layBetSize").val(parseFloat(layBetSize).toFixed(3));
 
@@ -336,7 +348,7 @@
 						backBetSize * (backOdds - 1) * (1 - backCommission);
 					$("#backWins").text(parseFloat(backWins).toFixed(3));
 
-					var backLoses = -backBetSize;
+					var backLoses = -backBetSize + pafGreenBonus * 1;
 					$("#backLoses").text(parseFloat(backLoses).toFixed(3));
 
 					var layLoses = -layBetSize * (layOdds - 1);
