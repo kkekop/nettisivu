@@ -117,8 +117,11 @@
 			<label for="years">Laina-aika (vuotta):</label>
 			<input type="number" id="years" placeholder="esim. 20" />
 
-			<label for="rates">Korkoprosentit (pilkulla erotettuna):</label>
-			<input type="text" id="rates" placeholder="esim. 2,3,4,5" />
+			<label for="rates"
+				>Korkoprosentit (välilyönnillä erotettuna, desimaalierotin
+				.):</label
+			>
+			<input type="text" id="rates" placeholder="esim. 2 2.5 3 4" />
 
 			<label for="monthlyCosts">Muut kuukausikulut (€):</label>
 			<input type="number" id="monthlyCosts" placeholder="esim. 150" />
@@ -203,7 +206,7 @@
 					0;
 				let rates = document
 					.getElementById("rates")
-					.value.split(",")
+					.value.split(" ")
 					.map((r) => parseFloat(r.trim()))
 					.filter((r) => !isNaN(r));
 
