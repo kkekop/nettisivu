@@ -212,9 +212,9 @@
 					downPayment + fee1 + fee2 + fee3 + taxes;
 				let loanAmount = price - downPayment;
 
-				let resultHtml = `<div class="section"><h4>Käteistarve alussa:</h4><strong>${formatEuro(
+				let resultHtml = `<div class="section"><h4>Käteistarve alussa: ${formatEuro(
 					initialCashNeeded
-				)}</strong>
+				)}</h4>
 			     <div class="subrow">Käsiraha: ${formatEuro(downPayment)}</div>
 			     <div class="subrow">Lainhuuto: ${formatEuro(fee1)}</div>
 			     <div class="subrow">Kuntotarkastus: ${formatEuro(fee2)}</div>
@@ -222,9 +222,9 @@
 			     <div class="subrow">Varainsiirtovero: ${formatEuro(taxes)}</div>
 			   </div>`;
 
-				resultHtml += `<div class="section"><h4>Lainasumma:</h4><strong>${formatEuro(
+				resultHtml += `<div class="section"><h4>Lainasumma: ${formatEuro(
 					loanAmount
-				)}</strong></div>`;
+				)}</h4></div>`;
 
 				if (rates.length > 0) {
 					resultHtml += "<div class='section'><h4>Kuukausierät:</h4>";
@@ -246,6 +246,13 @@
 					});
 					resultHtml += "</div>";
 				}
+
+				resultHtml += `<div class="section"><h4>OP-bonuksia kertyy jopa ${formatEuro(
+					loanAmount * 0.004
+				)} vuodessa!</h4>
+			     <div class="subrow">Muista maksaa verot!</div>
+
+			   </div>`;
 
 				document.getElementById("results").innerHTML = resultHtml;
 			}
