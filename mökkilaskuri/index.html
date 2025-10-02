@@ -76,7 +76,7 @@
 			<input
 				type="number"
 				id="price"
-				placeholder="esim. 100000"
+				placeholder="esim. 100 000"
 				oninput="updateDefaults()"
 			/>
 
@@ -106,13 +106,13 @@
 			/>
 
 			<label for="fee1">Lainhuuto (€):</label>
-			<input type="number" id="fee1" placeholder="esim. 500" />
+			<input type="number" id="fee1" placeholder="esim. 1 000" />
 
 			<label for="fee2">Kuntotarkastus (€):</label>
-			<input type="number" id="fee2" placeholder="esim. 1000" />
+			<input type="number" id="fee2" placeholder="esim. 1 000" />
 
 			<label for="fee3">Lainan avaus (€):</label>
-			<input type="number" id="fee3" placeholder="esim. 600" />
+			<input type="number" id="fee3" placeholder="esim. 1 000" />
 
 			<label for="years">Laina-aika (vuotta):</label>
 			<input type="number" id="years" placeholder="esim. 20" />
@@ -137,10 +137,10 @@
 
 				if (source === "amount" && price > 0) {
 					let amount = parseFloat(amountBox.value) || 0;
-					percentBox.value = ((amount / price) * 100).toFixed(2);
+					percentBox.value = (amount / price) * 100;
 				} else if (source === "percent" && price > 0) {
 					let percent = parseFloat(percentBox.value) || 0;
-					amountBox.value = ((percent / 100) * price).toFixed(2);
+					amountBox.value = (percent / 100) * price;
 				}
 			}
 
@@ -149,7 +149,7 @@
 					parseFloat(document.getElementById("price").value) || 0;
 				document
 					.getElementById("taxesPercent")
-					.setAttribute("placeholder", (price * 0.03).toFixed(2));
+					.setAttribute("placeholder", formatEuro(price * 0.03));
 			}
 
 			function calculateMonthlyPayment(principal, annualRate, years) {
@@ -159,6 +159,24 @@
 				return (
 					(principal * (monthlyRate * Math.pow(1 + monthlyRate, n))) /
 					(Math.pow(1 + monthlyRate, n) - 1)
+				);
+			}
+
+			function formatEuro(value) {
+				return (
+					value.toLocaleString("fi-FI", {
+						minimumFractionDigits: 0,
+						maximumFractionDigits: 2,
+					}) + " €"
+				);
+			}
+
+			function formatPercent(value) {
+				return (
+					value.toLocaleString("fi-FI", {
+						minimumFractionDigits: 1,
+						maximumFractionDigits: 1,
+					}) + " %"
 				);
 			}
 
@@ -194,18 +212,18 @@
 					downPayment + fee1 + fee2 + fee3 + taxes;
 				let loanAmount = price - downPayment;
 
-				let resultHtml = `<div class="section"><h4>Käteistarve alussa:</h4><strong>€${initialCashNeeded.toFixed(
-					2
+				let resultHtml = `<div class="section"><h4>Käteistarve alussa:</h4><strong>${formatEuro(
+					initialCashNeeded
 				)}</strong>
-        <div class="subrow">Käsiraha: €${downPayment.toFixed(2)}</div>
-        <div class="subrow">Lainhuuto: €${fee1.toFixed(2)}</div>
-        <div class="subrow">Kuntotarkastus: €${fee2.toFixed(2)}</div>
-        <div class="subrow">Lainan avaus: €${fee3.toFixed(2)}</div>
-        <div class="subrow">Varainsiirtovero: €${taxes.toFixed(2)}</div>
-      </div>`;
+			     <div class="subrow">Käsiraha: ${formatEuro(downPayment)}</div>
+			     <div class="subrow">Lainhuuto: ${formatEuro(fee1)}</div>
+			     <div class="subrow">Kuntotarkastus: ${formatEuro(fee2)}</div>
+			     <div class="subrow">Lainan avaus: ${formatEuro(fee3)}</div>
+			     <div class="subrow">Varainsiirtovero: ${formatEuro(taxes)}</div>
+			   </div>`;
 
-				resultHtml += `<div class="section"><h4>Lainasumma:</h4><strong>€${loanAmount.toFixed(
-					2
+				resultHtml += `<div class="section"><h4>Lainasumma:</h4><strong>${formatEuro(
+					loanAmount
 				)}</strong></div>`;
 
 				if (rates.length > 0) {
@@ -217,14 +235,14 @@
 							years
 						);
 						let totalMonthly = monthlyLoan + monthlyCosts;
-						resultHtml += `<div><strong>Korko ${rate}%:</strong></div>
-            <div class="subrow">Lainan maksuerä: €${monthlyLoan.toFixed(
-				2
-			)}</div>
-            <div class="subrow">Muut kulut: €${monthlyCosts.toFixed(2)}</div>
-            <div class="subrow"><strong>Yhteensä: €${totalMonthly.toFixed(
-				2
-			)}</strong></div><br>`;
+						resultHtml += `<div><strong>Korko ${formatPercent(
+							rate
+						)}</strong></div>
+			         <div class="subrow">Lainan maksuerä: ${formatEuro(monthlyLoan)}</div>
+			         <div class="subrow">Muut kulut: ${formatEuro(monthlyCosts)}</div>
+			         <div class="subrow"><strong>Yhteensä: ${formatEuro(
+							totalMonthly
+						)}</strong></div><br>`;
 					});
 					resultHtml += "</div>";
 				}
