@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Mökkilainalaskuri</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 30px;
+				background: #f7f7f7;
+			}
+			.calculator {
+				background: white;
+				padding: 20px;
+				border-radius: 10px;
+				max-width: 600px;
+				margin: auto;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+			}
+			h2 {
+				text-align: center;
+			}
+			label {
+				display: block;
+				margin: 10px 0 5px;
+			}
+			input {
+				width: 100%;
+				padding: 8px;
+				margin-bottom: 15px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+			.row {
+				display: flex;
+				gap: 10px;
+			}
+			.row input {
+				flex: 1;
+			}
+			button {
+				width: 100%;
+				padding: 12px;
+				background: #0077cc;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			button:hover {
+				background: #005fa3;
+			}
+			.results {
+				margin-top: 20px;
+				padding: 15px;
+				background: #eef;
+				border-radius: 8px;
+			}
+			.section {
+				margin-bottom: 15px;
+			}
+			.section h4 {
+				margin-bottom: 5px;
+			}
+			.subrow {
+				margin-left: 20px;
+				font-size: 0.95em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calculator">
+			<h2>Mökkilainalaskuri</h2>
+
+			<label for="price">Mökin hinta (€):</label>
+			<input
+				type="number"
+				id="price"
+				placeholder="esim. 100000"
+				oninput="updateDefaults()"
+			/>
+
+			<label>Käsiraha:</label>
+			<div class="row">
+				<input
+					type="number"
+					id="downPaymentAmount"
+					placeholder="Summa (€)"
+					oninput="syncDownPayment('amount')"
+				/>
+				<input
+					type="number"
+					id="downPaymentPercent"
+					placeholder="% hinnasta"
+					oninput="syncDownPayment('percent')"
+				/>
+			</div>
+
+			<label for="taxes">Varainsiirtovero (% hinnasta):</label>
+			<input
+				type="number"
+				id="taxesPercent"
+				value="3"
+				step="0.1"
+				oninput="updateDefaults()"
+			/>
+
+			<label for="fee1">Maanhuuto (€):</label>
+			<input type="number" id="fee1" placeholder="esim. 500" />
+
+			<label for="fee2">Kuntotarkastus (€):</label>
+			<input type="number" id="fee2" placeholder="esim. 1000" />
+
+			<label for="fee3">Lainan avaus (€):</label>
+			<input type="number" id="fee3" placeholder="esim. 600" />
+
+			<label for="years">Laina-aika (vuotta):</label>
+			<input type="number" id="years" placeholder="esim. 20" />
+
+			<label for="rates">Korkoprosentit (pilkulla erotettuna):</label>
+			<input type="text" id="rates" placeholder="esim. 2,3,4,5" />
+
+			<label for="monthlyCosts">Muut kuukausikulut (€):</label>
+			<input type="number" id="monthlyCosts" placeholder="esim. 150" />
+
+			<button onclick="calculate()">Laske</button>
+
+			<div class="results" id="results"></div>
+		</div>
+
+		<script>
+			function syncDownPayment(source) {
+				let price =
+					parseFloat(document.getElementById("price").value) || 0;
+				let amountBox = document.getElementById("downPaymentAmount");
+				let percentBox = document.getElementById("downPaymentPercent");
+
+				if (source === "amount" && price > 0) {
+					let amount = parseFloat(amountBox.value) || 0;
+					percentBox.value = ((amount / price) * 100).toFixed(2);
+				} else if (source === "percent" && price > 0) {
+					let percent = parseFloat(percentBox.value) || 0;
+					amountBox.value = ((percent / 100) * price).toFixed(2);
+				}
+			}
+
+			function updateDefaults() {
+				let price =
+					parseFloat(document.getElementById("price").value) || 0;
+				document
+					.getElementById("taxesPercent")
+					.setAttribute("placeholder", (price * 0.03).toFixed(2));
+			}
+
+			function calculateMonthlyPayment(principal, annualRate, years) {
+				let monthlyRate = annualRate / 100 / 12;
+				let n = years * 12;
+				if (monthlyRate === 0) return principal / n;
+				return (
+					(principal * (monthlyRate * Math.pow(1 + monthlyRate, n))) /
+					(Math.pow(1 + monthlyRate, n) - 1)
+				);
+			}
+
+			function calculate() {
+				let price =
+					parseFloat(document.getElementById("price").value) || 0;
+				let downPayment =
+					parseFloat(
+						document.getElementById("downPaymentAmount").value
+					) || 0;
+				let taxesPercent =
+					parseFloat(document.getElementById("taxesPercent").value) ||
+					0;
+				let fee1 =
+					parseFloat(document.getElementById("fee1").value) || 0;
+				let fee2 =
+					parseFloat(document.getElementById("fee2").value) || 0;
+				let fee3 =
+					parseFloat(document.getElementById("fee3").value) || 0;
+				let years =
+					parseFloat(document.getElementById("years").value) || 0;
+				let monthlyCosts =
+					parseFloat(document.getElementById("monthlyCosts").value) ||
+					0;
+				let rates = document
+					.getElementById("rates")
+					.value.split(",")
+					.map((r) => parseFloat(r.trim()))
+					.filter((r) => !isNaN(r));
+
+				let taxes = (price * taxesPercent) / 100;
+				let initialCashNeeded =
+					downPayment + fee1 + fee2 + fee3 + taxes;
+				let loanAmount = price - downPayment;
+
+				let resultHtml = `<div class="section"><h4>Käteistarve alussa:</h4><strong>€${initialCashNeeded.toFixed(
+					2
+				)}</strong>
+        <div class="subrow">Käsiraha: €${downPayment.toFixed(2)}</div>
+        <div class="subrow">Maanhuuto: €${fee1.toFixed(2)}</div>
+        <div class="subrow">Kuntotarkastus: €${fee2.toFixed(2)}</div>
+        <div class="subrow">Lainan avaus: €${fee3.toFixed(2)}</div>
+        <div class="subrow">Varainsiirtovero: €${taxes.toFixed(2)}</div>
+      </div>`;
+
+				resultHtml += `<div class="section"><h4>Lainasumma:</h4><strong>€${loanAmount.toFixed(
+					2
+				)}</strong></div>`;
+
+				if (rates.length > 0) {
+					resultHtml += "<div class='section'><h4>Kuukausierät:</h4>";
+					rates.forEach((rate) => {
+						let monthlyLoan = calculateMonthlyPayment(
+							loanAmount,
+							rate,
+							years
+						);
+						let totalMonthly = monthlyLoan + monthlyCosts;
+						resultHtml += `<div><strong>Korko ${rate}%:</strong></div>
+            <div class="subrow">Lainan maksuerä: €${monthlyLoan.toFixed(
+				2
+			)}</div>
+            <div class="subrow">Muut kulut: €${monthlyCosts.toFixed(2)}</div>
+            <div class="subrow"><strong>Yhteensä: €${totalMonthly.toFixed(
+				2
+			)}</strong></div><br>`;
+					});
+					resultHtml += "</div>";
+				}
+
+				document.getElementById("results").innerHTML = resultHtml;
+			}
+		</script>
+	</body>
+</html>
