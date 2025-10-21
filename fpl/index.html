@@ -67,6 +67,12 @@
 		<h2>Cumulative Points</h2>
 		<div id="cumulative-plot" style="width: 100%; height: 500px"></div>
 
+		<h2>Running Rank</h2>
+		<div id="rank-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Running Overall Rank</h2>
+		<div id="overall-rank-plot" style="width: 100%; height: 500px"></div>
+
 		<script>
 			async function initDashboard() {
 				const resp = await fetch("fpldata.json");
@@ -88,7 +94,7 @@
 
 				// Determine worst player
 				const worstPlayer = totals[totals.length - 1].player;
-				const worstIcon = "💩"; // you can change this emoji if you like
+				const worstIcon = "💩";
 
 				// Populate select with icons
 				players.forEach((p) => {
@@ -135,7 +141,7 @@
 						: `hsl(${(i / total) * 360}, 70%, 50%)`;
 				}
 
-				// Prepare traces once
+				// Prepare traces
 				const weeklyTraces = players.map((player, i) => {
 					const pData = data.filter((d) => d.player === player);
 					const isTop = top3.includes(player);
@@ -168,6 +174,38 @@
 					};
 				});
 
+				const rankTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.rank),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const overallRankTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.overall_rank), // <-- use overall_rank
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
 				// Initial plots
 				Plotly.newPlot("weekly-plot", weeklyTraces, {
 					title: "Weekly Points",
@@ -175,16 +213,31 @@
 				Plotly.newPlot("cumulative-plot", cumTraces, {
 					title: "Cumulative Points",
 				});
+				Plotly.newPlot("rank-plot", rankTraces, {
+					title: "Running Rank",
+					yaxis: { title: "Rank", autorange: "reversed" },
+					xaxis: { title: "Gameweek" },
+				});
 
-				// Update visible lines on selection change
+				Plotly.newPlot("overall-rank-plot", overallRankTraces, {
+					title: "Running Overall Rank",
+					yaxis: { title: "Overall Rank", autorange: "reversed" },
+					xaxis: { title: "Gameweek" },
+				});
+
+				function stripIcon(name) {
+					return name.replace(/^[^\w]+ /, "");
+				}
+
 				function updateVisible() {
 					const selected = choices.getValue(true);
+
 					weeklyTraces.forEach((trace, i) => {
 						Plotly.restyle(
 							"weekly-plot",
 							"visible",
 							[
-								selected.includes(trace.name)
+								selected.includes(stripIcon(trace.name))
 									? true
 									: "legendonly",
 							],
@@ -196,7 +249,32 @@
 							"cumulative-plot",
 							"visible",
 							[
-								selected.includes(trace.name)
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+					rankTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"rank-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
+					overallRankTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"overall-rank-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
 									? true
 									: "legendonly",
 							],

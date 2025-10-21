@@ -1,962 +1,1442 @@
 [
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 1,
     "weekly": 53,
-    "cumulative": 53
+    "cumulative": 53,
+    "overall_rank": 4864958,
+    "points_on_bench": 18,
+    "rank": 10
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 2,
     "weekly": 51,
-    "cumulative": 104
+    "cumulative": 104,
+    "overall_rank": 4706099,
+    "points_on_bench": 13,
+    "rank": 7
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 3,
     "weekly": 51,
-    "cumulative": 155
+    "cumulative": 155,
+    "overall_rank": 4046717,
+    "points_on_bench": 19,
+    "rank": 6
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 4,
     "weekly": 73,
-    "cumulative": 228
+    "cumulative": 228,
+    "overall_rank": 2878106,
+    "points_on_bench": 7,
+    "rank": 5
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 5,
     "weekly": 56,
-    "cumulative": 284
+    "cumulative": 284,
+    "overall_rank": 1738881,
+    "points_on_bench": 9,
+    "rank": 2
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 6,
     "weekly": 67,
-    "cumulative": 351
+    "cumulative": 351,
+    "overall_rank": 1112668,
+    "points_on_bench": 6,
+    "rank": 2
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 7,
     "weekly": 98,
-    "cumulative": 449
+    "cumulative": 449,
+    "overall_rank": 266189,
+    "points_on_bench": 9,
+    "rank": 1
   },
   {
-    "player": "Markus Wanamo",
+    "player": "TheMacAttack",
     "gw": 8,
     "weekly": 86,
-    "cumulative": 535
+    "cumulative": 535,
+    "overall_rank": 91187,
+    "points_on_bench": 0,
+    "rank": 1
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 1,
     "weekly": 56,
-    "cumulative": 56
+    "cumulative": 56,
+    "overall_rank": 3932974,
+    "points_on_bench": 8,
+    "rank": 7
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 2,
     "weekly": 38,
-    "cumulative": 94
+    "cumulative": 94,
+    "overall_rank": 6678506,
+    "points_on_bench": 6,
+    "rank": 13
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 3,
     "weekly": 71,
-    "cumulative": 165
+    "cumulative": 165,
+    "overall_rank": 2444832,
+    "points_on_bench": 3,
+    "rank": 2
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 4,
     "weekly": 77,
-    "cumulative": 242
+    "cumulative": 242,
+    "overall_rank": 1419466,
+    "points_on_bench": 7,
+    "rank": 1
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 5,
     "weekly": 47,
-    "cumulative": 289
+    "cumulative": 289,
+    "overall_rank": 1333935,
+    "points_on_bench": 8,
+    "rank": 1
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 6,
     "weekly": 67,
-    "cumulative": 356
+    "cumulative": 356,
+    "overall_rank": 897631,
+    "points_on_bench": 1,
+    "rank": 1
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 7,
     "weekly": 76,
-    "cumulative": 432
+    "cumulative": 432,
+    "overall_rank": 677172,
+    "points_on_bench": 5,
+    "rank": 2
   },
   {
-    "player": "Sini V",
+    "player": "FC Ryyderi",
     "gw": 8,
     "weekly": 79,
-    "cumulative": 511
+    "cumulative": 511,
+    "overall_rank": 378743,
+    "points_on_bench": 14,
+    "rank": 2
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 1,
     "weekly": 55,
-    "cumulative": 55
+    "cumulative": 55,
+    "overall_rank": 4223898,
+    "points_on_bench": 5,
+    "rank": 8
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 2,
     "weekly": 53,
-    "cumulative": 108
+    "cumulative": 108,
+    "overall_rank": 3954130,
+    "points_on_bench": 9,
+    "rank": 5
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 3,
     "weekly": 53,
-    "cumulative": 161
+    "cumulative": 161,
+    "overall_rank": 3046843,
+    "points_on_bench": 4,
+    "rank": 3
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 4,
     "weekly": 62,
-    "cumulative": 223
+    "cumulative": 223,
+    "overall_rank": 3514500,
+    "points_on_bench": 10,
+    "rank": 7
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 5,
     "weekly": 47,
-    "cumulative": 270
+    "cumulative": 270,
+    "overall_rank": 3095966,
+    "points_on_bench": 8,
+    "rank": 7
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 6,
     "weekly": 69,
-    "cumulative": 339
+    "cumulative": 339,
+    "overall_rank": 1773378,
+    "points_on_bench": 7,
+    "rank": 6
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 7,
     "weekly": 83,
-    "cumulative": 422
+    "cumulative": 422,
+    "overall_rank": 1030031,
+    "points_on_bench": 8,
+    "rank": 3
   },
   {
-    "player": "Iiro Tolonen",
+    "player": "FC Performing",
     "gw": 8,
     "weekly": 79,
-    "cumulative": 501
+    "cumulative": 501,
+    "overall_rank": 602711,
+    "points_on_bench": 17,
+    "rank": 3
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 1,
     "weekly": 61,
-    "cumulative": 61
+    "cumulative": 61,
+    "overall_rank": 2607687,
+    "points_on_bench": 5,
+    "rank": 3
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 2,
     "weekly": 65,
-    "cumulative": 126
+    "cumulative": 126,
+    "overall_rank": 1030589,
+    "points_on_bench": 10,
+    "rank": 1
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 3,
     "weekly": 29,
-    "cumulative": 155
+    "cumulative": 155,
+    "overall_rank": 4046717,
+    "points_on_bench": 8,
+    "rank": 7
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 4,
     "weekly": 79,
-    "cumulative": 234
+    "cumulative": 234,
+    "overall_rank": 2182409,
+    "points_on_bench": 3,
+    "rank": 2
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 5,
     "weekly": 40,
-    "cumulative": 274
+    "cumulative": 274,
+    "overall_rank": 2687021,
+    "points_on_bench": 13,
+    "rank": 6
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 6,
-    "weekly": 74,
-    "cumulative": 344
+    "weekly": 70,
+    "cumulative": 344,
+    "overall_rank": 1508951,
+    "points_on_bench": 9,
+    "rank": 4
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 7,
     "weekly": 76,
-    "cumulative": 420
+    "cumulative": 420,
+    "overall_rank": 1147535,
+    "points_on_bench": 22,
+    "rank": 4
   },
   {
-    "player": "Otto Kaipom\u00e4ki",
+    "player": "likainen rusina",
     "gw": 8,
     "weekly": 77,
-    "cumulative": 497
+    "cumulative": 497,
+    "overall_rank": 740177,
+    "points_on_bench": 0,
+    "rank": 4
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 1,
     "weekly": 54,
-    "cumulative": 54
+    "cumulative": 54,
+    "overall_rank": 4551053,
+    "points_on_bench": 4,
+    "rank": 9
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 2,
     "weekly": 56,
-    "cumulative": 110
+    "cumulative": 110,
+    "overall_rank": 3426960,
+    "points_on_bench": 10,
+    "rank": 4
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 3,
     "weekly": 70,
-    "cumulative": 180
+    "cumulative": 180,
+    "overall_rank": 825413,
+    "points_on_bench": 4,
+    "rank": 1
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 4,
     "weekly": 46,
-    "cumulative": 226
+    "cumulative": 226,
+    "overall_rank": 3127971,
+    "points_on_bench": 15,
+    "rank": 6
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 5,
     "weekly": 42,
-    "cumulative": 268
+    "cumulative": 268,
+    "overall_rank": 3321565,
+    "points_on_bench": 18,
+    "rank": 9
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 6,
     "weekly": 70,
-    "cumulative": 338
+    "cumulative": 338,
+    "overall_rank": 1836795,
+    "points_on_bench": 24,
+    "rank": 7
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 7,
     "weekly": 70,
-    "cumulative": 408
+    "cumulative": 408,
+    "overall_rank": 1718463,
+    "points_on_bench": 7,
+    "rank": 5
   },
   {
-    "player": "Roope R",
+    "player": "FC Nightman cometh",
     "gw": 8,
     "weekly": 87,
-    "cumulative": 495
+    "cumulative": 495,
+    "overall_rank": 780752,
+    "points_on_bench": 0,
+    "rank": 5
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 1,
     "weekly": 46,
-    "cumulative": 46
+    "cumulative": 46,
+    "overall_rank": 6908093,
+    "points_on_bench": 4,
+    "rank": 15
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 2,
     "weekly": 39,
-    "cumulative": 85
+    "cumulative": 85,
+    "overall_rank": 7974800,
+    "points_on_bench": 6,
+    "rank": 19
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 3,
     "weekly": 66,
-    "cumulative": 151
+    "cumulative": 151,
+    "overall_rank": 4733955,
+    "points_on_bench": 2,
+    "rank": 9
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 4,
     "weekly": 64,
-    "cumulative": 215
+    "cumulative": 215,
+    "overall_rank": 4590963,
+    "points_on_bench": 5,
+    "rank": 13
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 5,
     "weekly": 60,
-    "cumulative": 275
+    "cumulative": 275,
+    "overall_rank": 2558508,
+    "points_on_bench": 7,
+    "rank": 5
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 6,
     "weekly": 59,
-    "cumulative": 334
+    "cumulative": 334,
+    "overall_rank": 2101522,
+    "points_on_bench": 7,
+    "rank": 8
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 7,
     "weekly": 72,
-    "cumulative": 406
+    "cumulative": 406,
+    "overall_rank": 1844549,
+    "points_on_bench": 3,
+    "rank": 6
   },
   {
-    "player": "Lauri Isopahkala",
+    "player": "FC Default",
     "gw": 8,
     "weekly": 73,
-    "cumulative": 479
+    "cumulative": 479,
+    "overall_rank": 1411263,
+    "points_on_bench": 12,
+    "rank": 6
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 1,
     "weekly": 49,
-    "cumulative": 49
+    "cumulative": 49,
+    "overall_rank": 6072139,
+    "points_on_bench": 5,
+    "rank": 14
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 2,
     "weekly": 54,
-    "cumulative": 103
+    "cumulative": 103,
+    "overall_rank": 4919019,
+    "points_on_bench": 9,
+    "rank": 8
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 3,
     "weekly": 54,
-    "cumulative": 157
+    "cumulative": 157,
+    "overall_rank": 3706425,
+    "points_on_bench": 18,
+    "rank": 5
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 4,
     "weekly": 74,
-    "cumulative": 231
+    "cumulative": 231,
+    "overall_rank": 2518121,
+    "points_on_bench": 12,
+    "rank": 4
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 5,
     "weekly": 49,
-    "cumulative": 280
+    "cumulative": 280,
+    "overall_rank": 2068453,
+    "points_on_bench": 6,
+    "rank": 4
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 6,
     "weekly": 62,
-    "cumulative": 342
+    "cumulative": 342,
+    "overall_rank": 1590718,
+    "points_on_bench": 19,
+    "rank": 5
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 7,
     "weekly": 48,
-    "cumulative": 390
+    "cumulative": 390,
+    "overall_rank": 2841995,
+    "points_on_bench": 7,
+    "rank": 8
   },
   {
-    "player": "Miikka Kaihovaara",
+    "player": "FC Left Curve",
     "gw": 8,
     "weekly": 86,
-    "cumulative": 476
+    "cumulative": 476,
+    "overall_rank": 1558024,
+    "points_on_bench": 0,
+    "rank": 7
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 1,
     "weekly": 40,
-    "cumulative": 40
+    "cumulative": 40,
+    "overall_rank": 8200235,
+    "points_on_bench": 8,
+    "rank": 19
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 2,
     "weekly": 51,
-    "cumulative": 91
+    "cumulative": 91,
+    "overall_rank": 7246038,
+    "points_on_bench": 2,
+    "rank": 16
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 3,
     "weekly": 49,
-    "cumulative": 140
+    "cumulative": 140,
+    "overall_rank": 6512116,
+    "points_on_bench": 9,
+    "rank": 17
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 4,
     "weekly": 56,
-    "cumulative": 196
+    "cumulative": 196,
+    "overall_rank": 6948769,
+    "points_on_bench": 1,
+    "rank": 18
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 5,
     "weekly": 57,
-    "cumulative": 253
+    "cumulative": 253,
+    "overall_rank": 5102647,
+    "points_on_bench": 13,
+    "rank": 13
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 6,
     "weekly": 56,
-    "cumulative": 309
+    "cumulative": 309,
+    "overall_rank": 4080523,
+    "points_on_bench": 16,
+    "rank": 12
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 7,
     "weekly": 77,
-    "cumulative": 386
+    "cumulative": 386,
+    "overall_rank": 3131790,
+    "points_on_bench": 4,
+    "rank": 10
   },
   {
-    "player": "Samuel Taylor",
+    "player": "up_the_chels",
     "gw": 8,
     "weekly": 72,
-    "cumulative": 458
+    "cumulative": 458,
+    "overall_rank": 2513677,
+    "points_on_bench": 7,
+    "rank": 8
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 1,
     "weekly": 61,
-    "cumulative": 61
+    "cumulative": 61,
+    "overall_rank": 2607687,
+    "points_on_bench": 12,
+    "rank": 4
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 2,
     "weekly": 47,
-    "cumulative": 108
+    "cumulative": 108,
+    "overall_rank": 3840714,
+    "points_on_bench": 4,
+    "rank": 6
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 3,
     "weekly": 52,
-    "cumulative": 160
+    "cumulative": 160,
+    "overall_rank": 3142653,
+    "points_on_bench": 2,
+    "rank": 4
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 4,
     "weekly": 73,
-    "cumulative": 233
+    "cumulative": 233,
+    "overall_rank": 2264036,
+    "points_on_bench": 4,
+    "rank": 3
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 5,
     "weekly": 51,
-    "cumulative": 284
+    "cumulative": 284,
+    "overall_rank": 1704446,
+    "points_on_bench": 5,
+    "rank": 3
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 6,
     "weekly": 61,
-    "cumulative": 345
+    "cumulative": 345,
+    "overall_rank": 1413952,
+    "points_on_bench": 11,
+    "rank": 3
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 7,
     "weekly": 59,
-    "cumulative": 404
+    "cumulative": 404,
+    "overall_rank": 1946224,
+    "points_on_bench": 5,
+    "rank": 7
   },
   {
-    "player": "Ronja Marjamaa",
+    "player": "FC Berryfield",
     "gw": 8,
     "weekly": 53,
-    "cumulative": 457
+    "cumulative": 457,
+    "overall_rank": 2556478,
+    "points_on_bench": 17,
+    "rank": 9
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 1,
     "weekly": 70,
-    "cumulative": 70
+    "cumulative": 70,
+    "overall_rank": 958151,
+    "points_on_bench": 2,
+    "rank": 2
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 2,
-    "weekly": 34,
-    "cumulative": 100
+    "weekly": 30,
+    "cumulative": 100,
+    "overall_rank": 5709573,
+    "points_on_bench": 12,
+    "rank": 10
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 3,
-    "weekly": 44,
-    "cumulative": 140
+    "weekly": 40,
+    "cumulative": 140,
+    "overall_rank": 6575962,
+    "points_on_bench": 4,
+    "rank": 18
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 4,
     "weekly": 76,
-    "cumulative": 216
+    "cumulative": 216,
+    "overall_rank": 4493496,
+    "points_on_bench": 7,
+    "rank": 11
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 5,
     "weekly": 47,
-    "cumulative": 263
+    "cumulative": 263,
+    "overall_rank": 3970496,
+    "points_on_bench": 8,
+    "rank": 12
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 6,
     "weekly": 70,
-    "cumulative": 333
+    "cumulative": 333,
+    "overall_rank": 2210685,
+    "points_on_bench": 30,
+    "rank": 9
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 7,
     "weekly": 54,
-    "cumulative": 387
+    "cumulative": 387,
+    "overall_rank": 3076919,
+    "points_on_bench": 7,
+    "rank": 9
   },
   {
-    "player": "Jesse Puuska",
+    "player": "Negative EV",
     "gw": 8,
-    "weekly": 69,
-    "cumulative": 452
+    "weekly": 65,
+    "cumulative": 452,
+    "overall_rank": 2893470,
+    "points_on_bench": 17,
+    "rank": 10
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 1,
     "weekly": 52,
-    "cumulative": 52
+    "cumulative": 52,
+    "overall_rank": 5174823,
+    "points_on_bench": 7,
+    "rank": 11
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 2,
-    "weekly": 45,
-    "cumulative": 93
+    "weekly": 41,
+    "cumulative": 93,
+    "overall_rank": 6981241,
+    "points_on_bench": 13,
+    "rank": 15
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 3,
     "weekly": 58,
-    "cumulative": 151
+    "cumulative": 151,
+    "overall_rank": 4733955,
+    "points_on_bench": 18,
+    "rank": 10
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 4,
-    "weekly": 61,
-    "cumulative": 208
+    "weekly": 57,
+    "cumulative": 208,
+    "overall_rank": 5577549,
+    "points_on_bench": 16,
+    "rank": 15
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 5,
     "weekly": 57,
-    "cumulative": 265
+    "cumulative": 265,
+    "overall_rank": 3734118,
+    "points_on_bench": 5,
+    "rank": 11
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 6,
     "weekly": 38,
-    "cumulative": 303
+    "cumulative": 303,
+    "overall_rank": 4650819,
+    "points_on_bench": 22,
+    "rank": 14
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 7,
-    "weekly": 64,
-    "cumulative": 363
+    "weekly": 60,
+    "cumulative": 363,
+    "overall_rank": 4835126,
+    "points_on_bench": 12,
+    "rank": 13
   },
   {
-    "player": "Markus Kantor",
+    "player": "Seinfeld Chillwell",
     "gw": 8,
-    "weekly": 73,
-    "cumulative": 432
+    "weekly": 69,
+    "cumulative": 432,
+    "overall_rank": 4123311,
+    "points_on_bench": 8,
+    "rank": 11
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 1,
     "weekly": 45,
-    "cumulative": 45
+    "cumulative": 45,
+    "overall_rank": 7165709,
+    "points_on_bench": 10,
+    "rank": 16
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 2,
     "weekly": 56,
-    "cumulative": 101
+    "cumulative": 101,
+    "overall_rank": 5434641,
+    "points_on_bench": 5,
+    "rank": 9
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 3,
     "weekly": 54,
-    "cumulative": 155
+    "cumulative": 155,
+    "overall_rank": 4046717,
+    "points_on_bench": 13,
+    "rank": 8
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 4,
     "weekly": 68,
-    "cumulative": 223
+    "cumulative": 223,
+    "overall_rank": 3483560,
+    "points_on_bench": 8,
+    "rank": 8
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 5,
     "weekly": 47,
-    "cumulative": 270
+    "cumulative": 270,
+    "overall_rank": 3079028,
+    "points_on_bench": 11,
+    "rank": 8
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 6,
-    "weekly": 60,
-    "cumulative": 326
+    "weekly": 56,
+    "cumulative": 326,
+    "overall_rank": 2721687,
+    "points_on_bench": 13,
+    "rank": 10
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 7,
     "weekly": 59,
-    "cumulative": 385
+    "cumulative": 385,
+    "overall_rank": 3215516,
+    "points_on_bench": 5,
+    "rank": 11
   },
   {
-    "player": "Jenni Kauppinen",
+    "player": "FC Cura",
     "gw": 8,
     "weekly": 45,
-    "cumulative": 430
+    "cumulative": 430,
+    "overall_rank": 4225241,
+    "points_on_bench": 16,
+    "rank": 12
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 1,
     "weekly": 52,
-    "cumulative": 52
+    "cumulative": 52,
+    "overall_rank": 5174823,
+    "points_on_bench": 14,
+    "rank": 12
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 2,
     "weekly": 46,
-    "cumulative": 98
+    "cumulative": 98,
+    "overall_rank": 5939885,
+    "points_on_bench": 12,
+    "rank": 12
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 3,
     "weekly": 53,
-    "cumulative": 151
+    "cumulative": 151,
+    "overall_rank": 4667470,
+    "points_on_bench": 2,
+    "rank": 11
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 4,
     "weekly": 71,
-    "cumulative": 222
+    "cumulative": 222,
+    "overall_rank": 3615810,
+    "points_on_bench": 10,
+    "rank": 9
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 5,
     "weekly": 46,
-    "cumulative": 268
+    "cumulative": 268,
+    "overall_rank": 3304690,
+    "points_on_bench": 9,
+    "rank": 10
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 6,
     "weekly": 43,
-    "cumulative": 311
+    "cumulative": 311,
+    "overall_rank": 3908036,
+    "points_on_bench": 7,
+    "rank": 11
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 7,
     "weekly": 62,
-    "cumulative": 373
+    "cumulative": 373,
+    "overall_rank": 4075417,
+    "points_on_bench": 10,
+    "rank": 12
   },
   {
-    "player": "Tuomo Viholainen",
+    "player": "FC Relegated",
     "gw": 8,
     "weekly": 53,
-    "cumulative": 426
+    "cumulative": 426,
+    "overall_rank": 4464237,
+    "points_on_bench": 14,
+    "rank": 13
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 1,
     "weekly": 43,
-    "cumulative": 43
+    "cumulative": 43,
+    "overall_rank": 7620845,
+    "points_on_bench": 13,
+    "rank": 18
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 2,
     "weekly": 45,
-    "cumulative": 88
+    "cumulative": 88,
+    "overall_rank": 7604466,
+    "points_on_bench": 4,
+    "rank": 17
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 3,
     "weekly": 42,
-    "cumulative": 130
+    "cumulative": 130,
+    "overall_rank": 7718431,
+    "points_on_bench": 13,
+    "rank": 19
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 4,
     "weekly": 71,
-    "cumulative": 201
+    "cumulative": 201,
+    "overall_rank": 6391521,
+    "points_on_bench": 8,
+    "rank": 17
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 5,
     "weekly": 48,
-    "cumulative": 249
+    "cumulative": 249,
+    "overall_rank": 5573949,
+    "points_on_bench": 10,
+    "rank": 16
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 6,
     "weekly": 59,
-    "cumulative": 308
+    "cumulative": 308,
+    "overall_rank": 4184528,
+    "points_on_bench": 10,
+    "rank": 13
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 7,
     "weekly": 55,
-    "cumulative": 363
+    "cumulative": 363,
+    "overall_rank": 4811549,
+    "points_on_bench": 14,
+    "rank": 14
   },
   {
-    "player": "Tino K\u00e4yhk\u00f6",
+    "player": "FC Sukkaralli",
     "gw": 8,
     "weekly": 54,
-    "cumulative": 417
+    "cumulative": 417,
+    "overall_rank": 5036316,
+    "points_on_bench": 14,
+    "rank": 14
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 1,
     "weekly": 44,
-    "cumulative": 44
+    "cumulative": 44,
+    "overall_rank": 7400945,
+    "points_on_bench": 0,
+    "rank": 17
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 2,
     "weekly": 42,
-    "cumulative": 86
+    "cumulative": 86,
+    "overall_rank": 7917169,
+    "points_on_bench": 1,
+    "rank": 18
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 3,
     "weekly": 60,
-    "cumulative": 146
+    "cumulative": 146,
+    "overall_rank": 5576235,
+    "points_on_bench": 8,
+    "rank": 15
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 4,
     "weekly": 44,
-    "cumulative": 190
+    "cumulative": 190,
+    "overall_rank": 7543573,
+    "points_on_bench": 4,
+    "rank": 19
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 5,
     "weekly": 44,
-    "cumulative": 234
+    "cumulative": 234,
+    "overall_rank": 7176524,
+    "points_on_bench": 7,
+    "rank": 19
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 6,
     "weekly": 37,
-    "cumulative": 271
+    "cumulative": 271,
+    "overall_rank": 7396285,
+    "points_on_bench": 11,
+    "rank": 19
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 7,
     "weekly": 63,
-    "cumulative": 334
+    "cumulative": 334,
+    "overall_rank": 6909996,
+    "points_on_bench": 3,
+    "rank": 17
   },
   {
-    "player": "Make Kivil\u00e4",
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
     "gw": 8,
     "weekly": 78,
-    "cumulative": 412
+    "cumulative": 412,
+    "overall_rank": 5338088,
+    "points_on_bench": 16,
+    "rank": 15
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 1,
     "weekly": 57,
-    "cumulative": 57
+    "cumulative": 57,
+    "overall_rank": 3654196,
+    "points_on_bench": 5,
+    "rank": 5
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 2,
     "weekly": 37,
-    "cumulative": 94
+    "cumulative": 94,
+    "overall_rank": 6678506,
+    "points_on_bench": 14,
+    "rank": 14
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 3,
     "weekly": 53,
-    "cumulative": 147
+    "cumulative": 147,
+    "overall_rank": 5347552,
+    "points_on_bench": 2,
+    "rank": 14
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 4,
     "weekly": 69,
-    "cumulative": 216
+    "cumulative": 216,
+    "overall_rank": 4455140,
+    "points_on_bench": 14,
+    "rank": 12
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 5,
     "weekly": 33,
-    "cumulative": 249
+    "cumulative": 249,
+    "overall_rank": 5596669,
+    "points_on_bench": 6,
+    "rank": 17
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 6,
     "weekly": 54,
-    "cumulative": 303
+    "cumulative": 303,
+    "overall_rank": 4624966,
+    "points_on_bench": 1,
+    "rank": 15
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 7,
-    "weekly": 58,
-    "cumulative": 357
+    "weekly": 54,
+    "cumulative": 357,
+    "overall_rank": 5267135,
+    "points_on_bench": 9,
+    "rank": 15
   },
   {
-    "player": "Ida-Maria Juntunen",
+    "player": "Kupla 2.0",
     "gw": 8,
     "weekly": 55,
-    "cumulative": 412
+    "cumulative": 412,
+    "overall_rank": 5347246,
+    "points_on_bench": 9,
+    "rank": 16
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 1,
     "weekly": 76,
-    "cumulative": 76
+    "cumulative": 76,
+    "overall_rank": 400600,
+    "points_on_bench": 0,
+    "rank": 1
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 2,
     "weekly": 39,
-    "cumulative": 115
+    "cumulative": 115,
+    "overall_rank": 2563260,
+    "points_on_bench": 7,
+    "rank": 3
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 3,
-    "weekly": 35,
-    "cumulative": 146
+    "weekly": 31,
+    "cumulative": 146,
+    "overall_rank": 5632272,
+    "points_on_bench": 3,
+    "rank": 16
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 4,
     "weekly": 56,
-    "cumulative": 202
+    "cumulative": 202,
+    "overall_rank": 6302361,
+    "points_on_bench": 8,
+    "rank": 16
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 5,
     "weekly": 45,
-    "cumulative": 247
+    "cumulative": 247,
+    "overall_rank": 5847753,
+    "points_on_bench": 5,
+    "rank": 18
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 6,
     "weekly": 27,
-    "cumulative": 274
+    "cumulative": 274,
+    "overall_rank": 7158378,
+    "points_on_bench": 2,
+    "rank": 18
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 7,
     "weekly": 64,
-    "cumulative": 338
+    "cumulative": 338,
+    "overall_rank": 6623456,
+    "points_on_bench": 5,
+    "rank": 16
   },
   {
-    "player": "anton andersen",
+    "player": "Traktor Jorvas",
     "gw": 8,
     "weekly": 72,
-    "cumulative": 410
+    "cumulative": 410,
+    "overall_rank": 5454998,
+    "points_on_bench": 14,
+    "rank": 17
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 1,
     "weekly": 52,
-    "cumulative": 52
+    "cumulative": 52,
+    "overall_rank": 5174823,
+    "points_on_bench": 0,
+    "rank": 13
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 2,
     "weekly": 74,
-    "cumulative": 126
+    "cumulative": 126,
+    "overall_rank": 1030589,
+    "points_on_bench": 7,
+    "rank": 2
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 3,
     "weekly": 24,
-    "cumulative": 150
+    "cumulative": 150,
+    "overall_rank": 4904814,
+    "points_on_bench": 5,
+    "rank": 12
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 4,
     "weekly": 65,
-    "cumulative": 215
+    "cumulative": 215,
+    "overall_rank": 4561404,
+    "points_on_bench": 3,
+    "rank": 14
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 5,
     "weekly": 38,
-    "cumulative": 253
+    "cumulative": 253,
+    "overall_rank": 5126805,
+    "points_on_bench": 8,
+    "rank": 14
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 6,
     "weekly": 39,
-    "cumulative": 292
+    "cumulative": 292,
+    "overall_rank": 5595102,
+    "points_on_bench": 5,
+    "rank": 16
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 7,
     "weekly": 38,
-    "cumulative": 330
+    "cumulative": 330,
+    "overall_rank": 7179731,
+    "points_on_bench": 6,
+    "rank": 18
   },
   {
-    "player": "Antti Tiensuu",
+    "player": "Peikot FC HKI82",
     "gw": 8,
     "weekly": 68,
-    "cumulative": 398
+    "cumulative": 398,
+    "overall_rank": 6197186,
+    "points_on_bench": 14,
+    "rank": 18
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 1,
     "weekly": 38,
-    "cumulative": 38
+    "cumulative": 38,
+    "overall_rank": 8516190,
+    "points_on_bench": 5,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 2,
     "weekly": 35,
-    "cumulative": 73
+    "cumulative": 73,
+    "overall_rank": 8983039,
+    "points_on_bench": 5,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 3,
     "weekly": 53,
-    "cumulative": 126
+    "cumulative": 126,
+    "overall_rank": 8142624,
+    "points_on_bench": 1,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 4,
     "weekly": 62,
-    "cumulative": 188
+    "cumulative": 188,
+    "overall_rank": 7724165,
+    "points_on_bench": 5,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 5,
     "weekly": 44,
-    "cumulative": 232
+    "cumulative": 232,
+    "overall_rank": 7360653,
+    "points_on_bench": 3,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 6,
     "weekly": 23,
-    "cumulative": 255
+    "cumulative": 255,
+    "overall_rank": 8505939,
+    "points_on_bench": 29,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 7,
-    "weekly": 67,
-    "cumulative": 314
+    "weekly": 59,
+    "cumulative": 314,
+    "overall_rank": 8178897,
+    "points_on_bench": 7,
+    "rank": 20
   },
   {
-    "player": "Kimmo Koponen",
+    "player": "FC IRRBB",
     "gw": 8,
     "weekly": 65,
-    "cumulative": 379
+    "cumulative": 379,
+    "overall_rank": 7320008,
+    "points_on_bench": 4,
+    "rank": 19
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 1,
     "weekly": 57,
-    "cumulative": 57
+    "cumulative": 57,
+    "overall_rank": 3654196,
+    "points_on_bench": 9,
+    "rank": 6
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 2,
-    "weekly": 46,
-    "cumulative": 99
+    "weekly": 42,
+    "cumulative": 99,
+    "overall_rank": 5907475,
+    "points_on_bench": 4,
+    "rank": 11
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 3,
     "weekly": 50,
-    "cumulative": 149
+    "cumulative": 149,
+    "overall_rank": 5135520,
+    "points_on_bench": 2,
+    "rank": 13
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 4,
     "weekly": 71,
-    "cumulative": 220
+    "cumulative": 220,
+    "overall_rank": 3952792,
+    "points_on_bench": 7,
+    "rank": 10
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 5,
     "weekly": 33,
-    "cumulative": 253
+    "cumulative": 253,
+    "overall_rank": 5126805,
+    "points_on_bench": 17,
+    "rank": 15
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 6,
     "weekly": 34,
-    "cumulative": 287
+    "cumulative": 287,
+    "overall_rank": 6041406,
+    "points_on_bench": -1,
+    "rank": 17
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 7,
     "weekly": 37,
-    "cumulative": 324
+    "cumulative": 324,
+    "overall_rank": 7569354,
+    "points_on_bench": 6,
+    "rank": 19
   },
   {
-    "player": "Juuso E",
+    "player": "buy high play low",
     "gw": 8,
     "weekly": 46,
-    "cumulative": 370
+    "cumulative": 370,
+    "overall_rank": 7797605,
+    "points_on_bench": 17,
+    "rank": 20
   }
 ]
