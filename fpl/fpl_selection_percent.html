@@ -17,16 +17,27 @@ h1 {
 }
 .filter-container {
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
-select {
+.filter-container label {
+    margin-right: 5px;
+}
+.filter-container input,
+.filter-container select {
     padding: 5px;
-    margin-right: 10px;
 }
 </style>
 </head>
 <body>
 <h1>Hannes Gebhard's eliteleague — Starting XI Selection %</h1>
+
 <div class="filter-container">
+  <label for="playerSearch">Player:</label>
+  <input type="text" id="playerSearch" placeholder="Search player..." />
+
   <label for="positionFilter">Position:</label>
   <select id="positionFilter">
     <option value="">All</option>
@@ -49,7 +60,7 @@ select {
       <th>player_name</th>
       <th>position</th>
       <th>team</th>
-      <th>cost</th>
+      <th>price</th>
       <th>GW1</th>
       <th>GW2</th>
       <th>GW3</th>
@@ -1605,7 +1616,7 @@ select {
       <td>5.0</td>
       <td>5.0</td>
       <td>0.0</td>
-      <td>5.1</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <td>Gianluigi Donnarumma</td>
@@ -1843,6 +1854,12 @@ $(document).ready(function() {
         ordering: true,
         order: [[ 11, 'desc' ]], // last GW league % column
         fixedHeader: true
+    });
+
+    // Player search filter
+    $('#playerSearch').on('keyup', function() {
+        var val = $(this).val();
+        table.column(0).search(val).draw(); // only player_name column
     });
 
     // Position filter
