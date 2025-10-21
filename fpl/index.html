@@ -29,7 +29,7 @@
 				font-size: 28px;
 			}
 			#header-image {
-				height: 50px;
+				height: 80px;
 				margin-left: 15px;
 				border-radius: 8px;
 			}
@@ -86,12 +86,22 @@
 				const top3 = totals.slice(0, 3).map((d) => d.player);
 				const top3Icons = ["🥇", "🥈", "🥉"];
 
-				// Populate select with top3 badge
+				// Determine worst player
+				const worstPlayer = totals[totals.length - 1].player;
+				const worstIcon = "💩"; // you can change this emoji if you like
+
+				// Populate select with icons
 				players.forEach((p) => {
 					const opt = document.createElement("option");
 					opt.value = p;
 					const idx = top3.indexOf(p);
-					opt.text = idx >= 0 ? `${top3Icons[idx]} ${p}` : p;
+					if (idx >= 0) {
+						opt.text = `${top3Icons[idx]} ${p}`;
+					} else if (p === worstPlayer) {
+						opt.text = `${worstIcon} ${p}`;
+					} else {
+						opt.text = p;
+					}
 					select.appendChild(opt);
 				});
 
