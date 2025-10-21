@@ -17,12 +17,46 @@
 			}
 			#player-select {
 				min-width: 250px;
+				margin-bottom: 10px;
+			}
+			#header-container {
+				display: flex;
+				align-items: center;
 				margin-bottom: 20px;
+			}
+			#header-container h1 {
+				margin: 0;
+				font-size: 28px;
+			}
+			#header-image {
+				height: 50px;
+				margin-left: 15px;
+				border-radius: 8px;
+			}
+			#select-buttons {
+				margin-bottom: 10px;
+			}
+			#select-buttons button {
+				margin-right: 5px;
+				padding: 4px 8px;
+				font-size: 14px;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Hannes Gebhard's eliteleague FPL Dashboard</h1>
+		<div id="header-container">
+			<h1>Hannes Gebhard's eliteleague FPL Dashboard</h1>
+			<img
+				src="250px-Hannes_gebhard.jpg"
+				id="header-image"
+				alt="Hannes Gebhard"
+			/>
+		</div>
+
+		<div id="select-buttons">
+			<button id="select-all">Select All</button>
+			<button id="unselect-all">Unselect All</button>
+		</div>
 
 		<label for="player-select">Select Players:</label>
 		<select id="player-select" multiple></select>
@@ -41,11 +75,23 @@
 				const players = [...new Set(data.map((d) => d.player))];
 				const select = document.getElementById("player-select");
 
-				// Populate select
+				// Compute static top 3 from latest cumulative points
+				const latestGW = Math.max(...data.map((d) => d.gw));
+				const totals = players.map((p) => {
+					const playerData = data.filter((d) => d.player === p);
+					const last = playerData.find((d) => d.gw === latestGW);
+					return { player: p, total: last ? last.cumulative : 0 };
+				});
+				totals.sort((a, b) => b.total - a.total);
+				const top3 = totals.slice(0, 3).map((d) => d.player);
+				const top3Icons = ["🥇", "🥈", "🥉"];
+
+				// Populate select with top3 badge
 				players.forEach((p) => {
 					const opt = document.createElement("option");
 					opt.value = p;
-					opt.text = p;
+					const idx = top3.indexOf(p);
+					opt.text = idx >= 0 ? `${top3Icons[idx]} ${p}` : p;
 					select.appendChild(opt);
 				});
 
@@ -59,21 +105,25 @@
 				// Pre-select all players
 				choices.setChoiceByValue(players);
 
+				// Buttons functionality
+				document
+					.getElementById("select-all")
+					.addEventListener("click", () => {
+						choices.setChoiceByValue(players);
+						updateVisible();
+					});
+				document
+					.getElementById("unselect-all")
+					.addEventListener("click", () => {
+						choices.removeActiveItems();
+						updateVisible();
+					});
+
 				function getColor(i, total, highlight = false) {
 					return highlight
 						? `hsl(${(i / total) * 360}, 90%, 50%)`
 						: `hsl(${(i / total) * 360}, 70%, 50%)`;
 				}
-
-				// Compute static top 3 from latest cumulative points
-				const latestGW = Math.max(...data.map((d) => d.gw));
-				const totals = players.map((p) => {
-					const playerData = data.filter((d) => d.player === p);
-					const last = playerData.find((d) => d.gw === latestGW);
-					return { player: p, total: last ? last.cumulative : 0 };
-				});
-				totals.sort((a, b) => b.total - a.total);
-				const top3 = totals.slice(0, 3).map((d) => d.player);
 
 				// Prepare traces once
 				const weeklyTraces = players.map((player, i) => {
