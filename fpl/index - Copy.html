@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hannes Gebhard's eliteleague FPL Dashboard</title>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+			#player-select {
+				min-width: 250px;
+				margin-bottom: 10px;
+			}
+			#header-container {
+				display: flex;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+			#header-container h1 {
+				margin: 0;
+				font-size: 28px;
+			}
+			#header-image {
+				height: 80px;
+				margin-left: 15px;
+				border-radius: 8px;
+			}
+			#select-buttons {
+				margin-bottom: 10px;
+			}
+			#select-buttons button {
+				margin-right: 5px;
+				padding: 4px 8px;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header-container">
+			<h1>Hannes Gebhard's eliteleague FPL Dashboard</h1>
+			<img
+				src="250px-Hannes_gebhard.jpg"
+				id="header-image"
+				alt="Hannes Gebhard"
+			/>
+		</div>
+
+		<div id="select-buttons">
+			<button id="select-all">Select All</button>
+			<button id="unselect-all">Unselect All</button>
+		</div>
+
+		<label for="player-select">Select Players:</label>
+		<select id="player-select" multiple></select>
+
+		<h2>Weekly Points</h2>
+		<div id="weekly-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Cumulative Points</h2>
+		<div id="cumulative-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Running Rank</h2>
+		<div id="rank-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Running Overall Rank</h2>
+		<div id="overall-rank-plot" style="width: 100%; height: 500px"></div>
+
+		<script>
+			async function initDashboard() {
+				const resp = await fetch("fpldata.json");
+				const data = await resp.json();
+
+				const players = [...new Set(data.map((d) => d.player))];
+				const select = document.getElementById("player-select");
+
+				// Compute static top 3 from latest cumulative points
+				const latestGW = Math.max(...data.map((d) => d.gw));
+				const totals = players.map((p) => {
+					const playerData = data.filter((d) => d.player === p);
+					const last = playerData.find((d) => d.gw === latestGW);
+					return { player: p, total: last ? last.cumulative : 0 };
+				});
+				totals.sort((a, b) => b.total - a.total);
+				const top3 = totals.slice(0, 3).map((d) => d.player);
+				const top3Icons = ["🥇", "🥈", "🥉"];
+
+				// Determine worst player
+				const worstPlayer = totals[totals.length - 1].player;
+				const worstIcon = "💩";
+
+				// Populate select with icons
+				players.forEach((p) => {
+					const opt = document.createElement("option");
+					opt.value = p;
+					const idx = top3.indexOf(p);
+					if (idx >= 0) {
+						opt.text = `${top3Icons[idx]} ${p}`;
+					} else if (p === worstPlayer) {
+						opt.text = `${worstIcon} ${p}`;
+					} else {
+						opt.text = p;
+					}
+					select.appendChild(opt);
+				});
+
+				// Initialize Choices.js
+				const choices = new Choices(select, {
+					removeItemButton: true,
+					searchEnabled: true,
+					placeholderValue: "Select players...",
+				});
+
+				// Pre-select all players
+				choices.setChoiceByValue(players);
+
+				// Buttons functionality
+				document
+					.getElementById("select-all")
+					.addEventListener("click", () => {
+						choices.setChoiceByValue(players);
+						updateVisible();
+					});
+				document
+					.getElementById("unselect-all")
+					.addEventListener("click", () => {
+						choices.removeActiveItems();
+						updateVisible();
+					});
+
+				function getColor(i, total, highlight = false) {
+					return highlight
+						? `hsl(${(i / total) * 360}, 90%, 50%)`
+						: `hsl(${(i / total) * 360}, 70%, 50%)`;
+				}
+
+				// Prepare traces
+				const weeklyTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.weekly),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const cumTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.cumulative),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const rankTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.rank),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const overallRankTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.overall_rank), // <-- use overall_rank
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				// Initial plots
+				Plotly.newPlot("weekly-plot", weeklyTraces, {
+					title: "Weekly Points",
+				});
+				Plotly.newPlot("cumulative-plot", cumTraces, {
+					title: "Cumulative Points",
+				});
+				Plotly.newPlot("rank-plot", rankTraces, {
+					title: "Running Rank",
+					yaxis: { title: "Rank", autorange: "reversed" },
+					xaxis: { title: "Gameweek" },
+				});
+
+				Plotly.newPlot("overall-rank-plot", overallRankTraces, {
+					title: "Running Overall Rank",
+					yaxis: { title: "Overall Rank", autorange: "reversed" },
+					xaxis: { title: "Gameweek" },
+				});
+
+				function stripIcon(name) {
+					return name.replace(/^[^\w]+ /, "");
+				}
+
+				function updateVisible() {
+					const selected = choices.getValue(true);
+
+					weeklyTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"weekly-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+					cumTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"cumulative-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+					rankTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"rank-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
+					overallRankTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"overall-rank-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+				}
+
+				select.addEventListener("change", updateVisible);
+
+				// Show all players initially
+				updateVisible();
+			}
+
+			initDashboard();
+		</script>
+	</body>
+</html>

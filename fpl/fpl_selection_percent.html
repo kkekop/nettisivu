@@ -1,0 +1,1743 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FPL League Picks Dashboard</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    margin-bottom: 15px;
+}
+.filter-container {
+    margin-bottom: 10px;
+}
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+</style>
+</head>
+<body>
+<h1>Hannes Gebhard's eliteleague — Starting XI Selection %</h1>
+<div class="filter-container">
+  <label for="positionFilter">Position:</label>
+  <select id="positionFilter">
+    <option value="">All</option>
+    <option value="GK">GK</option>
+    <option value="DEF">DEF</option>
+    <option value="MID">MID</option>
+    <option value="FWD">FWD</option>
+  </select>
+
+  <label for="teamFilter">Team:</label>
+  <select id="teamFilter">
+    <option value="">All</option>
+    <option value="Arsenal">Arsenal</option><option value="Aston Villa">Aston Villa</option><option value="Bournemouth">Bournemouth</option><option value="Brentford">Brentford</option><option value="Brighton">Brighton</option><option value="Burnley">Burnley</option><option value="Chelsea">Chelsea</option><option value="Crystal Palace">Crystal Palace</option><option value="Everton">Everton</option><option value="Fulham">Fulham</option><option value="Leeds">Leeds</option><option value="Liverpool">Liverpool</option><option value="Man City">Man City</option><option value="Man Utd">Man Utd</option><option value="Newcastle">Newcastle</option><option value="Nott'm Forest">Nott'm Forest</option><option value="Spurs">Spurs</option><option value="Sunderland">Sunderland</option><option value="West Ham">West Ham</option><option value="Wolves">Wolves</option>
+  </select>
+</div>
+
+<table border="1" class="dataframe display" id="fpl-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>player_name</th>
+      <th>position</th>
+      <th>team</th>
+      <th>cost</th>
+      <th>GW1</th>
+      <th>GW2</th>
+      <th>GW3</th>
+      <th>GW4</th>
+      <th>GW5</th>
+      <th>GW6</th>
+      <th>GW7</th>
+      <th>GW8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Erling Haaland</td>
+      <td>FWD</td>
+      <td>Man City</td>
+      <td>14.7</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>25.0</td>
+      <td>60.0</td>
+      <td>75.0</td>
+      <td>90.0</td>
+    </tr>
+    <tr>
+      <td>Antoine Semenyo</td>
+      <td>MID</td>
+      <td>Bournemouth</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>25.0</td>
+      <td>30.0</td>
+      <td>50.0</td>
+      <td>65.0</td>
+      <td>70.0</td>
+      <td>85.0</td>
+    </tr>
+    <tr>
+      <td>João Pedro Junqueira de Jesus</td>
+      <td>FWD</td>
+      <td>Chelsea</td>
+      <td>7.5</td>
+      <td>45.0</td>
+      <td>45.0</td>
+      <td>70.0</td>
+      <td>80.0</td>
+      <td>80.0</td>
+      <td>85.0</td>
+      <td>70.0</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <td>Gabriel dos Santos Magalhães</td>
+      <td>DEF</td>
+      <td>Arsenal</td>
+      <td>6.4</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>10.0</td>
+      <td>20.0</td>
+      <td>15.0</td>
+      <td>30.0</td>
+      <td>40.0</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <td>Marcos Senesi Barón</td>
+      <td>DEF</td>
+      <td>Bournemouth</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>35.0</td>
+      <td>45.0</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <td>Tijjani Reijnders</td>
+      <td>MID</td>
+      <td>Man City</td>
+      <td>5.7</td>
+      <td>25.0</td>
+      <td>55.0</td>
+      <td>50.0</td>
+      <td>55.0</td>
+      <td>25.0</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <td>Micky van de Ven</td>
+      <td>DEF</td>
+      <td>Spurs</td>
+      <td>4.8</td>
+      <td>35.0</td>
+      <td>20.0</td>
+      <td>35.0</td>
+      <td>30.0</td>
+      <td>40.0</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+    </tr>
+    <tr>
+      <td>Bruno Borges Fernandes</td>
+      <td>MID</td>
+      <td>Man Utd</td>
+      <td>8.9</td>
+      <td>35.0</td>
+      <td>35.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>45.0</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <td>Mohammed Kudus</td>
+      <td>MID</td>
+      <td>Spurs</td>
+      <td>6.8</td>
+      <td>15.0</td>
+      <td>10.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <td>Marc Guéhi</td>
+      <td>DEF</td>
+      <td>Crystal Palace</td>
+      <td>4.9</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>20.0</td>
+      <td>10.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <td>Nick Woltemade</td>
+      <td>FWD</td>
+      <td>Newcastle</td>
+      <td>7.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>David Raya Martín</td>
+      <td>GK</td>
+      <td>Arsenal</td>
+      <td>5.7</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Jarrod Bowen</td>
+      <td>FWD</td>
+      <td>West Ham</td>
+      <td>7.8</td>
+      <td>35.0</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>30.0</td>
+      <td>15.0</td>
+      <td>20.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Martin Dúbravka</td>
+      <td>GK</td>
+      <td>Burnley</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>25.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Viktor Gyökeres</td>
+      <td>FWD</td>
+      <td>Arsenal</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Jurriën Timber</td>
+      <td>DEF</td>
+      <td>Arsenal</td>
+      <td>5.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Virgil van Dijk</td>
+      <td>DEF</td>
+      <td>Liverpool</td>
+      <td>6.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Ismaïla Sarr</td>
+      <td>MID</td>
+      <td>Crystal Palace</td>
+      <td>6.5</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <td>Moisés Caicedo Corozo</td>
+      <td>MID</td>
+      <td>Chelsea</td>
+      <td>5.8</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>20.0</td>
+      <td>15.0</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <td>Riccardo Calafiori</td>
+      <td>DEF</td>
+      <td>Arsenal</td>
+      <td>5.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Bukayo Saka</td>
+      <td>MID</td>
+      <td>Arsenal</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Bryan Mbeumo</td>
+      <td>MID</td>
+      <td>Man Utd</td>
+      <td>8.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Declan Rice</td>
+      <td>MID</td>
+      <td>Arsenal</td>
+      <td>6.6</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Jørgen Strand Larsen</td>
+      <td>FWD</td>
+      <td>Wolves</td>
+      <td>6.4</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Mohamed Salah</td>
+      <td>MID</td>
+      <td>Liverpool</td>
+      <td>14.4</td>
+      <td>80.0</td>
+      <td>80.0</td>
+      <td>80.0</td>
+      <td>80.0</td>
+      <td>80.0</td>
+      <td>50.0</td>
+      <td>35.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Nick Pope</td>
+      <td>GK</td>
+      <td>Newcastle</td>
+      <td>5.2</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Caoimhín Kelleher</td>
+      <td>GK</td>
+      <td>Brentford</td>
+      <td>4.5</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Maxence Lacroix</td>
+      <td>DEF</td>
+      <td>Crystal Palace</td>
+      <td>5.1</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Gabriel Gudmundsson</td>
+      <td>DEF</td>
+      <td>Leeds</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Maxime Estève</td>
+      <td>DEF</td>
+      <td>Burnley</td>
+      <td>4.0</td>
+      <td>15.0</td>
+      <td>40.0</td>
+      <td>15.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Aaron Wan-Bissaka</td>
+      <td>DEF</td>
+      <td>West Ham</td>
+      <td>4.3</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Elliot Anderson</td>
+      <td>MID</td>
+      <td>Nott'm Forest</td>
+      <td>5.4</td>
+      <td>10.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Joe Rodon</td>
+      <td>DEF</td>
+      <td>Leeds</td>
+      <td>4.1</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Daniel Muñoz Mejía</td>
+      <td>DEF</td>
+      <td>Crystal Palace</td>
+      <td>5.6</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Robert Lynch Sánchez</td>
+      <td>GK</td>
+      <td>Chelsea</td>
+      <td>4.9</td>
+      <td>40.0</td>
+      <td>25.0</td>
+      <td>35.0</td>
+      <td>40.0</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Ryan Gravenberch</td>
+      <td>MID</td>
+      <td>Liverpool</td>
+      <td>5.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Anton Stach</td>
+      <td>MID</td>
+      <td>Leeds</td>
+      <td>5.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Pedro Porro Sauceda</td>
+      <td>DEF</td>
+      <td>Spurs</td>
+      <td>5.6</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>35.0</td>
+      <td>35.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Marc Cucurella Saseta</td>
+      <td>DEF</td>
+      <td>Chelsea</td>
+      <td>6.1</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Alex Iwobi</td>
+      <td>MID</td>
+      <td>Fulham</td>
+      <td>6.5</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Jérémy Doku</td>
+      <td>MID</td>
+      <td>Man City</td>
+      <td>6.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Nordi Mukiele</td>
+      <td>DEF</td>
+      <td>Sunderland</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Ollie Watkins</td>
+      <td>FWD</td>
+      <td>Aston Villa</td>
+      <td>8.6</td>
+      <td>40.0</td>
+      <td>45.0</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>30.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Omar Alderete</td>
+      <td>DEF</td>
+      <td>Sunderland</td>
+      <td>4.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Richarlison de Andrade</td>
+      <td>FWD</td>
+      <td>Spurs</td>
+      <td>6.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>20.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Robin Roefs</td>
+      <td>GK</td>
+      <td>Sunderland</td>
+      <td>4.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Rúben dos Santos Gato Alves Dias</td>
+      <td>DEF</td>
+      <td>Man City</td>
+      <td>5.5</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Wilson Isidor</td>
+      <td>FWD</td>
+      <td>Sunderland</td>
+      <td>5.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Yankuba Minteh</td>
+      <td>MID</td>
+      <td>Brighton</td>
+      <td>6.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Josh Cullen</td>
+      <td>MID</td>
+      <td>Burnley</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Kieran Trippier</td>
+      <td>DEF</td>
+      <td>Newcastle</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Benjamin Sesko</td>
+      <td>FWD</td>
+      <td>Man Utd</td>
+      <td>7.3</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Granit Xhaka</td>
+      <td>MID</td>
+      <td>Sunderland</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Florian Wirtz</td>
+      <td>MID</td>
+      <td>Liverpool</td>
+      <td>8.1</td>
+      <td>45.0</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>30.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Ezri Konsa Ngoyo</td>
+      <td>DEF</td>
+      <td>Aston Villa</td>
+      <td>4.5</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Jean-Philippe Mateta</td>
+      <td>FWD</td>
+      <td>Crystal Palace</td>
+      <td>7.6</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Chris Richards</td>
+      <td>DEF</td>
+      <td>Crystal Palace</td>
+      <td>4.5</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Guglielmo Vicario</td>
+      <td>GK</td>
+      <td>Spurs</td>
+      <td>5.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>James Tarkowski</td>
+      <td>DEF</td>
+      <td>Everton</td>
+      <td>5.5</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>10.0</td>
+      <td>40.0</td>
+      <td>30.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Iliman Ndiaye</td>
+      <td>MID</td>
+      <td>Everton</td>
+      <td>6.5</td>
+      <td>20.0</td>
+      <td>15.0</td>
+      <td>20.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Dan Burn</td>
+      <td>DEF</td>
+      <td>Newcastle</td>
+      <td>5.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Jaidon Anthony</td>
+      <td>MID</td>
+      <td>Burnley</td>
+      <td>5.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Rayan Aït-Nouri</td>
+      <td>DEF</td>
+      <td>Man City</td>
+      <td>5.8</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Rayan Cherki</td>
+      <td>MID</td>
+      <td>Man City</td>
+      <td>6.3</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Jordan Pickford</td>
+      <td>GK</td>
+      <td>Everton</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Phil Foden</td>
+      <td>MID</td>
+      <td>Man City</td>
+      <td>8.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Danny Welbeck</td>
+      <td>FWD</td>
+      <td>Brighton</td>
+      <td>6.3</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Pedro Lomba Neto</td>
+      <td>MID</td>
+      <td>Chelsea</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Patrick Dorgu</td>
+      <td>DEF</td>
+      <td>Man Utd</td>
+      <td>4.4</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Oscar Bobb</td>
+      <td>MID</td>
+      <td>Man City</td>
+      <td>5.4</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Omar Marmoush</td>
+      <td>MID</td>
+      <td>Man City</td>
+      <td>8.3</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Dominik Szoboszlai</td>
+      <td>MID</td>
+      <td>Liverpool</td>
+      <td>6.5</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Reinildo Mandava</td>
+      <td>DEF</td>
+      <td>Sunderland</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Rodrigo Muniz Carvalho</td>
+      <td>FWD</td>
+      <td>Fulham</td>
+      <td>5.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Cristian Romero</td>
+      <td>DEF</td>
+      <td>Spurs</td>
+      <td>5.1</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Cole Palmer</td>
+      <td>MID</td>
+      <td>Chelsea</td>
+      <td>10.3</td>
+      <td>80.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Chris Wood</td>
+      <td>FWD</td>
+      <td>Nott'm Forest</td>
+      <td>7.3</td>
+      <td>25.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>30.0</td>
+      <td>25.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Ola Aina</td>
+      <td>DEF</td>
+      <td>Nott'm Forest</td>
+      <td>4.8</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Brennan Johnson</td>
+      <td>MID</td>
+      <td>Spurs</td>
+      <td>6.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Sandro Tonali</td>
+      <td>MID</td>
+      <td>Newcastle</td>
+      <td>5.4</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Tino Livramento</td>
+      <td>DEF</td>
+      <td>Newcastle</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Trevoh Chalobah</td>
+      <td>DEF</td>
+      <td>Chelsea</td>
+      <td>5.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Bart Verbruggen</td>
+      <td>GK</td>
+      <td>Brighton</td>
+      <td>4.4</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Amad Diallo</td>
+      <td>MID</td>
+      <td>Man Utd</td>
+      <td>6.3</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>William Saliba</td>
+      <td>DEF</td>
+      <td>Arsenal</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Alisson Becker</td>
+      <td>GK</td>
+      <td>Liverpool</td>
+      <td>5.4</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Alexander Isak</td>
+      <td>FWD</td>
+      <td>Liverpool</td>
+      <td>10.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Donyell Malen</td>
+      <td>MID</td>
+      <td>Aston Villa</td>
+      <td>5.1</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Niclas Füllkrug</td>
+      <td>FWD</td>
+      <td>West Ham</td>
+      <td>5.7</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Eberechi Eze</td>
+      <td>MID</td>
+      <td>Arsenal</td>
+      <td>7.6</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Matz Sels</td>
+      <td>GK</td>
+      <td>Nott'm Forest</td>
+      <td>4.9</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Jhon Arias</td>
+      <td>MID</td>
+      <td>Wolves</td>
+      <td>5.2</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Joël Piroe</td>
+      <td>FWD</td>
+      <td>Leeds</td>
+      <td>5.1</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Jeremie Frimpong</td>
+      <td>DEF</td>
+      <td>Liverpool</td>
+      <td>5.8</td>
+      <td>35.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Jan Paul van Hecke</td>
+      <td>DEF</td>
+      <td>Brighton</td>
+      <td>4.4</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Ki-Jana Hoever</td>
+      <td>DEF</td>
+      <td>Wolves</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Lewis Hall</td>
+      <td>DEF</td>
+      <td>Newcastle</td>
+      <td>5.3</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Lucas Bergvall</td>
+      <td>MID</td>
+      <td>Spurs</td>
+      <td>5.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Lucas Tolentino Coelho de Lima</td>
+      <td>MID</td>
+      <td>West Ham</td>
+      <td>5.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Marc Guiu Paz</td>
+      <td>FWD</td>
+      <td>Chelsea</td>
+      <td>4.3</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Jack Grealish</td>
+      <td>MID</td>
+      <td>Everton</td>
+      <td>6.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>25.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Martin Ødegaard</td>
+      <td>MID</td>
+      <td>Arsenal</td>
+      <td>7.9</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Matty Cash</td>
+      <td>DEF</td>
+      <td>Aston Villa</td>
+      <td>4.6</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Gianluigi Donnarumma</td>
+      <td>GK</td>
+      <td>Man City</td>
+      <td>5.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Norberto Bercique Gomes Betuncal</td>
+      <td>FWD</td>
+      <td>Everton</td>
+      <td>5.3</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Francisco Evanilson de Lima Barbosa</td>
+      <td>FWD</td>
+      <td>Bournemouth</td>
+      <td>7.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Mikel Merino Zazón</td>
+      <td>MID</td>
+      <td>Arsenal</td>
+      <td>5.9</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Mitoma Kaoru</td>
+      <td>MID</td>
+      <td>Brighton</td>
+      <td>6.3</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Estêvão Almeida de Oliveira Gonçalves</td>
+      <td>MID</td>
+      <td>Chelsea</td>
+      <td>6.5</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Morgan Rogers</td>
+      <td>MID</td>
+      <td>Aston Villa</td>
+      <td>6.8</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Murillo Costa dos Santos</td>
+      <td>DEF</td>
+      <td>Nott'm Forest</td>
+      <td>5.3</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Neco Williams</td>
+      <td>DEF</td>
+      <td>Nott'm Forest</td>
+      <td>4.8</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Enzo Fernández</td>
+      <td>MID</td>
+      <td>Chelsea</td>
+      <td>6.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>El Hadji Malick Diouf</td>
+      <td>DEF</td>
+      <td>West Ham</td>
+      <td>4.4</td>
+      <td>15.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Joachim Andersen</td>
+      <td>DEF</td>
+      <td>Fulham</td>
+      <td>4.5</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Nico O'Reilly</td>
+      <td>DEF</td>
+      <td>Man City</td>
+      <td>4.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Nikola Milenković</td>
+      <td>DEF</td>
+      <td>Nott'm Forest</td>
+      <td>5.3</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Đorđe Petrović</td>
+      <td>GK</td>
+      <td>Bournemouth</td>
+      <td>4.5</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+$(document).ready(function() {
+    var table = $('#fpl-table').DataTable({
+        paging: false,
+        searching: true,
+        ordering: true,
+        order: [[ 11, 'desc' ]],
+        fixedHeader: true
+    });
+
+    // Position filter
+    $('#positionFilter').on('change', function() {
+        var val = $(this).val();
+        table.column(1).search(val ? '^' + val + '$' : '', true, false).draw();
+    });
+
+    // Team filter
+    $('#teamFilter').on('change', function() {
+        var val = $(this).val();
+        table.column(2).search(val ? '^' + val + '$' : '', true, false).draw();
+    });
+});
+</script>
+</body>
+</html>
