@@ -3,9 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Hannes Gebhard's eliteleague FPL Dashboard</title>
-		<!-- Plotly -->
 		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<!-- Choices.js CSS & JS -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
@@ -19,6 +17,7 @@
 			}
 			#player-select {
 				min-width: 250px;
+				margin-bottom: 20px;
 			}
 		</style>
 	</head>
@@ -36,7 +35,6 @@
 
 		<script>
 			async function initDashboard() {
-				// Load JSON
 				const resp = await fetch("fpldata.json");
 				const data = await resp.json();
 
@@ -58,46 +56,99 @@
 					placeholderValue: "Select players...",
 				});
 
-				// Pre-select first 5 players
-				choices.setChoiceByValue(players.slice(0, 5));
+				// Pre-select all players
+				choices.setChoiceByValue(players);
 
-				function updatePlots() {
-					const selected = choices.getValue(true); // get selected values
-					const filtered = data.filter((d) =>
-						selected.includes(d.player)
-					);
-
-					// Weekly
-					const weeklyTraces = selected.map((player) => {
-						const pData = filtered.filter(
-							(d) => d.player === player
-						);
-						return {
-							x: pData.map((d) => d.gw),
-							y: pData.map((d) => d.weekly),
-							mode: "lines+markers",
-							name: player,
-						};
-					});
-					Plotly.newPlot("weekly-plot", weeklyTraces);
-
-					// Cumulative
-					const cumTraces = selected.map((player) => {
-						const pData = filtered.filter(
-							(d) => d.player === player
-						);
-						return {
-							x: pData.map((d) => d.gw),
-							y: pData.map((d) => d.cumulative),
-							mode: "lines+markers",
-							name: player,
-						};
-					});
-					Plotly.newPlot("cumulative-plot", cumTraces);
+				function getColor(i, total, highlight = false) {
+					return highlight
+						? `hsl(${(i / total) * 360}, 90%, 50%)`
+						: `hsl(${(i / total) * 360}, 70%, 50%)`;
 				}
 
-				select.addEventListener("change", updatePlots);
-				updatePlots();
+				// Compute static top 3 from latest cumulative points
+				const latestGW = Math.max(...data.map((d) => d.gw));
+				const totals = players.map((p) => {
+					const playerData = data.filter((d) => d.player === p);
+					const last = playerData.find((d) => d.gw === latestGW);
+					return { player: p, total: last ? last.cumulative : 0 };
+				});
+				totals.sort((a, b) => b.total - a.total);
+				const top3 = totals.slice(0, 3).map((d) => d.player);
+
+				// Prepare traces once
+				const weeklyTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.weekly),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const cumTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.cumulative),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				// Initial plots
+				Plotly.newPlot("weekly-plot", weeklyTraces, {
+					title: "Weekly Points",
+				});
+				Plotly.newPlot("cumulative-plot", cumTraces, {
+					title: "Cumulative Points",
+				});
+
+				// Update visible lines on selection change
+				function updateVisible() {
+					const selected = choices.getValue(true);
+					weeklyTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"weekly-plot",
+							"visible",
+							[
+								selected.includes(trace.name)
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+					cumTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"cumulative-plot",
+							"visible",
+							[
+								selected.includes(trace.name)
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+				}
+
+				select.addEventListener("change", updateVisible);
+
+				// Show all players initially
+				updateVisible();
 			}
 
 			initDashboard();
