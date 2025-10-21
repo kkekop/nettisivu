@@ -1,0 +1,962 @@
+[
+  {
+    "player": "Markus Wanamo",
+    "gw": 1,
+    "weekly": 53,
+    "cumulative": 53
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 2,
+    "weekly": 51,
+    "cumulative": 104
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 3,
+    "weekly": 51,
+    "cumulative": 155
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 4,
+    "weekly": 73,
+    "cumulative": 228
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 5,
+    "weekly": 56,
+    "cumulative": 284
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 6,
+    "weekly": 67,
+    "cumulative": 351
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 7,
+    "weekly": 98,
+    "cumulative": 449
+  },
+  {
+    "player": "Markus Wanamo",
+    "gw": 8,
+    "weekly": 86,
+    "cumulative": 535
+  },
+  {
+    "player": "Sini V",
+    "gw": 1,
+    "weekly": 56,
+    "cumulative": 56
+  },
+  {
+    "player": "Sini V",
+    "gw": 2,
+    "weekly": 38,
+    "cumulative": 94
+  },
+  {
+    "player": "Sini V",
+    "gw": 3,
+    "weekly": 71,
+    "cumulative": 165
+  },
+  {
+    "player": "Sini V",
+    "gw": 4,
+    "weekly": 77,
+    "cumulative": 242
+  },
+  {
+    "player": "Sini V",
+    "gw": 5,
+    "weekly": 47,
+    "cumulative": 289
+  },
+  {
+    "player": "Sini V",
+    "gw": 6,
+    "weekly": 67,
+    "cumulative": 356
+  },
+  {
+    "player": "Sini V",
+    "gw": 7,
+    "weekly": 76,
+    "cumulative": 432
+  },
+  {
+    "player": "Sini V",
+    "gw": 8,
+    "weekly": 79,
+    "cumulative": 511
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 1,
+    "weekly": 55,
+    "cumulative": 55
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 2,
+    "weekly": 53,
+    "cumulative": 108
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 3,
+    "weekly": 53,
+    "cumulative": 161
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 4,
+    "weekly": 62,
+    "cumulative": 223
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 5,
+    "weekly": 47,
+    "cumulative": 270
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 6,
+    "weekly": 69,
+    "cumulative": 339
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 7,
+    "weekly": 83,
+    "cumulative": 422
+  },
+  {
+    "player": "Iiro Tolonen",
+    "gw": 8,
+    "weekly": 79,
+    "cumulative": 501
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 1,
+    "weekly": 61,
+    "cumulative": 61
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 2,
+    "weekly": 65,
+    "cumulative": 126
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 3,
+    "weekly": 29,
+    "cumulative": 155
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 4,
+    "weekly": 79,
+    "cumulative": 234
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 5,
+    "weekly": 40,
+    "cumulative": 274
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 6,
+    "weekly": 74,
+    "cumulative": 344
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 7,
+    "weekly": 76,
+    "cumulative": 420
+  },
+  {
+    "player": "Otto Kaipom\u00e4ki",
+    "gw": 8,
+    "weekly": 77,
+    "cumulative": 497
+  },
+  {
+    "player": "Roope R",
+    "gw": 1,
+    "weekly": 54,
+    "cumulative": 54
+  },
+  {
+    "player": "Roope R",
+    "gw": 2,
+    "weekly": 56,
+    "cumulative": 110
+  },
+  {
+    "player": "Roope R",
+    "gw": 3,
+    "weekly": 70,
+    "cumulative": 180
+  },
+  {
+    "player": "Roope R",
+    "gw": 4,
+    "weekly": 46,
+    "cumulative": 226
+  },
+  {
+    "player": "Roope R",
+    "gw": 5,
+    "weekly": 42,
+    "cumulative": 268
+  },
+  {
+    "player": "Roope R",
+    "gw": 6,
+    "weekly": 70,
+    "cumulative": 338
+  },
+  {
+    "player": "Roope R",
+    "gw": 7,
+    "weekly": 70,
+    "cumulative": 408
+  },
+  {
+    "player": "Roope R",
+    "gw": 8,
+    "weekly": 87,
+    "cumulative": 495
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 1,
+    "weekly": 46,
+    "cumulative": 46
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 2,
+    "weekly": 39,
+    "cumulative": 85
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 3,
+    "weekly": 66,
+    "cumulative": 151
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 4,
+    "weekly": 64,
+    "cumulative": 215
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 5,
+    "weekly": 60,
+    "cumulative": 275
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 6,
+    "weekly": 59,
+    "cumulative": 334
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 7,
+    "weekly": 72,
+    "cumulative": 406
+  },
+  {
+    "player": "Lauri Isopahkala",
+    "gw": 8,
+    "weekly": 73,
+    "cumulative": 479
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 1,
+    "weekly": 49,
+    "cumulative": 49
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 2,
+    "weekly": 54,
+    "cumulative": 103
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 3,
+    "weekly": 54,
+    "cumulative": 157
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 4,
+    "weekly": 74,
+    "cumulative": 231
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 5,
+    "weekly": 49,
+    "cumulative": 280
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 6,
+    "weekly": 62,
+    "cumulative": 342
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 7,
+    "weekly": 48,
+    "cumulative": 390
+  },
+  {
+    "player": "Miikka Kaihovaara",
+    "gw": 8,
+    "weekly": 86,
+    "cumulative": 476
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 1,
+    "weekly": 40,
+    "cumulative": 40
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 2,
+    "weekly": 51,
+    "cumulative": 91
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 3,
+    "weekly": 49,
+    "cumulative": 140
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 4,
+    "weekly": 56,
+    "cumulative": 196
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 5,
+    "weekly": 57,
+    "cumulative": 253
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 6,
+    "weekly": 56,
+    "cumulative": 309
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 7,
+    "weekly": 77,
+    "cumulative": 386
+  },
+  {
+    "player": "Samuel Taylor",
+    "gw": 8,
+    "weekly": 72,
+    "cumulative": 458
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 1,
+    "weekly": 61,
+    "cumulative": 61
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 2,
+    "weekly": 47,
+    "cumulative": 108
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 3,
+    "weekly": 52,
+    "cumulative": 160
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 4,
+    "weekly": 73,
+    "cumulative": 233
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 5,
+    "weekly": 51,
+    "cumulative": 284
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 6,
+    "weekly": 61,
+    "cumulative": 345
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 7,
+    "weekly": 59,
+    "cumulative": 404
+  },
+  {
+    "player": "Ronja Marjamaa",
+    "gw": 8,
+    "weekly": 53,
+    "cumulative": 457
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 1,
+    "weekly": 70,
+    "cumulative": 70
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 2,
+    "weekly": 34,
+    "cumulative": 100
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 3,
+    "weekly": 44,
+    "cumulative": 140
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 4,
+    "weekly": 76,
+    "cumulative": 216
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 5,
+    "weekly": 47,
+    "cumulative": 263
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 6,
+    "weekly": 70,
+    "cumulative": 333
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 7,
+    "weekly": 54,
+    "cumulative": 387
+  },
+  {
+    "player": "Jesse Puuska",
+    "gw": 8,
+    "weekly": 69,
+    "cumulative": 452
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 1,
+    "weekly": 52,
+    "cumulative": 52
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 2,
+    "weekly": 45,
+    "cumulative": 93
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 3,
+    "weekly": 58,
+    "cumulative": 151
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 4,
+    "weekly": 61,
+    "cumulative": 208
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 5,
+    "weekly": 57,
+    "cumulative": 265
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 6,
+    "weekly": 38,
+    "cumulative": 303
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 7,
+    "weekly": 64,
+    "cumulative": 363
+  },
+  {
+    "player": "Markus Kantor",
+    "gw": 8,
+    "weekly": 73,
+    "cumulative": 432
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 1,
+    "weekly": 45,
+    "cumulative": 45
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 2,
+    "weekly": 56,
+    "cumulative": 101
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 3,
+    "weekly": 54,
+    "cumulative": 155
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 4,
+    "weekly": 68,
+    "cumulative": 223
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 5,
+    "weekly": 47,
+    "cumulative": 270
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 6,
+    "weekly": 60,
+    "cumulative": 326
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 7,
+    "weekly": 59,
+    "cumulative": 385
+  },
+  {
+    "player": "Jenni Kauppinen",
+    "gw": 8,
+    "weekly": 45,
+    "cumulative": 430
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 1,
+    "weekly": 52,
+    "cumulative": 52
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 2,
+    "weekly": 46,
+    "cumulative": 98
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 3,
+    "weekly": 53,
+    "cumulative": 151
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 4,
+    "weekly": 71,
+    "cumulative": 222
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 5,
+    "weekly": 46,
+    "cumulative": 268
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 6,
+    "weekly": 43,
+    "cumulative": 311
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 7,
+    "weekly": 62,
+    "cumulative": 373
+  },
+  {
+    "player": "Tuomo Viholainen",
+    "gw": 8,
+    "weekly": 53,
+    "cumulative": 426
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 1,
+    "weekly": 43,
+    "cumulative": 43
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 2,
+    "weekly": 45,
+    "cumulative": 88
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 3,
+    "weekly": 42,
+    "cumulative": 130
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 4,
+    "weekly": 71,
+    "cumulative": 201
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 5,
+    "weekly": 48,
+    "cumulative": 249
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 6,
+    "weekly": 59,
+    "cumulative": 308
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 7,
+    "weekly": 55,
+    "cumulative": 363
+  },
+  {
+    "player": "Tino K\u00e4yhk\u00f6",
+    "gw": 8,
+    "weekly": 54,
+    "cumulative": 417
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 1,
+    "weekly": 44,
+    "cumulative": 44
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 2,
+    "weekly": 42,
+    "cumulative": 86
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 3,
+    "weekly": 60,
+    "cumulative": 146
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 4,
+    "weekly": 44,
+    "cumulative": 190
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 5,
+    "weekly": 44,
+    "cumulative": 234
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 6,
+    "weekly": 37,
+    "cumulative": 271
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 7,
+    "weekly": 63,
+    "cumulative": 334
+  },
+  {
+    "player": "Make Kivil\u00e4",
+    "gw": 8,
+    "weekly": 78,
+    "cumulative": 412
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 1,
+    "weekly": 57,
+    "cumulative": 57
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 2,
+    "weekly": 37,
+    "cumulative": 94
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 3,
+    "weekly": 53,
+    "cumulative": 147
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 4,
+    "weekly": 69,
+    "cumulative": 216
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 5,
+    "weekly": 33,
+    "cumulative": 249
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 6,
+    "weekly": 54,
+    "cumulative": 303
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 7,
+    "weekly": 58,
+    "cumulative": 357
+  },
+  {
+    "player": "Ida-Maria Juntunen",
+    "gw": 8,
+    "weekly": 55,
+    "cumulative": 412
+  },
+  {
+    "player": "anton andersen",
+    "gw": 1,
+    "weekly": 76,
+    "cumulative": 76
+  },
+  {
+    "player": "anton andersen",
+    "gw": 2,
+    "weekly": 39,
+    "cumulative": 115
+  },
+  {
+    "player": "anton andersen",
+    "gw": 3,
+    "weekly": 35,
+    "cumulative": 146
+  },
+  {
+    "player": "anton andersen",
+    "gw": 4,
+    "weekly": 56,
+    "cumulative": 202
+  },
+  {
+    "player": "anton andersen",
+    "gw": 5,
+    "weekly": 45,
+    "cumulative": 247
+  },
+  {
+    "player": "anton andersen",
+    "gw": 6,
+    "weekly": 27,
+    "cumulative": 274
+  },
+  {
+    "player": "anton andersen",
+    "gw": 7,
+    "weekly": 64,
+    "cumulative": 338
+  },
+  {
+    "player": "anton andersen",
+    "gw": 8,
+    "weekly": 72,
+    "cumulative": 410
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 1,
+    "weekly": 52,
+    "cumulative": 52
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 2,
+    "weekly": 74,
+    "cumulative": 126
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 3,
+    "weekly": 24,
+    "cumulative": 150
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 4,
+    "weekly": 65,
+    "cumulative": 215
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 5,
+    "weekly": 38,
+    "cumulative": 253
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 6,
+    "weekly": 39,
+    "cumulative": 292
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 7,
+    "weekly": 38,
+    "cumulative": 330
+  },
+  {
+    "player": "Antti Tiensuu",
+    "gw": 8,
+    "weekly": 68,
+    "cumulative": 398
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 1,
+    "weekly": 38,
+    "cumulative": 38
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 2,
+    "weekly": 35,
+    "cumulative": 73
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 3,
+    "weekly": 53,
+    "cumulative": 126
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 4,
+    "weekly": 62,
+    "cumulative": 188
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 5,
+    "weekly": 44,
+    "cumulative": 232
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 6,
+    "weekly": 23,
+    "cumulative": 255
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 7,
+    "weekly": 67,
+    "cumulative": 314
+  },
+  {
+    "player": "Kimmo Koponen",
+    "gw": 8,
+    "weekly": 65,
+    "cumulative": 379
+  },
+  {
+    "player": "Juuso E",
+    "gw": 1,
+    "weekly": 57,
+    "cumulative": 57
+  },
+  {
+    "player": "Juuso E",
+    "gw": 2,
+    "weekly": 46,
+    "cumulative": 99
+  },
+  {
+    "player": "Juuso E",
+    "gw": 3,
+    "weekly": 50,
+    "cumulative": 149
+  },
+  {
+    "player": "Juuso E",
+    "gw": 4,
+    "weekly": 71,
+    "cumulative": 220
+  },
+  {
+    "player": "Juuso E",
+    "gw": 5,
+    "weekly": 33,
+    "cumulative": 253
+  },
+  {
+    "player": "Juuso E",
+    "gw": 6,
+    "weekly": 34,
+    "cumulative": 287
+  },
+  {
+    "player": "Juuso E",
+    "gw": 7,
+    "weekly": 37,
+    "cumulative": 324
+  },
+  {
+    "player": "Juuso E",
+    "gw": 8,
+    "weekly": 46,
+    "cumulative": 370
+  }
+]

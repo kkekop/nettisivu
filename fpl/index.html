@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hannes Gebhard's eliteleague FPL Dashboard</title>
+		<!-- Plotly -->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<!-- Choices.js CSS & JS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+			#player-select {
+				min-width: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Hannes Gebhard's eliteleague FPL Dashboard</h1>
+
+		<label for="player-select">Select Players:</label>
+		<select id="player-select" multiple></select>
+
+		<h2>Weekly Points</h2>
+		<div id="weekly-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Cumulative Points</h2>
+		<div id="cumulative-plot" style="width: 100%; height: 500px"></div>
+
+		<script>
+			async function initDashboard() {
+				// Load JSON
+				const resp = await fetch("fpldata.json");
+				const data = await resp.json();
+
+				const players = [...new Set(data.map((d) => d.player))];
+				const select = document.getElementById("player-select");
+
+				// Populate select
+				players.forEach((p) => {
+					const opt = document.createElement("option");
+					opt.value = p;
+					opt.text = p;
+					select.appendChild(opt);
+				});
+
+				// Initialize Choices.js
+				const choices = new Choices(select, {
+					removeItemButton: true,
+					searchEnabled: true,
+					placeholderValue: "Select players...",
+				});
+
+				// Pre-select first 5 players
+				choices.setChoiceByValue(players.slice(0, 5));
+
+				function updatePlots() {
+					const selected = choices.getValue(true); // get selected values
+					const filtered = data.filter((d) =>
+						selected.includes(d.player)
+					);
+
+					// Weekly
+					const weeklyTraces = selected.map((player) => {
+						const pData = filtered.filter(
+							(d) => d.player === player
+						);
+						return {
+							x: pData.map((d) => d.gw),
+							y: pData.map((d) => d.weekly),
+							mode: "lines+markers",
+							name: player,
+						};
+					});
+					Plotly.newPlot("weekly-plot", weeklyTraces);
+
+					// Cumulative
+					const cumTraces = selected.map((player) => {
+						const pData = filtered.filter(
+							(d) => d.player === player
+						);
+						return {
+							x: pData.map((d) => d.gw),
+							y: pData.map((d) => d.cumulative),
+							mode: "lines+markers",
+							name: player,
+						};
+					});
+					Plotly.newPlot("cumulative-plot", cumTraces);
+				}
+
+				select.addEventListener("change", updatePlots);
+				updatePlots();
+			}
+
+			initDashboard();
+		</script>
+	</body>
+</html>
