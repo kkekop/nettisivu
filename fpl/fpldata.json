@@ -6,7 +6,10 @@
     "cumulative": 56,
     "overall_rank": 3932974,
     "points_on_bench": 8,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Ryyderi",
@@ -15,7 +18,10 @@
     "cumulative": 94,
     "overall_rank": 6678506,
     "points_on_bench": 6,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Ryyderi",
@@ -24,7 +30,10 @@
     "cumulative": 165,
     "overall_rank": 2444832,
     "points_on_bench": 3,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 98.9,
+    "bank": 1.2,
+    "net_worth": 100.1
   },
   {
     "player": "FC Ryyderi",
@@ -33,7 +42,10 @@
     "cumulative": 242,
     "overall_rank": 1419466,
     "points_on_bench": 7,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 99.3,
+    "bank": 1.0,
+    "net_worth": 100.3
   },
   {
     "player": "FC Ryyderi",
@@ -42,7 +54,10 @@
     "cumulative": 289,
     "overall_rank": 1333935,
     "points_on_bench": 8,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 99.7,
+    "bank": 1.0,
+    "net_worth": 100.7
   },
   {
     "player": "FC Ryyderi",
@@ -51,7 +66,10 @@
     "cumulative": 356,
     "overall_rank": 897631,
     "points_on_bench": 1,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 100.0,
+    "bank": 0.8,
+    "net_worth": 100.8
   },
   {
     "player": "FC Ryyderi",
@@ -60,7 +78,10 @@
     "cumulative": 432,
     "overall_rank": 677172,
     "points_on_bench": 5,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 100.3,
+    "bank": 0.7,
+    "net_worth": 101.0
   },
   {
     "player": "FC Ryyderi",
@@ -69,7 +90,10 @@
     "cumulative": 511,
     "overall_rank": 378743,
     "points_on_bench": 14,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 100.6,
+    "bank": 0.7,
+    "net_worth": 101.3
   },
   {
     "player": "FC Ryyderi",
@@ -78,7 +102,10 @@
     "cumulative": 578,
     "overall_rank": 147699,
     "points_on_bench": 11,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 100.5,
+    "bank": 0.7,
+    "net_worth": 101.2
   },
   {
     "player": "TheMacAttack",
@@ -87,7 +114,10 @@
     "cumulative": 53,
     "overall_rank": 4864958,
     "points_on_bench": 18,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "TheMacAttack",
@@ -96,7 +126,10 @@
     "cumulative": 104,
     "overall_rank": 4706099,
     "points_on_bench": 13,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 100.1,
+    "bank": 0.0,
+    "net_worth": 100.1
   },
   {
     "player": "TheMacAttack",
@@ -105,7 +138,10 @@
     "cumulative": 155,
     "overall_rank": 4046717,
     "points_on_bench": 19,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 96.9,
+    "bank": 3.3,
+    "net_worth": 100.2
   },
   {
     "player": "TheMacAttack",
@@ -114,7 +150,10 @@
     "cumulative": 228,
     "overall_rank": 2878106,
     "points_on_bench": 7,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 94.7,
+    "bank": 5.6,
+    "net_worth": 100.3
   },
   {
     "player": "TheMacAttack",
@@ -123,7 +162,10 @@
     "cumulative": 284,
     "overall_rank": 1738881,
     "points_on_bench": 9,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 100.3,
+    "bank": 0.4,
+    "net_worth": 100.7
   },
   {
     "player": "TheMacAttack",
@@ -132,7 +174,10 @@
     "cumulative": 351,
     "overall_rank": 1112668,
     "points_on_bench": 6,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 100.3,
+    "bank": 0.4,
+    "net_worth": 100.7
   },
   {
     "player": "TheMacAttack",
@@ -141,7 +186,10 @@
     "cumulative": 449,
     "overall_rank": 266189,
     "points_on_bench": 9,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 99.2,
+    "bank": 1.6,
+    "net_worth": 100.8
   },
   {
     "player": "TheMacAttack",
@@ -150,7 +198,10 @@
     "cumulative": 535,
     "overall_rank": 91187,
     "points_on_bench": 0,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 101.4,
+    "bank": 0.5,
+    "net_worth": 101.9
   },
   {
     "player": "TheMacAttack",
@@ -159,7 +210,10 @@
     "cumulative": 577,
     "overall_rank": 156565,
     "points_on_bench": 15,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 102.2,
+    "bank": 0.2,
+    "net_worth": 102.4
   },
   {
     "player": "likainen rusina",
@@ -168,7 +222,10 @@
     "cumulative": 61,
     "overall_rank": 2607687,
     "points_on_bench": 5,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 97.0,
+    "bank": 3.0,
+    "net_worth": 100.0
   },
   {
     "player": "likainen rusina",
@@ -177,7 +234,10 @@
     "cumulative": 126,
     "overall_rank": 1030589,
     "points_on_bench": 10,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 96.2,
+    "bank": 3.9,
+    "net_worth": 100.1
   },
   {
     "player": "likainen rusina",
@@ -186,7 +246,10 @@
     "cumulative": 155,
     "overall_rank": 4046717,
     "points_on_bench": 8,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 97.9,
+    "bank": 2.5,
+    "net_worth": 100.4
   },
   {
     "player": "likainen rusina",
@@ -195,7 +258,10 @@
     "cumulative": 234,
     "overall_rank": 2182409,
     "points_on_bench": 3,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 99.2,
+    "bank": 1.4,
+    "net_worth": 100.6
   },
   {
     "player": "likainen rusina",
@@ -204,7 +270,10 @@
     "cumulative": 274,
     "overall_rank": 2687021,
     "points_on_bench": 13,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 100.8,
+    "bank": 0.0,
+    "net_worth": 100.8
   },
   {
     "player": "likainen rusina",
@@ -213,7 +282,10 @@
     "cumulative": 344,
     "overall_rank": 1508951,
     "points_on_bench": 9,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 98.6,
+    "bank": 2.1,
+    "net_worth": 100.7
   },
   {
     "player": "likainen rusina",
@@ -222,7 +294,10 @@
     "cumulative": 420,
     "overall_rank": 1147535,
     "points_on_bench": 22,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 98.3,
+    "bank": 2.7,
+    "net_worth": 101.0
   },
   {
     "player": "likainen rusina",
@@ -231,7 +306,10 @@
     "cumulative": 497,
     "overall_rank": 740177,
     "points_on_bench": 0,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 99.3,
+    "bank": 2.5,
+    "net_worth": 101.8
   },
   {
     "player": "likainen rusina",
@@ -240,7 +318,10 @@
     "cumulative": 558,
     "overall_rank": 434075,
     "points_on_bench": 11,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 99.3,
+    "bank": 2.5,
+    "net_worth": 101.8
   },
   {
     "player": "up_the_chels",
@@ -249,7 +330,10 @@
     "cumulative": 40,
     "overall_rank": 8200235,
     "points_on_bench": 8,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "up_the_chels",
@@ -258,7 +342,10 @@
     "cumulative": 91,
     "overall_rank": 7246038,
     "points_on_bench": 2,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 100.1,
+    "bank": 0.0,
+    "net_worth": 100.1
   },
   {
     "player": "up_the_chels",
@@ -267,7 +354,10 @@
     "cumulative": 140,
     "overall_rank": 6512116,
     "points_on_bench": 9,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 96.5,
+    "bank": 3.4,
+    "net_worth": 99.9
   },
   {
     "player": "up_the_chels",
@@ -276,7 +366,10 @@
     "cumulative": 196,
     "overall_rank": 6948769,
     "points_on_bench": 1,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 99.0,
+    "bank": 0.9,
+    "net_worth": 99.9
   },
   {
     "player": "up_the_chels",
@@ -285,7 +378,10 @@
     "cumulative": 253,
     "overall_rank": 5102647,
     "points_on_bench": 13,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 100.2,
+    "bank": 0.2,
+    "net_worth": 100.4
   },
   {
     "player": "up_the_chels",
@@ -294,7 +390,10 @@
     "cumulative": 309,
     "overall_rank": 4080523,
     "points_on_bench": 16,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 96.6,
+    "bank": 4.1,
+    "net_worth": 100.7
   },
   {
     "player": "up_the_chels",
@@ -303,7 +402,10 @@
     "cumulative": 386,
     "overall_rank": 3131790,
     "points_on_bench": 4,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 96.1,
+    "bank": 5.0,
+    "net_worth": 101.1
   },
   {
     "player": "up_the_chels",
@@ -312,7 +414,10 @@
     "cumulative": 458,
     "overall_rank": 2513677,
     "points_on_bench": 7,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 99.5,
+    "bank": 2.1,
+    "net_worth": 101.6
   },
   {
     "player": "up_the_chels",
@@ -321,7 +426,10 @@
     "cumulative": 548,
     "overall_rank": 669399,
     "points_on_bench": 0,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 100.7,
+    "bank": 1.0,
+    "net_worth": 101.7
   },
   {
     "player": "FC Performing",
@@ -330,7 +438,10 @@
     "cumulative": 55,
     "overall_rank": 4223898,
     "points_on_bench": 5,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Performing",
@@ -339,7 +450,10 @@
     "cumulative": 108,
     "overall_rank": 3954130,
     "points_on_bench": 9,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 100.2,
+    "bank": 0.0,
+    "net_worth": 100.2
   },
   {
     "player": "FC Performing",
@@ -348,7 +462,10 @@
     "cumulative": 161,
     "overall_rank": 3046843,
     "points_on_bench": 4,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 97.2,
+    "bank": 3.3,
+    "net_worth": 100.5
   },
   {
     "player": "FC Performing",
@@ -357,7 +474,10 @@
     "cumulative": 223,
     "overall_rank": 3514500,
     "points_on_bench": 10,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 98.5,
+    "bank": 2.3,
+    "net_worth": 100.8
   },
   {
     "player": "FC Performing",
@@ -366,7 +486,10 @@
     "cumulative": 270,
     "overall_rank": 3095966,
     "points_on_bench": 8,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 98.7,
+    "bank": 2.3,
+    "net_worth": 101.0
   },
   {
     "player": "FC Performing",
@@ -375,7 +498,10 @@
     "cumulative": 339,
     "overall_rank": 1773378,
     "points_on_bench": 7,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 101.2,
+    "bank": 0.0,
+    "net_worth": 101.2
   },
   {
     "player": "FC Performing",
@@ -384,7 +510,10 @@
     "cumulative": 422,
     "overall_rank": 1030031,
     "points_on_bench": 8,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 101.6,
+    "bank": 0.0,
+    "net_worth": 101.6
   },
   {
     "player": "FC Performing",
@@ -393,7 +522,10 @@
     "cumulative": 501,
     "overall_rank": 602711,
     "points_on_bench": 17,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 102.4,
+    "bank": 0.0,
+    "net_worth": 102.4
   },
   {
     "player": "FC Performing",
@@ -402,7 +534,10 @@
     "cumulative": 547,
     "overall_rank": 697467,
     "points_on_bench": 0,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 102.3,
+    "bank": 0.2,
+    "net_worth": 102.5
   },
   {
     "player": "FC Nightman cometh",
@@ -411,7 +546,10 @@
     "cumulative": 54,
     "overall_rank": 4551053,
     "points_on_bench": 4,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Nightman cometh",
@@ -420,7 +558,10 @@
     "cumulative": 110,
     "overall_rank": 3426960,
     "points_on_bench": 10,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 100.1,
+    "bank": 0.0,
+    "net_worth": 100.1
   },
   {
     "player": "FC Nightman cometh",
@@ -429,7 +570,10 @@
     "cumulative": 180,
     "overall_rank": 825413,
     "points_on_bench": 4,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 96.3,
+    "bank": 4.0,
+    "net_worth": 100.3
   },
   {
     "player": "FC Nightman cometh",
@@ -438,7 +582,10 @@
     "cumulative": 226,
     "overall_rank": 3127971,
     "points_on_bench": 15,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 98.8,
+    "bank": 1.5,
+    "net_worth": 100.3
   },
   {
     "player": "FC Nightman cometh",
@@ -447,7 +594,10 @@
     "cumulative": 268,
     "overall_rank": 3321565,
     "points_on_bench": 18,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 98.8,
+    "bank": 1.5,
+    "net_worth": 100.3
   },
   {
     "player": "FC Nightman cometh",
@@ -456,7 +606,10 @@
     "cumulative": 338,
     "overall_rank": 1836795,
     "points_on_bench": 24,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 98.7,
+    "bank": 1.3,
+    "net_worth": 100.0
   },
   {
     "player": "FC Nightman cometh",
@@ -465,7 +618,10 @@
     "cumulative": 408,
     "overall_rank": 1718463,
     "points_on_bench": 7,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 99.3,
+    "bank": 1.3,
+    "net_worth": 100.6
   },
   {
     "player": "FC Nightman cometh",
@@ -474,7 +630,10 @@
     "cumulative": 495,
     "overall_rank": 780752,
     "points_on_bench": 0,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 100.0,
+    "bank": 1.3,
+    "net_worth": 101.3
   },
   {
     "player": "FC Nightman cometh",
@@ -483,7 +642,10 @@
     "cumulative": 536,
     "overall_rank": 1053054,
     "points_on_bench": 4,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 101.1,
+    "bank": 0.0,
+    "net_worth": 101.1
   },
   {
     "player": "FC Left Curve",
@@ -492,7 +654,10 @@
     "cumulative": 49,
     "overall_rank": 6072139,
     "points_on_bench": 5,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Left Curve",
@@ -501,7 +666,10 @@
     "cumulative": 103,
     "overall_rank": 4919019,
     "points_on_bench": 9,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Left Curve",
@@ -510,7 +678,10 @@
     "cumulative": 157,
     "overall_rank": 3706425,
     "points_on_bench": 18,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 99.9,
+    "bank": 0.1,
+    "net_worth": 100.0
   },
   {
     "player": "FC Left Curve",
@@ -519,7 +690,10 @@
     "cumulative": 231,
     "overall_rank": 2518121,
     "points_on_bench": 12,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 100.1,
+    "bank": 0.1,
+    "net_worth": 100.2
   },
   {
     "player": "FC Left Curve",
@@ -528,7 +702,10 @@
     "cumulative": 280,
     "overall_rank": 2068453,
     "points_on_bench": 6,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 100.4,
+    "bank": 0.1,
+    "net_worth": 100.5
   },
   {
     "player": "FC Left Curve",
@@ -537,7 +714,10 @@
     "cumulative": 342,
     "overall_rank": 1590718,
     "points_on_bench": 19,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 100.2,
+    "bank": 0.1,
+    "net_worth": 100.3
   },
   {
     "player": "FC Left Curve",
@@ -546,7 +726,10 @@
     "cumulative": 390,
     "overall_rank": 2841995,
     "points_on_bench": 7,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 100.0,
+    "bank": 0.1,
+    "net_worth": 100.1
   },
   {
     "player": "FC Left Curve",
@@ -555,7 +738,10 @@
     "cumulative": 476,
     "overall_rank": 1558024,
     "points_on_bench": 0,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 99.5,
+    "bank": 0.3,
+    "net_worth": 99.8
   },
   {
     "player": "FC Left Curve",
@@ -564,7 +750,10 @@
     "cumulative": 517,
     "overall_rank": 1899909,
     "points_on_bench": 8,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 99.8,
+    "bank": 0.0,
+    "net_worth": 99.8
   },
   {
     "player": "FC Default",
@@ -573,7 +762,10 @@
     "cumulative": 46,
     "overall_rank": 6908093,
     "points_on_bench": 4,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Default",
@@ -582,7 +774,10 @@
     "cumulative": 85,
     "overall_rank": 7974800,
     "points_on_bench": 6,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 99.9,
+    "bank": 0.0,
+    "net_worth": 99.9
   },
   {
     "player": "FC Default",
@@ -591,7 +786,10 @@
     "cumulative": 151,
     "overall_rank": 4733955,
     "points_on_bench": 2,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 98.9,
+    "bank": 0.8,
+    "net_worth": 99.7
   },
   {
     "player": "FC Default",
@@ -600,7 +798,10 @@
     "cumulative": 215,
     "overall_rank": 4590963,
     "points_on_bench": 5,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 99.1,
+    "bank": 0.7,
+    "net_worth": 99.8
   },
   {
     "player": "FC Default",
@@ -609,7 +810,10 @@
     "cumulative": 275,
     "overall_rank": 2558508,
     "points_on_bench": 7,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 99.2,
+    "bank": 0.7,
+    "net_worth": 99.9
   },
   {
     "player": "FC Default",
@@ -618,7 +822,10 @@
     "cumulative": 334,
     "overall_rank": 2101522,
     "points_on_bench": 7,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 99.2,
+    "bank": 0.7,
+    "net_worth": 99.9
   },
   {
     "player": "FC Default",
@@ -627,7 +834,10 @@
     "cumulative": 406,
     "overall_rank": 1844549,
     "points_on_bench": 3,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 99.1,
+    "bank": 0.7,
+    "net_worth": 99.8
   },
   {
     "player": "FC Default",
@@ -636,7 +846,10 @@
     "cumulative": 479,
     "overall_rank": 1411263,
     "points_on_bench": 12,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 99.7,
+    "bank": 0.6,
+    "net_worth": 100.3
   },
   {
     "player": "FC Default",
@@ -645,7 +858,10 @@
     "cumulative": 517,
     "overall_rank": 1899909,
     "points_on_bench": 25,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 100.4,
+    "bank": 0.2,
+    "net_worth": 100.6
   },
   {
     "player": "Negative EV",
@@ -654,7 +870,10 @@
     "cumulative": 70,
     "overall_rank": 958151,
     "points_on_bench": 2,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "Negative EV",
@@ -663,7 +882,10 @@
     "cumulative": 100,
     "overall_rank": 5709573,
     "points_on_bench": 12,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 99.6,
+    "bank": 0.5,
+    "net_worth": 100.1
   },
   {
     "player": "Negative EV",
@@ -672,7 +894,10 @@
     "cumulative": 140,
     "overall_rank": 6575962,
     "points_on_bench": 4,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 97.9,
+    "bank": 2.3,
+    "net_worth": 100.2
   },
   {
     "player": "Negative EV",
@@ -681,7 +906,10 @@
     "cumulative": 216,
     "overall_rank": 4493496,
     "points_on_bench": 7,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 97.9,
+    "bank": 2.3,
+    "net_worth": 100.2
   },
   {
     "player": "Negative EV",
@@ -690,7 +918,10 @@
     "cumulative": 263,
     "overall_rank": 3970496,
     "points_on_bench": 8,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 99.3,
+    "bank": 1.2,
+    "net_worth": 100.5
   },
   {
     "player": "Negative EV",
@@ -699,7 +930,10 @@
     "cumulative": 333,
     "overall_rank": 2210685,
     "points_on_bench": 30,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 99.9,
+    "bank": 0.6,
+    "net_worth": 100.5
   },
   {
     "player": "Negative EV",
@@ -708,7 +942,10 @@
     "cumulative": 387,
     "overall_rank": 3076919,
     "points_on_bench": 7,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 100.7,
+    "bank": 0.6,
+    "net_worth": 101.3
   },
   {
     "player": "Negative EV",
@@ -717,7 +954,10 @@
     "cumulative": 452,
     "overall_rank": 2893470,
     "points_on_bench": 17,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 96.1,
+    "bank": 5.6,
+    "net_worth": 101.7
   },
   {
     "player": "Negative EV",
@@ -726,7 +966,10 @@
     "cumulative": 512,
     "overall_rank": 2188259,
     "points_on_bench": 4,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 96.3,
+    "bank": 5.6,
+    "net_worth": 101.9
   },
   {
     "player": "FC Berryfield",
@@ -735,7 +978,10 @@
     "cumulative": 61,
     "overall_rank": 2607687,
     "points_on_bench": 12,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Berryfield",
@@ -744,7 +990,10 @@
     "cumulative": 108,
     "overall_rank": 3840714,
     "points_on_bench": 4,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Berryfield",
@@ -753,7 +1002,10 @@
     "cumulative": 160,
     "overall_rank": 3142653,
     "points_on_bench": 2,
-    "rank": 4
+    "rank": 4,
+    "squad_value": 99.9,
+    "bank": 0.0,
+    "net_worth": 99.9
   },
   {
     "player": "FC Berryfield",
@@ -762,7 +1014,10 @@
     "cumulative": 233,
     "overall_rank": 2264036,
     "points_on_bench": 4,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 97.7,
+    "bank": 2.2,
+    "net_worth": 99.9
   },
   {
     "player": "FC Berryfield",
@@ -771,7 +1026,10 @@
     "cumulative": 284,
     "overall_rank": 1704446,
     "points_on_bench": 5,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 98.0,
+    "bank": 2.2,
+    "net_worth": 100.2
   },
   {
     "player": "FC Berryfield",
@@ -780,7 +1038,10 @@
     "cumulative": 345,
     "overall_rank": 1413952,
     "points_on_bench": 11,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 98.0,
+    "bank": 2.2,
+    "net_worth": 100.2
   },
   {
     "player": "FC Berryfield",
@@ -789,7 +1050,10 @@
     "cumulative": 404,
     "overall_rank": 1946224,
     "points_on_bench": 5,
-    "rank": 7
+    "rank": 7,
+    "squad_value": 98.1,
+    "bank": 2.2,
+    "net_worth": 100.3
   },
   {
     "player": "FC Berryfield",
@@ -798,7 +1062,10 @@
     "cumulative": 457,
     "overall_rank": 2556478,
     "points_on_bench": 17,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 100.2,
+    "bank": 0.3,
+    "net_worth": 100.5
   },
   {
     "player": "FC Berryfield",
@@ -807,7 +1074,10 @@
     "cumulative": 501,
     "overall_rank": 2766544,
     "points_on_bench": 7,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 100.4,
+    "bank": 0.3,
+    "net_worth": 100.7
   },
   {
     "player": "Seinfeld Chillwell",
@@ -816,7 +1086,10 @@
     "cumulative": 52,
     "overall_rank": 5174823,
     "points_on_bench": 7,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 99.5,
+    "bank": 0.5,
+    "net_worth": 100.0
   },
   {
     "player": "Seinfeld Chillwell",
@@ -825,7 +1098,10 @@
     "cumulative": 93,
     "overall_rank": 6981241,
     "points_on_bench": 13,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 96.6,
+    "bank": 3.4,
+    "net_worth": 100.0
   },
   {
     "player": "Seinfeld Chillwell",
@@ -834,7 +1110,10 @@
     "cumulative": 151,
     "overall_rank": 4733955,
     "points_on_bench": 18,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 96.8,
+    "bank": 3.4,
+    "net_worth": 100.2
   },
   {
     "player": "Seinfeld Chillwell",
@@ -843,7 +1122,10 @@
     "cumulative": 208,
     "overall_rank": 5577549,
     "points_on_bench": 16,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 100.3,
+    "bank": 0.1,
+    "net_worth": 100.4
   },
   {
     "player": "Seinfeld Chillwell",
@@ -852,7 +1134,10 @@
     "cumulative": 265,
     "overall_rank": 3734118,
     "points_on_bench": 5,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 100.3,
+    "bank": 0.4,
+    "net_worth": 100.7
   },
   {
     "player": "Seinfeld Chillwell",
@@ -861,7 +1146,10 @@
     "cumulative": 303,
     "overall_rank": 4650819,
     "points_on_bench": 22,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 100.6,
+    "bank": 0.1,
+    "net_worth": 100.7
   },
   {
     "player": "Seinfeld Chillwell",
@@ -870,7 +1158,10 @@
     "cumulative": 363,
     "overall_rank": 4835126,
     "points_on_bench": 12,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 100.7,
+    "bank": 0.3,
+    "net_worth": 101.0
   },
   {
     "player": "Seinfeld Chillwell",
@@ -879,7 +1170,10 @@
     "cumulative": 432,
     "overall_rank": 4123311,
     "points_on_bench": 8,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 100.7,
+    "bank": 0.6,
+    "net_worth": 101.3
   },
   {
     "player": "Seinfeld Chillwell",
@@ -888,7 +1182,10 @@
     "cumulative": 501,
     "overall_rank": 2812022,
     "points_on_bench": 12,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 100.4,
+    "bank": 0.6,
+    "net_worth": 101.0
   },
   {
     "player": "FC Cura",
@@ -897,7 +1194,10 @@
     "cumulative": 45,
     "overall_rank": 7165709,
     "points_on_bench": 10,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Cura",
@@ -906,7 +1206,10 @@
     "cumulative": 101,
     "overall_rank": 5434641,
     "points_on_bench": 5,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 99.0,
+    "bank": 0.9,
+    "net_worth": 99.9
   },
   {
     "player": "FC Cura",
@@ -915,7 +1218,10 @@
     "cumulative": 155,
     "overall_rank": 4046717,
     "points_on_bench": 13,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 95.8,
+    "bank": 4.0,
+    "net_worth": 99.8
   },
   {
     "player": "FC Cura",
@@ -924,7 +1230,10 @@
     "cumulative": 223,
     "overall_rank": 3483560,
     "points_on_bench": 8,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 96.0,
+    "bank": 4.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Cura",
@@ -933,7 +1242,10 @@
     "cumulative": 270,
     "overall_rank": 3079028,
     "points_on_bench": 11,
-    "rank": 8
+    "rank": 8,
+    "squad_value": 96.0,
+    "bank": 4.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Cura",
@@ -942,7 +1254,10 @@
     "cumulative": 326,
     "overall_rank": 2721687,
     "points_on_bench": 13,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 98.5,
+    "bank": 1.2,
+    "net_worth": 99.7
   },
   {
     "player": "FC Cura",
@@ -951,7 +1266,10 @@
     "cumulative": 385,
     "overall_rank": 3215516,
     "points_on_bench": 5,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 99.0,
+    "bank": 1.2,
+    "net_worth": 100.2
   },
   {
     "player": "FC Cura",
@@ -960,7 +1278,10 @@
     "cumulative": 430,
     "overall_rank": 4225241,
     "points_on_bench": 16,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 100.4,
+    "bank": 0.1,
+    "net_worth": 100.5
   },
   {
     "player": "FC Cura",
@@ -969,7 +1290,10 @@
     "cumulative": 488,
     "overall_rank": 3567694,
     "points_on_bench": 16,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 99.8,
+    "bank": 0.6,
+    "net_worth": 100.4
   },
   {
     "player": "FC Relegated",
@@ -978,7 +1302,10 @@
     "cumulative": 52,
     "overall_rank": 5174823,
     "points_on_bench": 14,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Relegated",
@@ -987,7 +1314,10 @@
     "cumulative": 98,
     "overall_rank": 5939885,
     "points_on_bench": 12,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Relegated",
@@ -996,7 +1326,10 @@
     "cumulative": 151,
     "overall_rank": 4667470,
     "points_on_bench": 2,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 99.5,
+    "bank": 0.0,
+    "net_worth": 99.5
   },
   {
     "player": "FC Relegated",
@@ -1005,7 +1338,10 @@
     "cumulative": 222,
     "overall_rank": 3615810,
     "points_on_bench": 10,
-    "rank": 9
+    "rank": 9,
+    "squad_value": 99.2,
+    "bank": 0.3,
+    "net_worth": 99.5
   },
   {
     "player": "FC Relegated",
@@ -1014,7 +1350,10 @@
     "cumulative": 268,
     "overall_rank": 3304690,
     "points_on_bench": 9,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 99.3,
+    "bank": 0.3,
+    "net_worth": 99.6
   },
   {
     "player": "FC Relegated",
@@ -1023,7 +1362,10 @@
     "cumulative": 311,
     "overall_rank": 3908036,
     "points_on_bench": 7,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 98.7,
+    "bank": 0.9,
+    "net_worth": 99.6
   },
   {
     "player": "FC Relegated",
@@ -1032,7 +1374,10 @@
     "cumulative": 373,
     "overall_rank": 4075417,
     "points_on_bench": 10,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 99.1,
+    "bank": 0.7,
+    "net_worth": 99.8
   },
   {
     "player": "FC Relegated",
@@ -1041,7 +1386,10 @@
     "cumulative": 426,
     "overall_rank": 4464237,
     "points_on_bench": 14,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 99.7,
+    "bank": 0.7,
+    "net_worth": 100.4
   },
   {
     "player": "FC Relegated",
@@ -1050,7 +1398,10 @@
     "cumulative": 485,
     "overall_rank": 3732750,
     "points_on_bench": 8,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 99.7,
+    "bank": 0.7,
+    "net_worth": 100.4
   },
   {
     "player": "Kupla 2.0",
@@ -1059,7 +1410,10 @@
     "cumulative": 57,
     "overall_rank": 3654196,
     "points_on_bench": 5,
-    "rank": 5
+    "rank": 5,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "Kupla 2.0",
@@ -1068,7 +1422,10 @@
     "cumulative": 94,
     "overall_rank": 6678506,
     "points_on_bench": 14,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "Kupla 2.0",
@@ -1077,7 +1434,10 @@
     "cumulative": 147,
     "overall_rank": 5347552,
     "points_on_bench": 2,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 99.7,
+    "bank": 0.0,
+    "net_worth": 99.7
   },
   {
     "player": "Kupla 2.0",
@@ -1086,7 +1446,10 @@
     "cumulative": 216,
     "overall_rank": 4455140,
     "points_on_bench": 14,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 97.0,
+    "bank": 2.7,
+    "net_worth": 99.7
   },
   {
     "player": "Kupla 2.0",
@@ -1095,7 +1458,10 @@
     "cumulative": 249,
     "overall_rank": 5596669,
     "points_on_bench": 6,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 98.2,
+    "bank": 1.7,
+    "net_worth": 99.9
   },
   {
     "player": "Kupla 2.0",
@@ -1104,7 +1470,10 @@
     "cumulative": 303,
     "overall_rank": 4624966,
     "points_on_bench": 1,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 98.7,
+    "bank": 1.2,
+    "net_worth": 99.9
   },
   {
     "player": "Kupla 2.0",
@@ -1113,7 +1482,10 @@
     "cumulative": 357,
     "overall_rank": 5267135,
     "points_on_bench": 9,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 97.0,
+    "bank": 3.2,
+    "net_worth": 100.2
   },
   {
     "player": "Kupla 2.0",
@@ -1122,7 +1494,10 @@
     "cumulative": 412,
     "overall_rank": 5347246,
     "points_on_bench": 9,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 97.4,
+    "bank": 3.2,
+    "net_worth": 100.6
   },
   {
     "player": "Kupla 2.0",
@@ -1131,7 +1506,10 @@
     "cumulative": 463,
     "overall_rank": 5101256,
     "points_on_bench": 5,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 97.3,
+    "bank": 3.2,
+    "net_worth": 100.5
   },
   {
     "player": "Traktor Jorvas",
@@ -1140,7 +1518,10 @@
     "cumulative": 76,
     "overall_rank": 400600,
     "points_on_bench": 0,
-    "rank": 1
+    "rank": 1,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "Traktor Jorvas",
@@ -1149,7 +1530,10 @@
     "cumulative": 115,
     "overall_rank": 2563260,
     "points_on_bench": 7,
-    "rank": 3
+    "rank": 3,
+    "squad_value": 100.1,
+    "bank": 0.0,
+    "net_worth": 100.1
   },
   {
     "player": "Traktor Jorvas",
@@ -1158,7 +1542,10 @@
     "cumulative": 146,
     "overall_rank": 5632272,
     "points_on_bench": 3,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 96.6,
+    "bank": 3.7,
+    "net_worth": 100.3
   },
   {
     "player": "Traktor Jorvas",
@@ -1167,7 +1554,10 @@
     "cumulative": 202,
     "overall_rank": 6302361,
     "points_on_bench": 8,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 96.7,
+    "bank": 3.6,
+    "net_worth": 100.3
   },
   {
     "player": "Traktor Jorvas",
@@ -1176,7 +1566,10 @@
     "cumulative": 247,
     "overall_rank": 5847753,
     "points_on_bench": 5,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 98.4,
+    "bank": 1.7,
+    "net_worth": 100.1
   },
   {
     "player": "Traktor Jorvas",
@@ -1185,7 +1578,10 @@
     "cumulative": 274,
     "overall_rank": 7158378,
     "points_on_bench": 2,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 98.3,
+    "bank": 1.7,
+    "net_worth": 100.0
   },
   {
     "player": "Traktor Jorvas",
@@ -1194,7 +1590,10 @@
     "cumulative": 338,
     "overall_rank": 6623456,
     "points_on_bench": 5,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 98.0,
+    "bank": 1.7,
+    "net_worth": 99.7
   },
   {
     "player": "Traktor Jorvas",
@@ -1203,7 +1602,10 @@
     "cumulative": 410,
     "overall_rank": 5454998,
     "points_on_bench": 14,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 98.7,
+    "bank": 0.6,
+    "net_worth": 99.3
   },
   {
     "player": "Traktor Jorvas",
@@ -1212,7 +1614,10 @@
     "cumulative": 453,
     "overall_rank": 5705004,
     "points_on_bench": 18,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 99.2,
+    "bank": 0.6,
+    "net_worth": 99.8
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1221,7 +1626,10 @@
     "cumulative": 44,
     "overall_rank": 7400945,
     "points_on_bench": 0,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1230,7 +1638,10 @@
     "cumulative": 86,
     "overall_rank": 7917169,
     "points_on_bench": 1,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 96.9,
+    "bank": 3.0,
+    "net_worth": 99.9
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1239,7 +1650,10 @@
     "cumulative": 146,
     "overall_rank": 5576235,
     "points_on_bench": 8,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 95.6,
+    "bank": 3.9,
+    "net_worth": 99.5
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1248,7 +1662,10 @@
     "cumulative": 190,
     "overall_rank": 7543573,
     "points_on_bench": 4,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 96.4,
+    "bank": 3.3,
+    "net_worth": 99.7
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1257,7 +1674,10 @@
     "cumulative": 234,
     "overall_rank": 7176524,
     "points_on_bench": 7,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 96.3,
+    "bank": 3.2,
+    "net_worth": 99.5
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1266,7 +1686,10 @@
     "cumulative": 271,
     "overall_rank": 7396285,
     "points_on_bench": 11,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 98.6,
+    "bank": 0.8,
+    "net_worth": 99.4
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1275,7 +1698,10 @@
     "cumulative": 334,
     "overall_rank": 6909996,
     "points_on_bench": 3,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 97.3,
+    "bank": 1.9,
+    "net_worth": 99.2
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1284,7 +1710,10 @@
     "cumulative": 412,
     "overall_rank": 5338088,
     "points_on_bench": 16,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 99.4,
+    "bank": 0.4,
+    "net_worth": 99.8
   },
   {
     "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
@@ -1293,7 +1722,10 @@
     "cumulative": 452,
     "overall_rank": 5770296,
     "points_on_bench": 12,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 100.2,
+    "bank": 0.4,
+    "net_worth": 100.6
   },
   {
     "player": "FC Sukkaralli",
@@ -1302,7 +1734,10 @@
     "cumulative": 43,
     "overall_rank": 7620845,
     "points_on_bench": 13,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "FC Sukkaralli",
@@ -1311,7 +1746,10 @@
     "cumulative": 88,
     "overall_rank": 7604466,
     "points_on_bench": 4,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 99.8,
+    "bank": 0.0,
+    "net_worth": 99.8
   },
   {
     "player": "FC Sukkaralli",
@@ -1320,7 +1758,10 @@
     "cumulative": 130,
     "overall_rank": 7718431,
     "points_on_bench": 13,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 99.3,
+    "bank": 0.0,
+    "net_worth": 99.3
   },
   {
     "player": "FC Sukkaralli",
@@ -1329,7 +1770,10 @@
     "cumulative": 201,
     "overall_rank": 6391521,
     "points_on_bench": 8,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 98.9,
+    "bank": 0.4,
+    "net_worth": 99.3
   },
   {
     "player": "FC Sukkaralli",
@@ -1338,7 +1782,10 @@
     "cumulative": 249,
     "overall_rank": 5573949,
     "points_on_bench": 10,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 99.1,
+    "bank": 0.4,
+    "net_worth": 99.5
   },
   {
     "player": "FC Sukkaralli",
@@ -1347,7 +1794,10 @@
     "cumulative": 308,
     "overall_rank": 4184528,
     "points_on_bench": 10,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 95.2,
+    "bank": 4.4,
+    "net_worth": 99.6
   },
   {
     "player": "FC Sukkaralli",
@@ -1356,7 +1806,10 @@
     "cumulative": 363,
     "overall_rank": 4811549,
     "points_on_bench": 14,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 95.2,
+    "bank": 4.3,
+    "net_worth": 99.5
   },
   {
     "player": "FC Sukkaralli",
@@ -1365,7 +1818,10 @@
     "cumulative": 417,
     "overall_rank": 5036316,
     "points_on_bench": 14,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 95.1,
+    "bank": 5.0,
+    "net_worth": 100.1
   },
   {
     "player": "FC Sukkaralli",
@@ -1374,7 +1830,10 @@
     "cumulative": 448,
     "overall_rank": 6017249,
     "points_on_bench": 5,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 95.2,
+    "bank": 5.0,
+    "net_worth": 100.2
   },
   {
     "player": "Peikot FC HKI82",
@@ -1383,7 +1842,10 @@
     "cumulative": 52,
     "overall_rank": 5174823,
     "points_on_bench": 0,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "Peikot FC HKI82",
@@ -1392,7 +1854,10 @@
     "cumulative": 126,
     "overall_rank": 1030589,
     "points_on_bench": 7,
-    "rank": 2
+    "rank": 2,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "Peikot FC HKI82",
@@ -1401,7 +1866,10 @@
     "cumulative": 150,
     "overall_rank": 4904814,
     "points_on_bench": 5,
-    "rank": 12
+    "rank": 12,
+    "squad_value": 99.1,
+    "bank": 0.8,
+    "net_worth": 99.9
   },
   {
     "player": "Peikot FC HKI82",
@@ -1410,7 +1878,10 @@
     "cumulative": 215,
     "overall_rank": 4561404,
     "points_on_bench": 3,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 98.9,
+    "bank": 0.8,
+    "net_worth": 99.7
   },
   {
     "player": "Peikot FC HKI82",
@@ -1419,7 +1890,10 @@
     "cumulative": 253,
     "overall_rank": 5126805,
     "points_on_bench": 8,
-    "rank": 14
+    "rank": 14,
+    "squad_value": 99.1,
+    "bank": 0.4,
+    "net_worth": 99.5
   },
   {
     "player": "Peikot FC HKI82",
@@ -1428,7 +1902,10 @@
     "cumulative": 292,
     "overall_rank": 5595102,
     "points_on_bench": 5,
-    "rank": 16
+    "rank": 16,
+    "squad_value": 99.1,
+    "bank": 0.4,
+    "net_worth": 99.5
   },
   {
     "player": "Peikot FC HKI82",
@@ -1437,7 +1914,10 @@
     "cumulative": 330,
     "overall_rank": 7179731,
     "points_on_bench": 6,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 98.9,
+    "bank": 0.6,
+    "net_worth": 99.5
   },
   {
     "player": "Peikot FC HKI82",
@@ -1446,7 +1926,10 @@
     "cumulative": 398,
     "overall_rank": 6197186,
     "points_on_bench": 14,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 99.4,
+    "bank": 0.8,
+    "net_worth": 100.2
   },
   {
     "player": "Peikot FC HKI82",
@@ -1455,7 +1938,10 @@
     "cumulative": 446,
     "overall_rank": 6130691,
     "points_on_bench": 8,
-    "rank": 18
+    "rank": 18,
+    "squad_value": 100.0,
+    "bank": 0.8,
+    "net_worth": 100.8
   },
   {
     "player": "FC IRRBB",
@@ -1464,7 +1950,10 @@
     "cumulative": 38,
     "overall_rank": 8516190,
     "points_on_bench": 5,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 98.5,
+    "bank": 1.5,
+    "net_worth": 100.0
   },
   {
     "player": "FC IRRBB",
@@ -1473,7 +1962,10 @@
     "cumulative": 73,
     "overall_rank": 8983039,
     "points_on_bench": 5,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 98.0,
+    "bank": 1.8,
+    "net_worth": 99.8
   },
   {
     "player": "FC IRRBB",
@@ -1482,7 +1974,10 @@
     "cumulative": 126,
     "overall_rank": 8142624,
     "points_on_bench": 1,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 98.8,
+    "bank": 0.6,
+    "net_worth": 99.4
   },
   {
     "player": "FC IRRBB",
@@ -1491,7 +1986,10 @@
     "cumulative": 188,
     "overall_rank": 7724165,
     "points_on_bench": 5,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 98.7,
+    "bank": 0.7,
+    "net_worth": 99.4
   },
   {
     "player": "FC IRRBB",
@@ -1500,7 +1998,10 @@
     "cumulative": 232,
     "overall_rank": 7360653,
     "points_on_bench": 3,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 97.9,
+    "bank": 1.6,
+    "net_worth": 99.5
   },
   {
     "player": "FC IRRBB",
@@ -1509,7 +2010,10 @@
     "cumulative": 255,
     "overall_rank": 8505939,
     "points_on_bench": 29,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 96.3,
+    "bank": 3.0,
+    "net_worth": 99.3
   },
   {
     "player": "FC IRRBB",
@@ -1518,7 +2022,10 @@
     "cumulative": 314,
     "overall_rank": 8178897,
     "points_on_bench": 7,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 98.7,
+    "bank": 0.6,
+    "net_worth": 99.3
   },
   {
     "player": "FC IRRBB",
@@ -1527,7 +2034,10 @@
     "cumulative": 379,
     "overall_rank": 7320008,
     "points_on_bench": 4,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 99.0,
+    "bank": 0.6,
+    "net_worth": 99.6
   },
   {
     "player": "FC IRRBB",
@@ -1536,7 +2046,10 @@
     "cumulative": 420,
     "overall_rank": 7616211,
     "points_on_bench": 8,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 99.4,
+    "bank": 0.0,
+    "net_worth": 99.4
   },
   {
     "player": "buy high play low",
@@ -1545,7 +2058,10 @@
     "cumulative": 57,
     "overall_rank": 3654196,
     "points_on_bench": 9,
-    "rank": 6
+    "rank": 6,
+    "squad_value": 100.0,
+    "bank": 0.0,
+    "net_worth": 100.0
   },
   {
     "player": "buy high play low",
@@ -1554,7 +2070,10 @@
     "cumulative": 99,
     "overall_rank": 5907475,
     "points_on_bench": 4,
-    "rank": 11
+    "rank": 11,
+    "squad_value": 97.2,
+    "bank": 3.0,
+    "net_worth": 100.2
   },
   {
     "player": "buy high play low",
@@ -1563,7 +2082,10 @@
     "cumulative": 149,
     "overall_rank": 5135520,
     "points_on_bench": 2,
-    "rank": 13
+    "rank": 13,
+    "squad_value": 100.4,
+    "bank": 0.0,
+    "net_worth": 100.4
   },
   {
     "player": "buy high play low",
@@ -1572,7 +2094,10 @@
     "cumulative": 220,
     "overall_rank": 3952792,
     "points_on_bench": 7,
-    "rank": 10
+    "rank": 10,
+    "squad_value": 100.4,
+    "bank": 0.0,
+    "net_worth": 100.4
   },
   {
     "player": "buy high play low",
@@ -1581,7 +2106,10 @@
     "cumulative": 253,
     "overall_rank": 5126805,
     "points_on_bench": 17,
-    "rank": 15
+    "rank": 15,
+    "squad_value": 100.5,
+    "bank": 0.0,
+    "net_worth": 100.5
   },
   {
     "player": "buy high play low",
@@ -1590,7 +2118,10 @@
     "cumulative": 287,
     "overall_rank": 6041406,
     "points_on_bench": -1,
-    "rank": 17
+    "rank": 17,
+    "squad_value": 100.3,
+    "bank": 0.0,
+    "net_worth": 100.3
   },
   {
     "player": "buy high play low",
@@ -1599,7 +2130,10 @@
     "cumulative": 324,
     "overall_rank": 7569354,
     "points_on_bench": 6,
-    "rank": 19
+    "rank": 19,
+    "squad_value": 97.9,
+    "bank": 2.4,
+    "net_worth": 100.3
   },
   {
     "player": "buy high play low",
@@ -1608,7 +2142,10 @@
     "cumulative": 370,
     "overall_rank": 7797605,
     "points_on_bench": 17,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 97.9,
+    "bank": 2.4,
+    "net_worth": 100.3
   },
   {
     "player": "buy high play low",
@@ -1617,6 +2154,9 @@
     "cumulative": 405,
     "overall_rank": 8343846,
     "points_on_bench": 8,
-    "rank": 20
+    "rank": 20,
+    "squad_value": 93.1,
+    "bank": 6.9,
+    "net_worth": 100.0
   }
 ]

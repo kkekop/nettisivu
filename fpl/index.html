@@ -90,6 +90,12 @@
 		<h2>Running Overall Rank</h2>
 		<div id="overall-rank-plot" style="width: 100%; height: 500px"></div>
 
+		<h2>Net Worth</h2>
+		<div id="net-worth-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Cash Money</h2>
+		<div id="cash-plot" style="width: 100%; height: 500px"></div>
+
 		<script>
 			async function initDashboard() {
 				const resp = await fetch("fpldata.json");
@@ -223,6 +229,38 @@
 					};
 				});
 
+				const netWorth = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.net_worth), // <-- use overall_rank
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const cash = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.bank), // <-- use overall_rank
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
 				// Initial plots
 				Plotly.newPlot("weekly-plot", weeklyTraces, {
 					title: "Weekly Points",
@@ -240,6 +278,14 @@
 					title: "Running Overall Rank",
 					yaxis: { title: "Overall Rank", autorange: "reversed" },
 					xaxis: { title: "Gameweek" },
+				});
+
+				Plotly.newPlot("net-worth-plot", netWorth, {
+					title: "Net Worth",
+				});
+
+				Plotly.newPlot("cash-plot", cash, {
+					title: "Cash Money",
 				});
 
 				function stripIcon(name) {
@@ -289,6 +335,32 @@
 					overallRankTraces.forEach((trace, i) => {
 						Plotly.restyle(
 							"overall-rank-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
+					netWorth.forEach((trace, i) => {
+						Plotly.restyle(
+							"net-worth-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
+					cash.forEach((trace, i) => {
+						Plotly.restyle(
+							"cash-plot",
 							"visible",
 							[
 								selected.includes(stripIcon(trace.name))
