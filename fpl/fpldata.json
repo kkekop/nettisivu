@@ -1,77 +1,5 @@
 [
   {
-    "player": "TheMacAttack",
-    "gw": 1,
-    "weekly": 53,
-    "cumulative": 53,
-    "overall_rank": 4864958,
-    "points_on_bench": 18,
-    "rank": 10
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 2,
-    "weekly": 51,
-    "cumulative": 104,
-    "overall_rank": 4706099,
-    "points_on_bench": 13,
-    "rank": 7
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 3,
-    "weekly": 51,
-    "cumulative": 155,
-    "overall_rank": 4046717,
-    "points_on_bench": 19,
-    "rank": 6
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 4,
-    "weekly": 73,
-    "cumulative": 228,
-    "overall_rank": 2878106,
-    "points_on_bench": 7,
-    "rank": 5
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 5,
-    "weekly": 56,
-    "cumulative": 284,
-    "overall_rank": 1738881,
-    "points_on_bench": 9,
-    "rank": 2
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 6,
-    "weekly": 67,
-    "cumulative": 351,
-    "overall_rank": 1112668,
-    "points_on_bench": 6,
-    "rank": 2
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 7,
-    "weekly": 98,
-    "cumulative": 449,
-    "overall_rank": 266189,
-    "points_on_bench": 9,
-    "rank": 1
-  },
-  {
-    "player": "TheMacAttack",
-    "gw": 8,
-    "weekly": 86,
-    "cumulative": 535,
-    "overall_rank": 91187,
-    "points_on_bench": 0,
-    "rank": 1
-  },
-  {
     "player": "FC Ryyderi",
     "gw": 1,
     "weekly": 56,
@@ -144,76 +72,94 @@
     "rank": 2
   },
   {
-    "player": "FC Performing",
+    "player": "FC Ryyderi",
+    "gw": 9,
+    "weekly": 67,
+    "cumulative": 578,
+    "overall_rank": 147699,
+    "points_on_bench": 11,
+    "rank": 1
+  },
+  {
+    "player": "TheMacAttack",
     "gw": 1,
-    "weekly": 55,
-    "cumulative": 55,
-    "overall_rank": 4223898,
-    "points_on_bench": 5,
-    "rank": 8
+    "weekly": 53,
+    "cumulative": 53,
+    "overall_rank": 4864958,
+    "points_on_bench": 18,
+    "rank": 10
   },
   {
-    "player": "FC Performing",
+    "player": "TheMacAttack",
     "gw": 2,
-    "weekly": 53,
-    "cumulative": 108,
-    "overall_rank": 3954130,
-    "points_on_bench": 9,
-    "rank": 5
+    "weekly": 51,
+    "cumulative": 104,
+    "overall_rank": 4706099,
+    "points_on_bench": 13,
+    "rank": 7
   },
   {
-    "player": "FC Performing",
+    "player": "TheMacAttack",
     "gw": 3,
-    "weekly": 53,
-    "cumulative": 161,
-    "overall_rank": 3046843,
-    "points_on_bench": 4,
-    "rank": 3
-  },
-  {
-    "player": "FC Performing",
-    "gw": 4,
-    "weekly": 62,
-    "cumulative": 223,
-    "overall_rank": 3514500,
-    "points_on_bench": 10,
-    "rank": 7
-  },
-  {
-    "player": "FC Performing",
-    "gw": 5,
-    "weekly": 47,
-    "cumulative": 270,
-    "overall_rank": 3095966,
-    "points_on_bench": 8,
-    "rank": 7
-  },
-  {
-    "player": "FC Performing",
-    "gw": 6,
-    "weekly": 69,
-    "cumulative": 339,
-    "overall_rank": 1773378,
-    "points_on_bench": 7,
+    "weekly": 51,
+    "cumulative": 155,
+    "overall_rank": 4046717,
+    "points_on_bench": 19,
     "rank": 6
   },
   {
-    "player": "FC Performing",
-    "gw": 7,
-    "weekly": 83,
-    "cumulative": 422,
-    "overall_rank": 1030031,
-    "points_on_bench": 8,
-    "rank": 3
+    "player": "TheMacAttack",
+    "gw": 4,
+    "weekly": 73,
+    "cumulative": 228,
+    "overall_rank": 2878106,
+    "points_on_bench": 7,
+    "rank": 5
   },
   {
-    "player": "FC Performing",
+    "player": "TheMacAttack",
+    "gw": 5,
+    "weekly": 56,
+    "cumulative": 284,
+    "overall_rank": 1738881,
+    "points_on_bench": 9,
+    "rank": 2
+  },
+  {
+    "player": "TheMacAttack",
+    "gw": 6,
+    "weekly": 67,
+    "cumulative": 351,
+    "overall_rank": 1112668,
+    "points_on_bench": 6,
+    "rank": 2
+  },
+  {
+    "player": "TheMacAttack",
+    "gw": 7,
+    "weekly": 98,
+    "cumulative": 449,
+    "overall_rank": 266189,
+    "points_on_bench": 9,
+    "rank": 1
+  },
+  {
+    "player": "TheMacAttack",
     "gw": 8,
-    "weekly": 79,
-    "cumulative": 501,
-    "overall_rank": 602711,
-    "points_on_bench": 17,
-    "rank": 3
+    "weekly": 86,
+    "cumulative": 535,
+    "overall_rank": 91187,
+    "points_on_bench": 0,
+    "rank": 1
+  },
+  {
+    "player": "TheMacAttack",
+    "gw": 9,
+    "weekly": 42,
+    "cumulative": 577,
+    "overall_rank": 156565,
+    "points_on_bench": 15,
+    "rank": 2
   },
   {
     "player": "likainen rusina",
@@ -288,6 +234,177 @@
     "rank": 4
   },
   {
+    "player": "likainen rusina",
+    "gw": 9,
+    "weekly": 61,
+    "cumulative": 558,
+    "overall_rank": 434075,
+    "points_on_bench": 11,
+    "rank": 3
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 1,
+    "weekly": 40,
+    "cumulative": 40,
+    "overall_rank": 8200235,
+    "points_on_bench": 8,
+    "rank": 19
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 2,
+    "weekly": 51,
+    "cumulative": 91,
+    "overall_rank": 7246038,
+    "points_on_bench": 2,
+    "rank": 16
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 3,
+    "weekly": 49,
+    "cumulative": 140,
+    "overall_rank": 6512116,
+    "points_on_bench": 9,
+    "rank": 17
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 4,
+    "weekly": 56,
+    "cumulative": 196,
+    "overall_rank": 6948769,
+    "points_on_bench": 1,
+    "rank": 18
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 5,
+    "weekly": 57,
+    "cumulative": 253,
+    "overall_rank": 5102647,
+    "points_on_bench": 13,
+    "rank": 13
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 6,
+    "weekly": 56,
+    "cumulative": 309,
+    "overall_rank": 4080523,
+    "points_on_bench": 16,
+    "rank": 12
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 7,
+    "weekly": 77,
+    "cumulative": 386,
+    "overall_rank": 3131790,
+    "points_on_bench": 4,
+    "rank": 10
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 8,
+    "weekly": 72,
+    "cumulative": 458,
+    "overall_rank": 2513677,
+    "points_on_bench": 7,
+    "rank": 8
+  },
+  {
+    "player": "up_the_chels",
+    "gw": 9,
+    "weekly": 90,
+    "cumulative": 548,
+    "overall_rank": 669399,
+    "points_on_bench": 0,
+    "rank": 4
+  },
+  {
+    "player": "FC Performing",
+    "gw": 1,
+    "weekly": 55,
+    "cumulative": 55,
+    "overall_rank": 4223898,
+    "points_on_bench": 5,
+    "rank": 8
+  },
+  {
+    "player": "FC Performing",
+    "gw": 2,
+    "weekly": 53,
+    "cumulative": 108,
+    "overall_rank": 3954130,
+    "points_on_bench": 9,
+    "rank": 5
+  },
+  {
+    "player": "FC Performing",
+    "gw": 3,
+    "weekly": 53,
+    "cumulative": 161,
+    "overall_rank": 3046843,
+    "points_on_bench": 4,
+    "rank": 3
+  },
+  {
+    "player": "FC Performing",
+    "gw": 4,
+    "weekly": 62,
+    "cumulative": 223,
+    "overall_rank": 3514500,
+    "points_on_bench": 10,
+    "rank": 7
+  },
+  {
+    "player": "FC Performing",
+    "gw": 5,
+    "weekly": 47,
+    "cumulative": 270,
+    "overall_rank": 3095966,
+    "points_on_bench": 8,
+    "rank": 7
+  },
+  {
+    "player": "FC Performing",
+    "gw": 6,
+    "weekly": 69,
+    "cumulative": 339,
+    "overall_rank": 1773378,
+    "points_on_bench": 7,
+    "rank": 6
+  },
+  {
+    "player": "FC Performing",
+    "gw": 7,
+    "weekly": 83,
+    "cumulative": 422,
+    "overall_rank": 1030031,
+    "points_on_bench": 8,
+    "rank": 3
+  },
+  {
+    "player": "FC Performing",
+    "gw": 8,
+    "weekly": 79,
+    "cumulative": 501,
+    "overall_rank": 602711,
+    "points_on_bench": 17,
+    "rank": 3
+  },
+  {
+    "player": "FC Performing",
+    "gw": 9,
+    "weekly": 46,
+    "cumulative": 547,
+    "overall_rank": 697467,
+    "points_on_bench": 0,
+    "rank": 5
+  },
+  {
     "player": "FC Nightman cometh",
     "gw": 1,
     "weekly": 54,
@@ -360,75 +477,12 @@
     "rank": 5
   },
   {
-    "player": "FC Default",
-    "gw": 1,
-    "weekly": 46,
-    "cumulative": 46,
-    "overall_rank": 6908093,
+    "player": "FC Nightman cometh",
+    "gw": 9,
+    "weekly": 41,
+    "cumulative": 536,
+    "overall_rank": 1053054,
     "points_on_bench": 4,
-    "rank": 15
-  },
-  {
-    "player": "FC Default",
-    "gw": 2,
-    "weekly": 39,
-    "cumulative": 85,
-    "overall_rank": 7974800,
-    "points_on_bench": 6,
-    "rank": 19
-  },
-  {
-    "player": "FC Default",
-    "gw": 3,
-    "weekly": 66,
-    "cumulative": 151,
-    "overall_rank": 4733955,
-    "points_on_bench": 2,
-    "rank": 9
-  },
-  {
-    "player": "FC Default",
-    "gw": 4,
-    "weekly": 64,
-    "cumulative": 215,
-    "overall_rank": 4590963,
-    "points_on_bench": 5,
-    "rank": 13
-  },
-  {
-    "player": "FC Default",
-    "gw": 5,
-    "weekly": 60,
-    "cumulative": 275,
-    "overall_rank": 2558508,
-    "points_on_bench": 7,
-    "rank": 5
-  },
-  {
-    "player": "FC Default",
-    "gw": 6,
-    "weekly": 59,
-    "cumulative": 334,
-    "overall_rank": 2101522,
-    "points_on_bench": 7,
-    "rank": 8
-  },
-  {
-    "player": "FC Default",
-    "gw": 7,
-    "weekly": 72,
-    "cumulative": 406,
-    "overall_rank": 1844549,
-    "points_on_bench": 3,
-    "rank": 6
-  },
-  {
-    "player": "FC Default",
-    "gw": 8,
-    "weekly": 73,
-    "cumulative": 479,
-    "overall_rank": 1411263,
-    "points_on_bench": 12,
     "rank": 6
   },
   {
@@ -504,76 +558,175 @@
     "rank": 7
   },
   {
-    "player": "up_the_chels",
-    "gw": 1,
-    "weekly": 40,
-    "cumulative": 40,
-    "overall_rank": 8200235,
+    "player": "FC Left Curve",
+    "gw": 9,
+    "weekly": 41,
+    "cumulative": 517,
+    "overall_rank": 1899909,
     "points_on_bench": 8,
+    "rank": 7
+  },
+  {
+    "player": "FC Default",
+    "gw": 1,
+    "weekly": 46,
+    "cumulative": 46,
+    "overall_rank": 6908093,
+    "points_on_bench": 4,
+    "rank": 15
+  },
+  {
+    "player": "FC Default",
+    "gw": 2,
+    "weekly": 39,
+    "cumulative": 85,
+    "overall_rank": 7974800,
+    "points_on_bench": 6,
     "rank": 19
   },
   {
-    "player": "up_the_chels",
-    "gw": 2,
-    "weekly": 51,
-    "cumulative": 91,
-    "overall_rank": 7246038,
-    "points_on_bench": 2,
-    "rank": 16
-  },
-  {
-    "player": "up_the_chels",
+    "player": "FC Default",
     "gw": 3,
-    "weekly": 49,
-    "cumulative": 140,
-    "overall_rank": 6512116,
-    "points_on_bench": 9,
-    "rank": 17
+    "weekly": 66,
+    "cumulative": 151,
+    "overall_rank": 4733955,
+    "points_on_bench": 2,
+    "rank": 9
   },
   {
-    "player": "up_the_chels",
+    "player": "FC Default",
     "gw": 4,
-    "weekly": 56,
-    "cumulative": 196,
-    "overall_rank": 6948769,
-    "points_on_bench": 1,
-    "rank": 18
-  },
-  {
-    "player": "up_the_chels",
-    "gw": 5,
-    "weekly": 57,
-    "cumulative": 253,
-    "overall_rank": 5102647,
-    "points_on_bench": 13,
+    "weekly": 64,
+    "cumulative": 215,
+    "overall_rank": 4590963,
+    "points_on_bench": 5,
     "rank": 13
   },
   {
-    "player": "up_the_chels",
-    "gw": 6,
-    "weekly": 56,
-    "cumulative": 309,
-    "overall_rank": 4080523,
-    "points_on_bench": 16,
-    "rank": 12
+    "player": "FC Default",
+    "gw": 5,
+    "weekly": 60,
+    "cumulative": 275,
+    "overall_rank": 2558508,
+    "points_on_bench": 7,
+    "rank": 5
   },
   {
-    "player": "up_the_chels",
+    "player": "FC Default",
+    "gw": 6,
+    "weekly": 59,
+    "cumulative": 334,
+    "overall_rank": 2101522,
+    "points_on_bench": 7,
+    "rank": 8
+  },
+  {
+    "player": "FC Default",
     "gw": 7,
-    "weekly": 77,
-    "cumulative": 386,
-    "overall_rank": 3131790,
-    "points_on_bench": 4,
+    "weekly": 72,
+    "cumulative": 406,
+    "overall_rank": 1844549,
+    "points_on_bench": 3,
+    "rank": 6
+  },
+  {
+    "player": "FC Default",
+    "gw": 8,
+    "weekly": 73,
+    "cumulative": 479,
+    "overall_rank": 1411263,
+    "points_on_bench": 12,
+    "rank": 6
+  },
+  {
+    "player": "FC Default",
+    "gw": 9,
+    "weekly": 38,
+    "cumulative": 517,
+    "overall_rank": 1899909,
+    "points_on_bench": 25,
+    "rank": 8
+  },
+  {
+    "player": "Negative EV",
+    "gw": 1,
+    "weekly": 70,
+    "cumulative": 70,
+    "overall_rank": 958151,
+    "points_on_bench": 2,
+    "rank": 2
+  },
+  {
+    "player": "Negative EV",
+    "gw": 2,
+    "weekly": 30,
+    "cumulative": 100,
+    "overall_rank": 5709573,
+    "points_on_bench": 12,
     "rank": 10
   },
   {
-    "player": "up_the_chels",
-    "gw": 8,
-    "weekly": 72,
-    "cumulative": 458,
-    "overall_rank": 2513677,
+    "player": "Negative EV",
+    "gw": 3,
+    "weekly": 40,
+    "cumulative": 140,
+    "overall_rank": 6575962,
+    "points_on_bench": 4,
+    "rank": 18
+  },
+  {
+    "player": "Negative EV",
+    "gw": 4,
+    "weekly": 76,
+    "cumulative": 216,
+    "overall_rank": 4493496,
     "points_on_bench": 7,
-    "rank": 8
+    "rank": 11
+  },
+  {
+    "player": "Negative EV",
+    "gw": 5,
+    "weekly": 47,
+    "cumulative": 263,
+    "overall_rank": 3970496,
+    "points_on_bench": 8,
+    "rank": 12
+  },
+  {
+    "player": "Negative EV",
+    "gw": 6,
+    "weekly": 70,
+    "cumulative": 333,
+    "overall_rank": 2210685,
+    "points_on_bench": 30,
+    "rank": 9
+  },
+  {
+    "player": "Negative EV",
+    "gw": 7,
+    "weekly": 54,
+    "cumulative": 387,
+    "overall_rank": 3076919,
+    "points_on_bench": 7,
+    "rank": 9
+  },
+  {
+    "player": "Negative EV",
+    "gw": 8,
+    "weekly": 65,
+    "cumulative": 452,
+    "overall_rank": 2893470,
+    "points_on_bench": 17,
+    "rank": 10
+  },
+  {
+    "player": "Negative EV",
+    "gw": 9,
+    "weekly": 60,
+    "cumulative": 512,
+    "overall_rank": 2188259,
+    "points_on_bench": 4,
+    "rank": 9
   },
   {
     "player": "FC Berryfield",
@@ -648,75 +801,12 @@
     "rank": 9
   },
   {
-    "player": "Negative EV",
-    "gw": 1,
-    "weekly": 70,
-    "cumulative": 70,
-    "overall_rank": 958151,
-    "points_on_bench": 2,
-    "rank": 2
-  },
-  {
-    "player": "Negative EV",
-    "gw": 2,
-    "weekly": 30,
-    "cumulative": 100,
-    "overall_rank": 5709573,
-    "points_on_bench": 12,
-    "rank": 10
-  },
-  {
-    "player": "Negative EV",
-    "gw": 3,
-    "weekly": 40,
-    "cumulative": 140,
-    "overall_rank": 6575962,
-    "points_on_bench": 4,
-    "rank": 18
-  },
-  {
-    "player": "Negative EV",
-    "gw": 4,
-    "weekly": 76,
-    "cumulative": 216,
-    "overall_rank": 4493496,
+    "player": "FC Berryfield",
+    "gw": 9,
+    "weekly": 44,
+    "cumulative": 501,
+    "overall_rank": 2766544,
     "points_on_bench": 7,
-    "rank": 11
-  },
-  {
-    "player": "Negative EV",
-    "gw": 5,
-    "weekly": 47,
-    "cumulative": 263,
-    "overall_rank": 3970496,
-    "points_on_bench": 8,
-    "rank": 12
-  },
-  {
-    "player": "Negative EV",
-    "gw": 6,
-    "weekly": 70,
-    "cumulative": 333,
-    "overall_rank": 2210685,
-    "points_on_bench": 30,
-    "rank": 9
-  },
-  {
-    "player": "Negative EV",
-    "gw": 7,
-    "weekly": 54,
-    "cumulative": 387,
-    "overall_rank": 3076919,
-    "points_on_bench": 7,
-    "rank": 9
-  },
-  {
-    "player": "Negative EV",
-    "gw": 8,
-    "weekly": 65,
-    "cumulative": 452,
-    "overall_rank": 2893470,
-    "points_on_bench": 17,
     "rank": 10
   },
   {
@@ -792,6 +882,15 @@
     "rank": 11
   },
   {
+    "player": "Seinfeld Chillwell",
+    "gw": 9,
+    "weekly": 69,
+    "cumulative": 501,
+    "overall_rank": 2812022,
+    "points_on_bench": 12,
+    "rank": 11
+  },
+  {
     "player": "FC Cura",
     "gw": 1,
     "weekly": 45,
@@ -860,6 +959,15 @@
     "weekly": 45,
     "cumulative": 430,
     "overall_rank": 4225241,
+    "points_on_bench": 16,
+    "rank": 12
+  },
+  {
+    "player": "FC Cura",
+    "gw": 9,
+    "weekly": 58,
+    "cumulative": 488,
+    "overall_rank": 3567694,
     "points_on_bench": 16,
     "rank": 12
   },
@@ -936,148 +1044,13 @@
     "rank": 13
   },
   {
-    "player": "FC Sukkaralli",
-    "gw": 1,
-    "weekly": 43,
-    "cumulative": 43,
-    "overall_rank": 7620845,
-    "points_on_bench": 13,
-    "rank": 18
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 2,
-    "weekly": 45,
-    "cumulative": 88,
-    "overall_rank": 7604466,
-    "points_on_bench": 4,
-    "rank": 17
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 3,
-    "weekly": 42,
-    "cumulative": 130,
-    "overall_rank": 7718431,
-    "points_on_bench": 13,
-    "rank": 19
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 4,
-    "weekly": 71,
-    "cumulative": 201,
-    "overall_rank": 6391521,
-    "points_on_bench": 8,
-    "rank": 17
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 5,
-    "weekly": 48,
-    "cumulative": 249,
-    "overall_rank": 5573949,
-    "points_on_bench": 10,
-    "rank": 16
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 6,
+    "player": "FC Relegated",
+    "gw": 9,
     "weekly": 59,
-    "cumulative": 308,
-    "overall_rank": 4184528,
-    "points_on_bench": 10,
-    "rank": 13
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 7,
-    "weekly": 55,
-    "cumulative": 363,
-    "overall_rank": 4811549,
-    "points_on_bench": 14,
-    "rank": 14
-  },
-  {
-    "player": "FC Sukkaralli",
-    "gw": 8,
-    "weekly": 54,
-    "cumulative": 417,
-    "overall_rank": 5036316,
-    "points_on_bench": 14,
-    "rank": 14
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 1,
-    "weekly": 44,
-    "cumulative": 44,
-    "overall_rank": 7400945,
-    "points_on_bench": 0,
-    "rank": 17
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 2,
-    "weekly": 42,
-    "cumulative": 86,
-    "overall_rank": 7917169,
-    "points_on_bench": 1,
-    "rank": 18
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 3,
-    "weekly": 60,
-    "cumulative": 146,
-    "overall_rank": 5576235,
+    "cumulative": 485,
+    "overall_rank": 3732750,
     "points_on_bench": 8,
-    "rank": 15
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 4,
-    "weekly": 44,
-    "cumulative": 190,
-    "overall_rank": 7543573,
-    "points_on_bench": 4,
-    "rank": 19
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 5,
-    "weekly": 44,
-    "cumulative": 234,
-    "overall_rank": 7176524,
-    "points_on_bench": 7,
-    "rank": 19
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 6,
-    "weekly": 37,
-    "cumulative": 271,
-    "overall_rank": 7396285,
-    "points_on_bench": 11,
-    "rank": 19
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 7,
-    "weekly": 63,
-    "cumulative": 334,
-    "overall_rank": 6909996,
-    "points_on_bench": 3,
-    "rank": 17
-  },
-  {
-    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
-    "gw": 8,
-    "weekly": 78,
-    "cumulative": 412,
-    "overall_rank": 5338088,
-    "points_on_bench": 16,
-    "rank": 15
+    "rank": 13
   },
   {
     "player": "Kupla 2.0",
@@ -1122,7 +1095,7 @@
     "cumulative": 249,
     "overall_rank": 5596669,
     "points_on_bench": 6,
-    "rank": 17
+    "rank": 16
   },
   {
     "player": "Kupla 2.0",
@@ -1149,7 +1122,16 @@
     "cumulative": 412,
     "overall_rank": 5347246,
     "points_on_bench": 9,
-    "rank": 16
+    "rank": 15
+  },
+  {
+    "player": "Kupla 2.0",
+    "gw": 9,
+    "weekly": 51,
+    "cumulative": 463,
+    "overall_rank": 5101256,
+    "points_on_bench": 5,
+    "rank": 14
   },
   {
     "player": "Traktor Jorvas",
@@ -1176,7 +1158,7 @@
     "cumulative": 146,
     "overall_rank": 5632272,
     "points_on_bench": 3,
-    "rank": 16
+    "rank": 15
   },
   {
     "player": "Traktor Jorvas",
@@ -1221,6 +1203,177 @@
     "cumulative": 410,
     "overall_rank": 5454998,
     "points_on_bench": 14,
+    "rank": 17
+  },
+  {
+    "player": "Traktor Jorvas",
+    "gw": 9,
+    "weekly": 43,
+    "cumulative": 453,
+    "overall_rank": 5705004,
+    "points_on_bench": 18,
+    "rank": 15
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 1,
+    "weekly": 44,
+    "cumulative": 44,
+    "overall_rank": 7400945,
+    "points_on_bench": 0,
+    "rank": 17
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 2,
+    "weekly": 42,
+    "cumulative": 86,
+    "overall_rank": 7917169,
+    "points_on_bench": 1,
+    "rank": 18
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 3,
+    "weekly": 60,
+    "cumulative": 146,
+    "overall_rank": 5576235,
+    "points_on_bench": 8,
+    "rank": 16
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 4,
+    "weekly": 44,
+    "cumulative": 190,
+    "overall_rank": 7543573,
+    "points_on_bench": 4,
+    "rank": 19
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 5,
+    "weekly": 44,
+    "cumulative": 234,
+    "overall_rank": 7176524,
+    "points_on_bench": 7,
+    "rank": 19
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 6,
+    "weekly": 37,
+    "cumulative": 271,
+    "overall_rank": 7396285,
+    "points_on_bench": 11,
+    "rank": 19
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 7,
+    "weekly": 63,
+    "cumulative": 334,
+    "overall_rank": 6909996,
+    "points_on_bench": 3,
+    "rank": 17
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 8,
+    "weekly": 78,
+    "cumulative": 412,
+    "overall_rank": 5338088,
+    "points_on_bench": 16,
+    "rank": 16
+  },
+  {
+    "player": "FC K\u00e4p\u00e4l\u00e4m\u00e4ki",
+    "gw": 9,
+    "weekly": 40,
+    "cumulative": 452,
+    "overall_rank": 5770296,
+    "points_on_bench": 12,
+    "rank": 16
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 1,
+    "weekly": 43,
+    "cumulative": 43,
+    "overall_rank": 7620845,
+    "points_on_bench": 13,
+    "rank": 18
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 2,
+    "weekly": 45,
+    "cumulative": 88,
+    "overall_rank": 7604466,
+    "points_on_bench": 4,
+    "rank": 17
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 3,
+    "weekly": 42,
+    "cumulative": 130,
+    "overall_rank": 7718431,
+    "points_on_bench": 13,
+    "rank": 19
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 4,
+    "weekly": 71,
+    "cumulative": 201,
+    "overall_rank": 6391521,
+    "points_on_bench": 8,
+    "rank": 17
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 5,
+    "weekly": 48,
+    "cumulative": 249,
+    "overall_rank": 5573949,
+    "points_on_bench": 10,
+    "rank": 17
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 6,
+    "weekly": 59,
+    "cumulative": 308,
+    "overall_rank": 4184528,
+    "points_on_bench": 10,
+    "rank": 13
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 7,
+    "weekly": 55,
+    "cumulative": 363,
+    "overall_rank": 4811549,
+    "points_on_bench": 14,
+    "rank": 14
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 8,
+    "weekly": 54,
+    "cumulative": 417,
+    "overall_rank": 5036316,
+    "points_on_bench": 14,
+    "rank": 14
+  },
+  {
+    "player": "FC Sukkaralli",
+    "gw": 9,
+    "weekly": 31,
+    "cumulative": 448,
+    "overall_rank": 6017249,
+    "points_on_bench": 5,
     "rank": 17
   },
   {
@@ -1296,6 +1449,15 @@
     "rank": 18
   },
   {
+    "player": "Peikot FC HKI82",
+    "gw": 9,
+    "weekly": 48,
+    "cumulative": 446,
+    "overall_rank": 6130691,
+    "points_on_bench": 8,
+    "rank": 18
+  },
+  {
     "player": "FC IRRBB",
     "gw": 1,
     "weekly": 38,
@@ -1368,6 +1530,15 @@
     "rank": 19
   },
   {
+    "player": "FC IRRBB",
+    "gw": 9,
+    "weekly": 41,
+    "cumulative": 420,
+    "overall_rank": 7616211,
+    "points_on_bench": 8,
+    "rank": 19
+  },
+  {
     "player": "buy high play low",
     "gw": 1,
     "weekly": 57,
@@ -1437,6 +1608,15 @@
     "cumulative": 370,
     "overall_rank": 7797605,
     "points_on_bench": 17,
+    "rank": 20
+  },
+  {
+    "player": "buy high play low",
+    "gw": 9,
+    "weekly": 35,
+    "cumulative": 405,
+    "overall_rank": 8343846,
+    "points_on_bench": 8,
     "rank": 20
   }
 ]
