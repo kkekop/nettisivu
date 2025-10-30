@@ -1,0 +1,3325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FPL League Starting XI</title>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    margin-bottom: 15px;
+}
+.filter-container {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.gw-table {
+    display: none;
+}
+</style>
+</head>
+<body>
+<h1>Eliteleague — Starting XI per Gameweek</h1>
+
+<div class="filter-container">
+  <label for="gwSelect">Gameweek:</label>
+  <select id="gwSelect">
+    <option value="1">GW1</option><option value="2">GW2</option><option value="3">GW3</option><option value="4">GW4</option><option value="5">GW5</option><option value="6">GW6</option><option value="7">GW7</option><option value="8">GW8</option><option value="9">GW9</option>
+  </select>
+</div>
+
+<table border="1" class="dataframe display gw-table" id="gw1">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Estève</td>
+      <td>Van de Ven</td>
+      <td>Wan-Bissaka</td>
+      <td>Virgil</td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Ndiaye</td>
+      <td>Palmer</td>
+      <td>B.Fernandes</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>N.Williams</td>
+      <td>Tarkowski</td>
+      <td>Virgil</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Wirtz</td>
+      <td>Palmer</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Verbruggen</td>
+      <td>Milenković</td>
+      <td>Aina</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Minteh</td>
+      <td>Szoboszlai</td>
+      <td>Kudus</td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+      <td>Wood</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>A.Becker</td>
+      <td>Aït-Nouri</td>
+      <td>Frimpong</td>
+      <td>Rúben</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Saka</td>
+      <td>Wirtz</td>
+      <td>Estêvão</td>
+      <td>Palmer</td>
+      <td>Gyökeres</td>
+      <td><b>João Pedro</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Sels</td>
+      <td>Pedro Porro</td>
+      <td>Rodon</td>
+      <td>Murillo</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>Rogers</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Diouf</td>
+      <td>Murillo</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td>João Pedro</td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Sánchez</td>
+      <td>Diouf</td>
+      <td>Milenković</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Anderson</td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td>João Pedro</td>
+      <td>Evanilson</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Tarkowski</td>
+      <td>Wan-Bissaka</td>
+      <td>Hoever</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>Mateta</td>
+      <td>Bowen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Frimpong</td>
+      <td>Van de Ven</td>
+      <td>Estève</td>
+      <td>Reinildo</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Palmer</td>
+      <td></td>
+      <td>Füllkrug</td>
+      <td>Haaland</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Frimpong</td>
+      <td>Cucurella</td>
+      <td>Wan-Bissaka</td>
+      <td>Konsa</td>
+      <td></td>
+      <td>Eze</td>
+      <td>Iwobi</td>
+      <td>Merino</td>
+      <td>Ødegaard</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>B.Fernandes</td>
+      <td>Kudus</td>
+      <td>Wirtz</td>
+      <td><b>M.Salah</b></td>
+      <td>Amad</td>
+      <td>Beto</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>N.Williams</td>
+      <td>Diouf</td>
+      <td></td>
+      <td></td>
+      <td>Ndiaye</td>
+      <td>Wirtz</td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Wan-Bissaka</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>Mitoma</td>
+      <td>Minteh</td>
+      <td>Rogers</td>
+      <td>Watkins</td>
+      <td>Piroe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Wan-Bissaka</td>
+      <td>Van de Ven</td>
+      <td>Trippier</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td><b>Palmer</b></td>
+      <td>Mitoma</td>
+      <td></td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Murillo</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Palmer</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td>Wood</td>
+      <td>Bowen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Aina</td>
+      <td>Muñoz</td>
+      <td>Frimpong</td>
+      <td></td>
+      <td></td>
+      <td>Tonali</td>
+      <td><b>M.Salah</b></td>
+      <td>Rice</td>
+      <td>Sarr</td>
+      <td>Amad</td>
+      <td>Beto</td>
+      <td>Bowen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Sels</td>
+      <td>Aït-Nouri</td>
+      <td>Virgil</td>
+      <td>Aina</td>
+      <td></td>
+      <td></td>
+      <td>Caicedo</td>
+      <td>Ndiaye</td>
+      <td>Palmer</td>
+      <td>Malen</td>
+      <td>M.Salah</td>
+      <td>Bowen</td>
+      <td><b>Watkins</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Dúbravka</td>
+      <td>Frimpong</td>
+      <td>Gabriel</td>
+      <td>Tarkowski</td>
+      <td>Aina</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>Mitoma</td>
+      <td>J.Arias</td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>Šeško</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td>Frimpong</td>
+      <td>Milenković</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td>Wirtz</td>
+      <td><b>Palmer</b></td>
+      <td>Mitoma</td>
+      <td></td>
+      <td></td>
+      <td>Welbeck</td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Sánchez</td>
+      <td>Aina</td>
+      <td>Frimpong</td>
+      <td>Romero</td>
+      <td>Estève</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>B.Fernandes</td>
+      <td>Marmoush</td>
+      <td></td>
+      <td>Wood</td>
+      <td>Strand Larsen</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw2">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Estève</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Cherki</td>
+      <td>Ndiaye</td>
+      <td>B.Fernandes</td>
+      <td>Mbeumo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+      <td>Marc Guiu</td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td>Richards</td>
+      <td>N.Williams</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Anderson</td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Petrović</td>
+      <td>Milenković</td>
+      <td>Aina</td>
+      <td>Van Hecke</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Minteh</td>
+      <td>Reijnders</td>
+      <td>Estêvão</td>
+      <td></td>
+      <td><b>Gyökeres</b></td>
+      <td>João Pedro</td>
+      <td>Wood</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Sels</td>
+      <td>Aït-Nouri</td>
+      <td>Rúben</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td></td>
+      <td><b>Saka</b></td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Estêvão</td>
+      <td></td>
+      <td>Marc Guiu</td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Sels</td>
+      <td>Dorgu</td>
+      <td>Estève</td>
+      <td>Murillo</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Sánchez</td>
+      <td>Murillo</td>
+      <td>Dorgu</td>
+      <td>Estève</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Dúbravka</td>
+      <td>Milenković</td>
+      <td>Andersen</td>
+      <td>Estève</td>
+      <td>Diouf</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Evanilson</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Tarkowski</td>
+      <td>Andersen</td>
+      <td>Wan-Bissaka</td>
+      <td>Hoever</td>
+      <td>M.Salah</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td></td>
+      <td>Mateta</td>
+      <td>Bowen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Cash</td>
+      <td>Van de Ven</td>
+      <td>Reinildo</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Bobb</td>
+      <td></td>
+      <td>Marc Guiu</td>
+      <td>Füllkrug</td>
+      <td>Haaland</td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Dúbravka</td>
+      <td>Cucurella</td>
+      <td>Wan-Bissaka</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Wirtz</td>
+      <td>Iwobi</td>
+      <td>Merino</td>
+      <td>Ødegaard</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Strand Larsen</td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Aït-Nouri</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Amad</td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Kudus</td>
+      <td>Reijnders</td>
+      <td>Beto</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Dúbravka</td>
+      <td>Estève</td>
+      <td>Diouf</td>
+      <td>N.Williams</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Bowen</td>
+      <td>Watkins</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Senesi</td>
+      <td>Lacroix</td>
+      <td>Wan-Bissaka</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Mitoma</td>
+      <td>Rogers</td>
+      <td>Minteh</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Strand Larsen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Wan-Bissaka</td>
+      <td>Van de Ven</td>
+      <td>Trippier</td>
+      <td>Estève</td>
+      <td>M.Salah</td>
+      <td>Mitoma</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Murillo</td>
+      <td>Pedro Porro</td>
+      <td>Cash</td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td>Bowen</td>
+      <td>Wood</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Aina</td>
+      <td>Muñoz</td>
+      <td>Hall</td>
+      <td></td>
+      <td></td>
+      <td>Tonali</td>
+      <td><b>M.Salah</b></td>
+      <td>Rice</td>
+      <td>Sarr</td>
+      <td></td>
+      <td>Wood</td>
+      <td>Beto</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Dúbravka</td>
+      <td>Estève</td>
+      <td>Virgil</td>
+      <td>Aina</td>
+      <td>Aït-Nouri</td>
+      <td>Gudmundsson</td>
+      <td>Ndiaye</td>
+      <td>Malen</td>
+      <td><b>M.Salah</b></td>
+      <td>Caicedo</td>
+      <td></td>
+      <td>Watkins</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Pickford</td>
+      <td>Saliba</td>
+      <td>Gabriel</td>
+      <td>Tarkowski</td>
+      <td>Aina</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>J.Arias</td>
+      <td>Mitoma</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>Šeško</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td>Milenković</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td></td>
+      <td>Wirtz</td>
+      <td>Sarr</td>
+      <td>Mitoma</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td>Welbeck</td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Dúbravka</td>
+      <td>Aina</td>
+      <td>Gabriel</td>
+      <td>Estève</td>
+      <td>Romero</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Wood</td>
+      <td>Strand Larsen</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw3">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td>Cucurella</td>
+      <td></td>
+      <td></td>
+      <td>Ndiaye</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Mbeumo</td>
+      <td></td>
+      <td>Marc Guiu</td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Sánchez</td>
+      <td>N.Williams</td>
+      <td>Tarkowski</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Kudus</td>
+      <td>Reijnders</td>
+      <td>Anderson</td>
+      <td><b>B.Fernandes</b></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Verbruggen</td>
+      <td>Milenković</td>
+      <td>Aina</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td><b>Kudus</b></td>
+      <td>Semenyo</td>
+      <td>Estêvão</td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+      <td>Wood</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Sels</td>
+      <td>Aït-Nouri</td>
+      <td>Guéhi</td>
+      <td>Rúben</td>
+      <td>Hall</td>
+      <td></td>
+      <td>Kudus</td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Estêvão</td>
+      <td></td>
+      <td>Watkins</td>
+      <td><b>João Pedro</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Sels</td>
+      <td>Pedro Porro</td>
+      <td>Rodon</td>
+      <td>Murillo</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Reijnders</td>
+      <td><b>B.Fernandes</b></td>
+      <td>Semenyo</td>
+      <td>Johnson</td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Murillo</td>
+      <td>Diouf</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Sarr</td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td><b>João Pedro</b></td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Dúbravka</td>
+      <td>Pedro Porro</td>
+      <td>Milenković</td>
+      <td>Diouf</td>
+      <td></td>
+      <td></td>
+      <td>Anderson</td>
+      <td><b>M.Salah</b></td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Tarkowski</td>
+      <td>Andersen</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Kudus</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>Mateta</td>
+      <td>Bowen</td>
+      <td><b>João Pedro</b></td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Cash</td>
+      <td>Reinildo</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Neto</td>
+      <td>Bobb</td>
+      <td><b>João Pedro</b></td>
+      <td>Haaland</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Cucurella</td>
+      <td>Konsa</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Merino</td>
+      <td>Eze</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td>Ødegaard</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Aït-Nouri</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>Amad</td>
+      <td>M.Salah</td>
+      <td>B.Fernandes</td>
+      <td>Kudus</td>
+      <td>Reijnders</td>
+      <td>Beto</td>
+      <td><b>João Pedro</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>N.Williams</td>
+      <td>Rodon</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td>M.Salah</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td>Watkins</td>
+      <td><b>João Pedro</b></td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Pedro Porro</td>
+      <td>Lacroix</td>
+      <td>Senesi</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Mitoma</td>
+      <td>Rogers</td>
+      <td>Minteh</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Strand Larsen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Estève</td>
+      <td>Van de Ven</td>
+      <td>Trippier</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Ndiaye</td>
+      <td>Mitoma</td>
+      <td></td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Murillo</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td>Johnson</td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Chalobah</td>
+      <td>Muñoz</td>
+      <td>Aina</td>
+      <td>Hall</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Rice</td>
+      <td>Sarr</td>
+      <td></td>
+      <td></td>
+      <td>Bowen</td>
+      <td>Wood</td>
+      <td>Beto</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Dúbravka</td>
+      <td>Estève</td>
+      <td>Virgil</td>
+      <td>Aina</td>
+      <td>Aït-Nouri</td>
+      <td>Gudmundsson</td>
+      <td>Ndiaye</td>
+      <td>Malen</td>
+      <td><b>M.Salah</b></td>
+      <td>Caicedo</td>
+      <td></td>
+      <td>Watkins</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Pickford</td>
+      <td>Saliba</td>
+      <td>Gabriel</td>
+      <td>Tarkowski</td>
+      <td>Konsa</td>
+      <td>Aina</td>
+      <td>M.Salah</td>
+      <td>Mitoma</td>
+      <td>Anderson</td>
+      <td></td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td><b>Richarlison</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td>Milenković</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td>Mitoma</td>
+      <td>Sarr</td>
+      <td></td>
+      <td>Bowen</td>
+      <td><b>Wood</b></td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Sánchez</td>
+      <td>Aina</td>
+      <td>Gabriel</td>
+      <td>Romero</td>
+      <td>Estève</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td><b>B.Fernandes</b></td>
+      <td>Reijnders</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw4">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Cucurella</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Sánchez</td>
+      <td>Richards</td>
+      <td>Tarkowski</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Kudus</td>
+      <td>Reijnders</td>
+      <td>Grealish</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Petrović</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Van Hecke</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Reijnders</td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td>Gyökeres</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>A.Becker</td>
+      <td>Frimpong</td>
+      <td>Guéhi</td>
+      <td>Rúben</td>
+      <td></td>
+      <td></td>
+      <td>Kudus</td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Palmer</td>
+      <td>Watkins</td>
+      <td><b>João Pedro</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Sels</td>
+      <td>Rodon</td>
+      <td>Pedro Porro</td>
+      <td>Muñoz</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Johnson</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Sánchez</td>
+      <td>Diouf</td>
+      <td>Pedro Porro</td>
+      <td>Dorgu</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>L.Paquetá</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Watkins</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Andersen</td>
+      <td>Richards</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>Evanilson</td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Tarkowski</td>
+      <td>Senesi</td>
+      <td>Andersen</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Kudus</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Cash</td>
+      <td>Reinildo</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Neto</td>
+      <td>Bobb</td>
+      <td><b>João Pedro</b></td>
+      <td>Haaland</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Cucurella</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td>Merino</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Gabriel</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Kudus</td>
+      <td>Reijnders</td>
+      <td>Šeško</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>N.Williams</td>
+      <td>Rodon</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td><b>M.Salah</b></td>
+      <td>Semenyo</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Pedro Porro</td>
+      <td>Lacroix</td>
+      <td>Senesi</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>Mitoma</td>
+      <td>Minteh</td>
+      <td></td>
+      <td>Muniz</td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Trippier</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Grealish</td>
+      <td>Ndiaye</td>
+      <td>Enzo</td>
+      <td></td>
+      <td><b>João Pedro</b></td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Muñoz</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td>Johnson</td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Chalobah</td>
+      <td>Muñoz</td>
+      <td>Calafiori</td>
+      <td></td>
+      <td></td>
+      <td>Amad</td>
+      <td><b>M.Salah</b></td>
+      <td>Rice</td>
+      <td>Tonali</td>
+      <td></td>
+      <td>Wood</td>
+      <td>Beto</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Sels</td>
+      <td>Estève</td>
+      <td>Virgil</td>
+      <td>Gudmundsson</td>
+      <td></td>
+      <td></td>
+      <td>Caicedo</td>
+      <td>Enzo</td>
+      <td>Semenyo</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Pickford</td>
+      <td>Gabriel</td>
+      <td>Tarkowski</td>
+      <td>Konsa</td>
+      <td></td>
+      <td></td>
+      <td>Palmer</td>
+      <td>J.Arias</td>
+      <td>M.Salah</td>
+      <td>Mitoma</td>
+      <td>Anderson</td>
+      <td>Gyökeres</td>
+      <td><b>Richarlison</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td><b>Virgil</b></td>
+      <td>Tarkowski</td>
+      <td>Calafiori</td>
+      <td>Frimpong</td>
+      <td></td>
+      <td>Palmer</td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td>Mitoma</td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Sánchez</td>
+      <td>Lacroix</td>
+      <td>Gabriel</td>
+      <td>Romero</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Anderson</td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw5">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Cucurella</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Dúbravka</td>
+      <td>Richards</td>
+      <td>N.Williams</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Kudus</td>
+      <td>Grealish</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Haaland</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Petrović</td>
+      <td>Van Hecke</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Calafiori</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td></td>
+      <td>Wood</td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Petrović</td>
+      <td>Van de Ven</td>
+      <td>Guéhi</td>
+      <td>Livramento</td>
+      <td>J.Timber</td>
+      <td></td>
+      <td>Bergvall</td>
+      <td><b>Semenyo</b></td>
+      <td>B.Fernandes</td>
+      <td>Palmer</td>
+      <td></td>
+      <td>Haaland</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Sels</td>
+      <td>Pedro Porro</td>
+      <td>Rodon</td>
+      <td>Muñoz</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Semenyo</td>
+      <td>Johnson</td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Diouf</td>
+      <td>Estève</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>L.Paquetá</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Watkins</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Dúbravka</td>
+      <td>Milenković</td>
+      <td>Andersen</td>
+      <td>Richards</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>Evanilson</td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Senesi</td>
+      <td>Andersen</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Kudus</td>
+      <td>B.Fernandes</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Cash</td>
+      <td>Reinildo</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Wirtz</td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Haaland</td>
+      <td>Woltemade</td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Cucurella</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Strand Larsen</td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Kudus</td>
+      <td>Reijnders</td>
+      <td>Šeško</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>N.Williams</td>
+      <td>Rodon</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Wirtz</td>
+      <td><b>M.Salah</b></td>
+      <td>Semenyo</td>
+      <td></td>
+      <td>Watkins</td>
+      <td>João Pedro</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Rodon</td>
+      <td>Lacroix</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Rogers</td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>Mitoma</td>
+      <td>Minteh</td>
+      <td>Muniz</td>
+      <td>Watkins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Estève</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>Enzo</td>
+      <td></td>
+      <td><b>João Pedro</b></td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Muñoz</td>
+      <td>Pedro Porro</td>
+      <td>Cash</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Chalobah</td>
+      <td>Muñoz</td>
+      <td>Calafiori</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Amad</td>
+      <td>Rice</td>
+      <td>Caicedo</td>
+      <td></td>
+      <td>Beto</td>
+      <td>Wood</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Sels</td>
+      <td>Estève</td>
+      <td>Virgil</td>
+      <td>Gudmundsson</td>
+      <td></td>
+      <td></td>
+      <td>Caicedo</td>
+      <td>Enzo</td>
+      <td>Semenyo</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td>Watkins</td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Dúbravka</td>
+      <td>Saliba</td>
+      <td>Gabriel</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Mitoma</td>
+      <td>L.Paquetá</td>
+      <td><b>Palmer</b></td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>Richarlison</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td>Milenković</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Palmer</td>
+      <td>Mitoma</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td>Bowen</td>
+      <td>Wood</td>
+      <td><b>João Pedro</b></td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Sánchez</td>
+      <td>Lacroix</td>
+      <td>Gabriel</td>
+      <td>Romero</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Palmer</td>
+      <td>B.Fernandes</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Wood</td>
+      <td>Strand Larsen</td>
+      <td>João Pedro</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw6">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Cucurella</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Sánchez</td>
+      <td>Tarkowski</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Kudus</td>
+      <td>Grealish</td>
+      <td>Anderson</td>
+      <td>Reijnders</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Petrović</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Milenković</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Gravenberch</td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Raya</td>
+      <td>Van de Ven</td>
+      <td>J.Timber</td>
+      <td>Rúben</td>
+      <td></td>
+      <td></td>
+      <td>Bergvall</td>
+      <td>Semenyo</td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Szoboszlai</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Gabriel</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Ndiaye</td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Raya</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Ndiaye</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Vicario</td>
+      <td>O’Reilly</td>
+      <td>Tarkowski</td>
+      <td>Romero</td>
+      <td></td>
+      <td></td>
+      <td>Foden</td>
+      <td>Semenyo</td>
+      <td>Enzo</td>
+      <td>Ndiaye</td>
+      <td></td>
+      <td>Richarlison</td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Donnarumma</td>
+      <td>Pedro Porro</td>
+      <td>Senesi</td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>Grealish</td>
+      <td>Foden</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Richarlison</td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Pedro Porro</td>
+      <td>Senesi</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Gravenberch</td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td>Doku</td>
+      <td><b>Haaland</b></td>
+      <td>Isak</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Pedro Porro</td>
+      <td>Cucurella</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Strand Larsen</td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>M.Salah</td>
+      <td>B.Fernandes</td>
+      <td><b>Grealish</b></td>
+      <td>Reijnders</td>
+      <td>Šeško</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>N.Williams</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td>M.Salah</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Richarlison</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Rodon</td>
+      <td>Tarkowski</td>
+      <td>Senesi</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td><b>M.Salah</b></td>
+      <td>B.Fernandes</td>
+      <td>Mitoma</td>
+      <td>Minteh</td>
+      <td>Watkins</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>Enzo</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Wood</td>
+      <td><b>Bowen</b></td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Muñoz</td>
+      <td>Pedro Porro</td>
+      <td>Cash</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Chalobah</td>
+      <td>Muñoz</td>
+      <td>Calafiori</td>
+      <td>Frimpong</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Rice</td>
+      <td>Caicedo</td>
+      <td></td>
+      <td></td>
+      <td>Bowen</td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Sels</td>
+      <td>Estève</td>
+      <td>Virgil</td>
+      <td>Gudmundsson</td>
+      <td></td>
+      <td></td>
+      <td>Caicedo</td>
+      <td>Ndiaye</td>
+      <td>Semenyo</td>
+      <td>Stach</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Dúbravka</td>
+      <td>Saliba</td>
+      <td>Gabriel</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td>Tarkowski</td>
+      <td>M.Salah</td>
+      <td>Mitoma</td>
+      <td>L.Paquetá</td>
+      <td></td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>Richarlison</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td>Frimpong</td>
+      <td>Milenković</td>
+      <td></td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Semenyo</td>
+      <td>Mitoma</td>
+      <td></td>
+      <td>Wood</td>
+      <td><b>João Pedro</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Sánchez</td>
+      <td>Lacroix</td>
+      <td>Gabriel</td>
+      <td>Romero</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Strand Larsen</td>
+      <td><b>Wood</b></td>
+      <td>João Pedro</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw7">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Pope</td>
+      <td>J.Timber</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>Sarr</td>
+      <td>Saka</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Petrović</td>
+      <td>Gabriel</td>
+      <td>Calafiori</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Gravenberch</td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Raya</td>
+      <td>J.Timber</td>
+      <td>Van de Ven</td>
+      <td>Rúben</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Reijnders</td>
+      <td>Mbeumo</td>
+      <td>Szoboszlai</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Gabriel</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Ndiaye</td>
+      <td>Gyökeres</td>
+      <td><b>Haaland</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Raya</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Ndiaye</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Andersen</td>
+      <td>Richards</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Semenyo</td>
+      <td><b>B.Fernandes</b></td>
+      <td>Anderson</td>
+      <td></td>
+      <td>Evanilson</td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Sánchez</td>
+      <td>Pedro Porro</td>
+      <td>Senesi</td>
+      <td>Tarkowski</td>
+      <td>Andersen</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>B.Fernandes</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Pedro Porro</td>
+      <td>Senesi</td>
+      <td>Van de Ven</td>
+      <td>Mukiele</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>Gravenberch</td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td>Doku</td>
+      <td><b>Haaland</b></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Pedro Porro</td>
+      <td>Cucurella</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Strand Larsen</td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Sels</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>B.Fernandes</td>
+      <td>Grealish</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Šeško</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Dúbravka</td>
+      <td>Van de Ven</td>
+      <td>Rodon</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td>M.Salah</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Richarlison</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Senesi</td>
+      <td>Lacroix</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Semenyo</td>
+      <td>Minteh</td>
+      <td></td>
+      <td>Strand Larsen</td>
+      <td>Watkins</td>
+      <td><b>Haaland</b></td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Anthony</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>Enzo</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Sels</td>
+      <td>Tarkowski</td>
+      <td>Muñoz</td>
+      <td>Pedro Porro</td>
+      <td>Cash</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Wirtz</td>
+      <td>Kudus</td>
+      <td><b>M.Salah</b></td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Muñoz</td>
+      <td>Guéhi</td>
+      <td>Calafiori</td>
+      <td></td>
+      <td></td>
+      <td>Caicedo</td>
+      <td>M.Salah</td>
+      <td>Rice</td>
+      <td><b>Sarr</b></td>
+      <td></td>
+      <td>Wood</td>
+      <td>João Pedro</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Sels</td>
+      <td>Estève</td>
+      <td>Virgil</td>
+      <td>Gudmundsson</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Ndiaye</td>
+      <td>Semenyo</td>
+      <td>Stach</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Dúbravka</td>
+      <td>Saliba</td>
+      <td>Gabriel</td>
+      <td><b>Guéhi</b></td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>L.Paquetá</td>
+      <td>Enzo</td>
+      <td></td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>Richarlison</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Sels</td>
+      <td>Calafiori</td>
+      <td>Virgil</td>
+      <td>Tarkowski</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Sarr</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Dúbravka</td>
+      <td>Gabriel</td>
+      <td>Romero</td>
+      <td>Lacroix</td>
+      <td></td>
+      <td></td>
+      <td>M.Salah</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Ndiaye</td>
+      <td>Anderson</td>
+      <td><b>Gyökeres</b></td>
+      <td>Strand Larsen</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw8">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Dúbravka</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Isidor</td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Pope</td>
+      <td>J.Timber</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>Sarr</td>
+      <td>Saka</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Roefs</td>
+      <td>Gabriel</td>
+      <td>Calafiori</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Gravenberch</td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Raya</td>
+      <td>J.Timber</td>
+      <td>Rúben</td>
+      <td>Guéhi</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Reijnders</td>
+      <td>Mbeumo</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Raya</td>
+      <td>Gudmundsson</td>
+      <td>Gabriel</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Raya</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Stach</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Dúbravka</td>
+      <td>J.Timber</td>
+      <td>Gabriel</td>
+      <td>Richards</td>
+      <td></td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Anderson</td>
+      <td>Rice</td>
+      <td>João Pedro</td>
+      <td>Mateta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Dúbravka</td>
+      <td>Alderete</td>
+      <td>J.Timber</td>
+      <td>Calafiori</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>Cullen</td>
+      <td>Saka</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Senesi</td>
+      <td>Van de Ven</td>
+      <td>Mukiele</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Gravenberch</td>
+      <td>Reijnders</td>
+      <td>Doku</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td>Gyökeres</td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Guéhi</td>
+      <td>Cucurella</td>
+      <td>Konsa</td>
+      <td>Pedro Porro</td>
+      <td>Wan-Bissaka</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Strand Larsen</td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Kelleher</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>B.Fernandes</td>
+      <td>Xhaka</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Šeško</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>Rodon</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td>M.Salah</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Richarlison</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Lacroix</td>
+      <td>Rodon</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Minteh</td>
+      <td></td>
+      <td>Strand Larsen</td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Senesi</td>
+      <td>Van de Ven</td>
+      <td>Estève</td>
+      <td>Trippier</td>
+      <td>Anthony</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Pope</td>
+      <td>Senesi</td>
+      <td>Muñoz</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Sarr</td>
+      <td>Kudus</td>
+      <td>Saka</td>
+      <td>Rice</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Kelleher</td>
+      <td>Gabriel</td>
+      <td>Muñoz</td>
+      <td>Guéhi</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Caicedo</td>
+      <td>Rice</td>
+      <td>Sarr</td>
+      <td></td>
+      <td>Bowen</td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Dúbravka</td>
+      <td>Virgil</td>
+      <td>Senesi</td>
+      <td>Burn</td>
+      <td>Gudmundsson</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Stach</td>
+      <td>Caicedo</td>
+      <td></td>
+      <td></td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Vicario</td>
+      <td>J.Timber</td>
+      <td>Gabriel</td>
+      <td>Guéhi</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Caicedo</td>
+      <td>Kudus</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Kelleher</td>
+      <td>Calafiori</td>
+      <td>Virgil</td>
+      <td>Guéhi</td>
+      <td>Tarkowski</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Sarr</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Dúbravka</td>
+      <td>Lacroix</td>
+      <td>Gabriel</td>
+      <td>Estève</td>
+      <td>Wan-Bissaka</td>
+      <td></td>
+      <td><b>M.Salah</b></td>
+      <td>Reijnders</td>
+      <td>Anderson</td>
+      <td></td>
+      <td></td>
+      <td>João Pedro</td>
+      <td>Gyökeres</td>
+      <td>Strand Larsen</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe display gw-table" id="gw9">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Manager</th>
+      <th>GK1</th>
+      <th>DEF1</th>
+      <th>DEF2</th>
+      <th>DEF3</th>
+      <th>DEF4</th>
+      <th>DEF5</th>
+      <th>MID1</th>
+      <th>MID2</th>
+      <th>MID3</th>
+      <th>MID4</th>
+      <th>MID5</th>
+      <th>FWD1</th>
+      <th>FWD2</th>
+      <th>FWD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sini V</td>
+      <td>Sánchez</td>
+      <td>Gabriel</td>
+      <td>Van de Ven</td>
+      <td>Virgil</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td>Grealish</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Markus Wanamo</td>
+      <td>Pope</td>
+      <td>J.Timber</td>
+      <td>Gabriel</td>
+      <td>Botman</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>Enzo</td>
+      <td>Saka</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Otto Kaipomäki</td>
+      <td>Roefs</td>
+      <td>Gabriel</td>
+      <td>Guéhi</td>
+      <td>Calafiori</td>
+      <td>Van de Ven</td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+    </tr>
+    <tr>
+      <td>Samuel Taylor</td>
+      <td>Raya</td>
+      <td>J.Timber</td>
+      <td>Rúben</td>
+      <td>Guéhi</td>
+      <td>Van de Ven</td>
+      <td>Cucurella</td>
+      <td>Semenyo</td>
+      <td>Reijnders</td>
+      <td>Mbeumo</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iiro Tolonen</td>
+      <td>Raya</td>
+      <td>Tarkowski</td>
+      <td>Gabriel</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Kudus</td>
+      <td>Semenyo</td>
+      <td>Saka</td>
+      <td>Enzo</td>
+      <td></td>
+      <td>Woltemade</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Roope R</td>
+      <td>Raya</td>
+      <td>Gabriel</td>
+      <td>Thiaw</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Ndiaye</td>
+      <td>B.Fernandes</td>
+      <td>Enzo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Gyökeres</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Miikka Kaihovaara</td>
+      <td>Sánchez</td>
+      <td>Gudmundsson</td>
+      <td>Gabriel</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Semenyo</td>
+      <td>B.Fernandes</td>
+      <td>Saka</td>
+      <td>Rice</td>
+      <td><b>Haaland</b></td>
+      <td>Mateta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lauri Isopahkala</td>
+      <td>Pope</td>
+      <td>J.Timber</td>
+      <td>Calafiori</td>
+      <td>Chalobah</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Kudus</td>
+      <td>Cullen</td>
+      <td>Saka</td>
+      <td></td>
+      <td>Woltemade</td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Jesse Puuska</td>
+      <td>Raya</td>
+      <td>Senesi</td>
+      <td>Van de Ven</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Caicedo</td>
+      <td>Reijnders</td>
+      <td>Doku</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td>Gyökeres</td>
+    </tr>
+    <tr>
+      <td>Ronja Marjamaa</td>
+      <td>Pope</td>
+      <td>Pedro Porro</td>
+      <td>Cucurella</td>
+      <td>Guéhi</td>
+      <td>Konsa</td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Iwobi</td>
+      <td>Wirtz</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Strand Larsen</td>
+    </tr>
+    <tr>
+      <td>Markus Kantor</td>
+      <td>Kelleher</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Mbeumo</td>
+      <td>B.Fernandes</td>
+      <td>Xhaka</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Šeško</td>
+      <td>João Pedro</td>
+    </tr>
+    <tr>
+      <td>Jenni Kauppinen</td>
+      <td>Sánchez</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td>J.Timber</td>
+      <td></td>
+      <td></td>
+      <td>Reijnders</td>
+      <td>Caicedo</td>
+      <td>M.Salah</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td>Thiago</td>
+    </tr>
+    <tr>
+      <td>Tuomo Viholainen</td>
+      <td>Raya</td>
+      <td>Lacroix</td>
+      <td>Rodon</td>
+      <td>Pedro Porro</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Reijnders</td>
+      <td>B.Fernandes</td>
+      <td>Minteh</td>
+      <td></td>
+      <td>Strand Larsen</td>
+      <td><b>Haaland</b></td>
+      <td>Watkins</td>
+    </tr>
+    <tr>
+      <td>Ida-Maria Juntunen</td>
+      <td>Sánchez</td>
+      <td>Virgil</td>
+      <td>Van de Ven</td>
+      <td>Senesi</td>
+      <td></td>
+      <td></td>
+      <td>Anthony</td>
+      <td>Grealish</td>
+      <td>Semenyo</td>
+      <td>Enzo</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>anton andersen</td>
+      <td>Pope</td>
+      <td>Senesi</td>
+      <td>Muñoz</td>
+      <td>Gabriel</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Sarr</td>
+      <td>Kudus</td>
+      <td>Saka</td>
+      <td>Rice</td>
+      <td><b>Haaland</b></td>
+      <td>João Pedro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Make Kivilä</td>
+      <td>Pope</td>
+      <td>Gabriel</td>
+      <td>Muñoz</td>
+      <td>Chalobah</td>
+      <td></td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Caicedo</td>
+      <td>Rice</td>
+      <td>Sarr</td>
+      <td></td>
+      <td>Bowen</td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+    </tr>
+    <tr>
+      <td>Tino Käyhkö</td>
+      <td>Dúbravka</td>
+      <td>Virgil</td>
+      <td>Senesi</td>
+      <td>Burn</td>
+      <td>Gudmundsson</td>
+      <td></td>
+      <td>Enzo</td>
+      <td>Semenyo</td>
+      <td>Caicedo</td>
+      <td></td>
+      <td></td>
+      <td>Bowen</td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+    </tr>
+    <tr>
+      <td>Antti Tiensuu</td>
+      <td>Vicario</td>
+      <td>J.Timber</td>
+      <td>Gabriel</td>
+      <td>Guéhi</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Semenyo</td>
+      <td>Anthony</td>
+      <td>Caicedo</td>
+      <td></td>
+      <td></td>
+      <td><b>Haaland</b></td>
+      <td>Woltemade</td>
+      <td>Bowen</td>
+    </tr>
+    <tr>
+      <td>Kimmo Koponen</td>
+      <td>Kelleher</td>
+      <td>Virgil</td>
+      <td>Calafiori</td>
+      <td>Gabriel</td>
+      <td>Senesi</td>
+      <td></td>
+      <td>Sarr</td>
+      <td>B.Fernandes</td>
+      <td>Reijnders</td>
+      <td>Semenyo</td>
+      <td></td>
+      <td>João Pedro</td>
+      <td><b>Haaland</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Juuso E</td>
+      <td>Sánchez</td>
+      <td>Gabriel</td>
+      <td>Wan-Bissaka</td>
+      <td>Estève</td>
+      <td></td>
+      <td></td>
+      <td><b>Saka</b></td>
+      <td>B.Fernandes</td>
+      <td>Ndiaye</td>
+      <td>Reijnders</td>
+      <td></td>
+      <td>Gyökeres</td>
+      <td>Strand Larsen</td>
+      <td>João Pedro</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+$(document).ready(function(){
+    function showGW(gw){
+        $('.gw-table').hide();
+        $('#gw'+gw).show();
+    }
+    // show latest GW by default
+    showGW(9);
+
+    var table = $('.gw-table').DataTable({
+        paging: false,
+        searching: true,
+        ordering: true,
+        fixedHeader: true
+    });
+
+    $('#gwSelect').on('change', function(){
+        var gw = $(this).val();
+        $('.gw-table').hide();
+        $('.gw-table').DataTable().destroy(); // destroy previous tables
+        showGW(gw);
+        $('#gw'+gw).DataTable({paging:false, searching:true, ordering:true, fixedHeader:true});
+    });
+});
+</script>
+</body>
+</html>
