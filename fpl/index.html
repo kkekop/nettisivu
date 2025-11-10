@@ -102,6 +102,12 @@
 		<h2>Running Rank</h2>
 		<div id="rank-plot" style="width: 100%; height: 500px"></div>
 
+		<h2>Points Difference to Leader</h2>
+		<div id="leader-diff-plot" style="width: 100%; height: 500px"></div>
+
+		<h2>Average Points Difference to Leader</h2>
+		<div id="avg-diff-plot" style="width: 100%; height: 500px"></div>
+
 		<h2>Running Overall Rank</h2>
 		<div id="overall-rank-plot" style="width: 100%; height: 500px"></div>
 
@@ -276,6 +282,52 @@
 					};
 				});
 
+				// Compute Points Difference to Leader
+				const leaderByGW = {}; // {gw: leader cumulative points}
+				data.forEach((d) => {
+					const current = leaderByGW[d.gw];
+					if (!current || d.cumulative > current) {
+						leaderByGW[d.gw] = d.cumulative;
+					}
+				});
+
+				const leaderDiffTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.cumulative - leaderByGW[d.gw]), // negative = behind leader
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				const avgDiffTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					const avgDiff = pData.map((d) => {
+						const diff = d.cumulative - leaderByGW[d.gw]; // negative for behind
+						return diff / d.gw;
+					});
+
+					return {
+						x: pData.map((d) => d.gw),
+						y: avgDiff,
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
 				// Initial plots
 				Plotly.newPlot("weekly-plot", weeklyTraces, {
 					title: "Weekly Points",
@@ -283,9 +335,35 @@
 				Plotly.newPlot("cumulative-plot", cumTraces, {
 					title: "Cumulative Points",
 				});
+
 				Plotly.newPlot("rank-plot", rankTraces, {
 					title: "Running Rank",
 					yaxis: { title: "Rank", autorange: "reversed" },
+					xaxis: { title: "Gameweek" },
+				});
+
+				Plotly.newPlot("leader-diff-plot", leaderDiffTraces, {
+					title: "Points Difference to Leader",
+					yaxis: { title: "Difference to Leader (pts)" },
+					xaxis: { title: "Gameweek" },
+					shapes: [
+						{
+							type: "line",
+							x0: 0,
+							y0: 0,
+							x1: 1,
+							y1: 0,
+							xref: "paper",
+							yref: "y",
+							line: { color: "gray", width: 1, dash: "dot" },
+						},
+					],
+				});
+
+				// Plot average difference
+				Plotly.newPlot("avg-diff-plot", avgDiffTraces, {
+					title: "Average Points Difference to Leader",
+					yaxis: { title: "Average Points Behind Leader" },
 					xaxis: { title: "Gameweek" },
 				});
 
@@ -337,6 +415,19 @@
 					rankTraces.forEach((trace, i) => {
 						Plotly.restyle(
 							"rank-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
+					leaderDiffTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"leader-diff-plot",
 							"visible",
 							[
 								selected.includes(stripIcon(trace.name))
