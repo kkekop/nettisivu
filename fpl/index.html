@@ -99,6 +99,9 @@
 		<h2>Cumulative Points</h2>
 		<div id="cumulative-plot" style="width: 100%; height: 500px"></div>
 
+		<h2>Average Points per Gameweek</h2>
+		<div id="avg-points-plot" style="width: 100%; height: 500px"></div>
+
 		<h2>Running Rank</h2>
 		<div id="rank-plot" style="width: 100%; height: 500px"></div>
 
@@ -208,6 +211,23 @@
 					return {
 						x: pData.map((d) => d.gw),
 						y: pData.map((d) => d.cumulative),
+						mode: "lines+markers",
+						name: player,
+						line: {
+							color: getColor(i, players.length, isTop),
+							width: isTop ? 4 : 1.5,
+						},
+						marker: { size: 6 },
+					};
+				});
+
+				// Compute average points per GW (cumulative / gw)
+				const avgPointsTraces = players.map((player, i) => {
+					const pData = data.filter((d) => d.player === player);
+					const isTop = top3.includes(player);
+					return {
+						x: pData.map((d) => d.gw),
+						y: pData.map((d) => d.cumulative / d.gw),
 						mode: "lines+markers",
 						name: player,
 						line: {
@@ -336,6 +356,12 @@
 					title: "Cumulative Points",
 				});
 
+				Plotly.newPlot("avg-points-plot", avgPointsTraces, {
+					title: "Average Points per Gameweek",
+					yaxis: { title: "Average Points" },
+					xaxis: { title: "Gameweek" },
+				});
+
 				Plotly.newPlot("rank-plot", rankTraces, {
 					title: "Running Rank",
 					yaxis: { title: "Rank", autorange: "reversed" },
@@ -412,6 +438,20 @@
 							[i]
 						);
 					});
+
+					avgPointsTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"avg-points-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
 					rankTraces.forEach((trace, i) => {
 						Plotly.restyle(
 							"rank-plot",
@@ -428,6 +468,19 @@
 					leaderDiffTraces.forEach((trace, i) => {
 						Plotly.restyle(
 							"leader-diff-plot",
+							"visible",
+							[
+								selected.includes(stripIcon(trace.name))
+									? true
+									: "legendonly",
+							],
+							[i]
+						);
+					});
+
+					avgDiffTraces.forEach((trace, i) => {
+						Plotly.restyle(
+							"avg-diff-plot",
 							"visible",
 							[
 								selected.includes(stripIcon(trace.name))
